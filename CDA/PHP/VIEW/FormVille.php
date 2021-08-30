@@ -24,13 +24,13 @@ echo '<form action="index.php?codePage=actionVille&mode=edit" method="POST">
     <div class="espace"></div>
     <div class="colonne center">
             <label for="nomVille">Nom</label>
-            <input name="nomVille" <?php echo 'value="'.$ville->getNomVille().'"'?>/>
+            <input name="nomVille" pattern="[a-z]"<?php echo 'value="'.$ville->getNomVille().'"'?>/>
         <div class="espace"></div>
             <label for="numDepVille">numDep</label>
-            <input name="numDepVille"  <?php echo 'value="'.$ville->getNumDepVille().'"'?> />
+            <input name="numDepVille" pattern="[0-9]{2}" <?php echo 'value="'.$ville->getNumDepVille().'"'?> />
         <div class="espace"></div>
             <label for="cpVille">cpVille</label>
-            <input name="cpVille" <?php echo 'value="'.$ville->getCpVille().'"'?> />
+            <input name="cpVille" pattern="[0-9]{5}" <?php echo 'value="'.$ville->getCpVille().'"'?> />
     </div>
     
      
