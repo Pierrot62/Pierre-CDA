@@ -1,3 +1,4 @@
 console.log("toto");
-var inputs = document.getElementsByTagName("input");
+alert("toto");
+var inputs = element.getElementsByTagName("input");
 console.log(input);
