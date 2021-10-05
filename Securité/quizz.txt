@@ -1,0 +1,84 @@
+1. Sélectionner ci-dessous les enjeux de la cybersécurité ?
+    d. Protéger le système d’information
+
+2. Si vous étiez victime d’une attaque cybercriminelle, quelles pourraient être les
+conséquences (impacts) sur votre vie privée ? 
+    a. Propagation de donnée personnelles 
+    b. Usurpation d'identité
+
+4. Entourer la (ou les) phrase(s) correcte(s)
+    c. La signature électronique permet de garantir la confidentialité de la donnée;
+    d. Les dénis de service distribués (DDoS) portent atteinte à la disponibilité des 
+    données
+
+5. Vous développez un site web www.asso-etudiants-touristes.org pour une association qui 
+regroupe les étudiants souhaitant effectuer des voyages ensemble à l'étranger. Sur ce 
+site on retrouve les informations concernant les voyages proposés telles que : le pays, 
+les villes à visiter, le prix du transport, les conditions d’hébergement, les dates 
+potentielles du voyage. Ces informations ont un besoin en confidentialité :
+    a. Faible
+
+6. Vous développez un site web www.asso-etudiants-touristes.org pour une association qui 
+regroupe les étudiants souhaitant effectuer des voyages en groupe à l'étranger. Les 
+informations relatives aux étudiants inscrits sur le site (login et mot de passe, nom, 
+prénom, numéro de téléphone, adresse), ont un besoin en confidentialité : 
+    b. Fort
+
+7. Je peux réussir une attaque sur un objet qui n'a aucune vulnérabilité (faiblesse):
+    b. Faux
+
+8. Toutes les organisations et tous les individus font face aux mêmes menaces :
+    a. Vrai
+
+9. Entourer les attaques qui sont généralement de type " ciblée " :
+    a. Phishing ou hameçonnage
+    b. Ransomware ou rançongiciel
+
+10. Entourer les attaques qui sont généralement de type « non ciblées » :
+    b. Virus informatique
+    c. Déni de service distribué
+    d. Phishing ou hameçonnage
+
+11. Entourer les éléments facilitateurs des fraudes internes
+    a. Des comptes utilisateurs partagés entre plusieurs personnes ;
+    d. Une absence ou une faiblesse de supervision des actions internes.
+
+12. Entourer les éléments qui peuvent réduire ou empêcher des fraudes internes
+    a. Une gestion stricte et une revue des habilitations
+    b. Une séparation des rôles des utilisateurs
+    d. Des comptes utilisateurs individuels pour chacun
+
+13. Citer deux moyens (vecteurs d’infection) par lesquels les virus informatiques peuvent être 
+transmis d’un système compromis (ou d’un attaquant) à un système sain.
+    a. Clé USB 
+    b. Piece jointe
+
+14. Qu'est-ce qu'un botnet?
+    C'est un ordinateur infecté qui peut etre utiliser pour des attaque DDOS
+
+15. Vous devez systématiquement donner votre accord avant de faire partie d'un réseau de 
+botnets?
+    b. Faux
+
+16. En France, la cybersécurité ne concerne que les entreprises du secteur privé et les 
+individus
+    b. Faux
+
+17. L'usage d'outils pour obtenir les clés Wifi et accéder au réseau Wifi du voisin tombe sous 
+le coup de la loi : 
+    b. Godfrain
+
+18. Mon réseau wifi personnel est mal sécurisé, par exemple par l'usage d'une clé Wifi faible 
+(exemple: 12345678). Une personne (intrus) se connecte à mon réseau pour effectuer 
+des actions malveillantes comme attaquer un site gouvernemental : 
+    b. Seul l'intrus encourt des sanctions ;
+
+19. Donner un exemple de données à caractère personnel.
+    a. Num CB
+    b. Adresse
+    c. Num Secu
+
+20. Lors de la création du site Web de notre association étudiante, si vous stockez les 
+informations suivantes pour chaque membre : nom, prénom, adresse, adresse email. 
+Auprès de quel organisme devez-vous faire une déclaration?
+    c. CNIL
