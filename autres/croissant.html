@@ -7,16 +7,44 @@
     <title>♥ CROISSANTS ♥</title>
 </head>
 <body>
-    <img src="./img1.jpg" alt="">
-    <img src="./img2.jpeg" alt="">
+    <img class="rotating" src="./img1.png" alt="">
+    <img class="rotating" src="./img2.png" alt="">
 </body>
-<script>
-    var img = document.getElementsByTagName("img");
-    console.log(img.length);
-    rotate(img);
-    function rotate(img) {
-        img[i].style.transform = "rotate(45deg)";
-        rotate(img);
+<style>
+   @-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
-</script>
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+</style>
 </html>
