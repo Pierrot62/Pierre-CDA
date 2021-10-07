@@ -6,13 +6,22 @@
 6) NON
 7) NON
 8) NON
-9) NON
+9) OUI
 10) OUI
-11) Un medicament pourrait n'etre distribué par aucun laboratoire 
+11) Un laboratoire pourrait distribué qu'un seul medicament ou 0
 
 ---------------------------------------------------------------------
 
 Chercheur :
 - prenom / penom 
 - manque anneeNaissance
+- codeLabo (relation 1/1)
 
+
+laboratoire : 
+- Directeur de dois pas etre un attribut
+
+Pays :
+- Idpays / nom
+
+EstMembre ne sera pas une table
