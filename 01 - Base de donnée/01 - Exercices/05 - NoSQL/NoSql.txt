@@ -1,0 +1,28 @@
+Source : kdnuggets.com/2021/05/nosql-know-it-all-compendium.html;
+
+Question 1 : Not Only SQL => En NoSQL aucune architecture n'est définie et le langage non plus.
+
+Question 2 : il n'y pas a de tables, tout est stocké sour forme de fichier en .json
+
+
+Source : https://fr.m.wikipedia.org/wiki/NoSQL
+Question 3 : Le NoSQL a été crée en 1970, et c'est qu'a partir du début des années 2000 que les grandes sociétés Amazon, Google et Ebay 
+traitant d'énormes quantités de données à la seconde, ont ressenti le besoin d'optimiser la rapidité du temps de réponse de leurs BDD et donc
+opter pour cette "nouvelle" technologie pour palier au probleme.
+
+Source : https://www.mongodb.com/fr-fr/nosql-explained
+Question 4 : 
+- paire clé / valeur représentent le modèle le plus simple de BDD NoSQL. Chaque élément de la base est stocké sous la forme d’un nom d’attribut (la clé), associé à sa valeur. 
+Parmi elles, on trouve Riak et Berkeley DB. Pour gagner en fonctionnalité, certaines bases de données clé/valeur comme Redis permettent à chaque valeur d’avoir un type (intégral, par exemple).
+
+- orienté colonne sont optimisées pour les requêtes sur de grands ensembles de données, à l'image de Cassandra et HBase. Elles stockent ces données en colonnes plutôt qu’en lignes.
+
+- orienté graph servent à stocker les informations de réseaux de données (réseaux sociaux, par exemple). Parmi elles figurent Neo4J et Giraph.
+
+- orienté document associent chaque clé à une structure de données complexe, baptisée "document". 
+Les documents peuvent contenir de nombreuses paires clé/valeur ou clé/tableau différentes, voire des documents imbriqués.
+
+
+https://www.guru99.com/nosql-tutorial.html
+Question 5 : Dans le cas ou un site ou une application Web traite une énorme quantité d'informations/données en tres peu de temps, grace aux différentes méthodes d'utilisation de noSQL,
+on peut répondre plus ou moins aux besoins du site, en fonction de la fréquence des requetes executées et/ou du nombre d'informations a stocker 
