@@ -6,8 +6,7 @@ SELECT * FROM employe
 
 SELECT * FROM dept
 
--- Afficher le nom, la date d'embauche, le numéro du supérieur, le 
--- numéro de département et le salaire de tous les employés.
+-- Afficher le nom, la date d'embauche, le numéro du supérieur, le numéro de département et le salaire de tous les employés.
 
 SELECT `nom` , `dateemb`, `nosup`, `nodep`, `salaire`FROM `employe`
 
@@ -124,30 +123,130 @@ SELECT nom, LENGTH(nom) AS "Nombre de lettre" FROM employe
 
 SELECT prenom, noregion , nodep FROM employe INNER JOIN dept ON employe.nodep = dept.nodept
 
-Rechercher le numéro du département, le nom du département, le nom des employés classés par numéro de département (renommer les tables utilisées).
+-- Rechercher le numéro du département, le nom du département, le nom des employés classés par numéro de département (renommer les tables utilisées).
 
-SELECT prenom, noregion , nodep FROM employe as toto LEFT JOIN dept as tata ON toto.nodep = tata.nodept GROUP BY nodep
+SELECT prenom, noregion , nodep FROM employe as toto LEFT JOIN dept as tata ON toto.nodep = tata.nodept ORDER BY nodep
 
-Rechercher le nom des employés du département Distribution. 
+-- Rechercher le nom des employés du département Distribution. 
 
 SELECT employe.nom FROM employe INNER JOIN dept ON employe.nodep = dept.nodept WHERE dept.nom = "distribution"
 
-Rechercher le nom et le salaire des employés qui gagnent plus que leur patron, et le nom et le salaire de leur patron. 
+-- Rechercher le nom et le salaire des employés qui gagnent plus que leur patron, et le nom et le salaire de leur patron. 
 
-SELECT nom, salaire , (SELECT nom, salaire FROM employe WHERE titre = "president ")
+SELECT nom, salaire , SalaireBoss FROM employe WHERE  (SELECT `salaire` FROM employe WHERE noemp =  ) AS SalaireBoss AND- ----
 
-Rechercher le nom et le titre des employés qui ont le même titre que Amartakaldire. 
+-- Rechercher le nom et le titre des employés qui ont le même titre que Amartakaldire. 
 
 SELECT nom, titre FROM employe WHERE titre = (SELECT titre FROM employe WHERE nom = "Amartakaldire")
 
-Rechercher le nom, le salaire et le numéro de département des employés qui gagnent plus qu un seul employé du département 31, classés par numéro de département et salaire.
+-- Rechercher le nom, le salaire et le numéro de département des employés qui gagnent plus qu un seul employé du département 31, classés par numéro de département et salaire.
 
-SELECT nom, salaire, nodep FROM employe WHERE salaire > (SELECT MIN(salaire) FROM employe WHERE nodep = 31)
+SELECT nom, salaire, nodep FROM employe WHERE salaire > (SELECT MIN(salaire) FROM employe WHERE nodep = 31) ORDER BY nodep , salaire
 
-Rechercher le nom, le salaire et le numéro de département des employés qui gagnent plus que tous les employés du département 31, classés par numéro de département et salaire. 
+-- Rechercher le nom, le salaire et le numéro de département des employés qui gagnent plus que tous les employés du département 31, classés par numéro de département et salaire. 
 
 SELECT nom, salaire, nodep FROM employe WHERE salaire > (SELECT MAX(salaire) FROM employe WHERE nodep = 31) ORDER BY nodep AND salaire
 
-Rechercher le nom et le titre des employés du service 31 qui ont un titre que l on trouve dans le département 32. 
+-- Rechercher le nom et le titre des employés du service 31 qui ont un titre que l on trouve dans le département 32. 
 
-SELECT nom, titre
+SELECT nom, titre  FROM employe WHERE titre IN (SELECT titre FROM employe WHERE nodep = 32) AND nodep = 31
+
+-- Rechercher le nom et le titre des employés du service 31 qui ont un titre l on ne trouve pas dans le département 32. 
+
+SELECT nom, titre  FROM employe WHERE titre NOT IN (SELECT titre FROM employe WHERE nodep = 32) AND nodep = 31
+
+-- Rechercher le nom, le titre et le salaire des employés qui ont le même titre et le même salaire que Fairant. 
+
+SELECT nom, titre, salaire FROM employe WHERE titre = fairent.titre AND salaire = fairent.salaire (SELECT titre, salaire FROM employe where nom = "Fairent" ) as fairent---------------
+
+-- Rechercher le numéro de département, le nom du département, le nom des employés, en affichant aussi les départements dans lesquels il n y a personne, classés par numéro de département.
+
+SELECT nodep , dept.nom , employe.nom 
+
+-- 1. Calculer le nombre d'employés de chaque titre.
+
+SELECT titre, COUNT(titre) AS NbEmploye FROM employe GROUP BY titre
+
+-- 2. Calculer la moyenne des salaires et leur somme, par région.
+
+SELECT AVG(salaire) AS "Moyenne des salaire" , SUM(salaire) AS "Somme des salaire" , noregion FROM employe INNER JOIN dept ON employe.nodep = dept.nodept GROUP BY noregion
+
+-- 3. Afficher les numéros des départements ayant au moins 3 employés. 
+
+SELECT nodep FROM `employe` GROUP BY nodep HAVING count(nodep) > 2
+
+-- 4. Afficher les lettres qui sont l'initiale d'au moins trois employés. 
+-- 5. Rechercher le salaire maximum et le salaire minimum parmi tous les salariés et l'écart entre les deux. 
+
+SELECT MIN(salaire) AS "SalaireMin" , MAX(salaire) AS "SalaireMax" , (MAX(salaire) - MIN(salaire)) AS "Ecart" FROM employe
+
+-- 6. Rechercher le nombre de titres différents.
+
+SELECT COUNT(DISTINCT titre) as "Nombre de titres" FROM employe
+
+-- 7. Pour chaque titre, compter le nombre d'employés possédant ce titre.
+
+SELECT titre, DISTINCT COUNT(titre) FROM employe
+
+-- 8. Pour chaque nom de département, afficher le nom du département et le nombre d'employés.
+
+SELECT COUNT(DISTINCT titre) as "Nombre de titres" FROM employe
+
+-- 9. Pour chaque nom de département, afficher le nom du département et le nombre d'employés.
+
+-- 10.Rechercher le nombre de salaires renseignés et le nombre de taux de commission renseignés. 
+
+
+
+
+
+FICHE 3
+
+
+-- Quelles sont les commandes du fournisseur 09120 ?
+
+SELECT * FROM entcom WHERE numfou = 09120
+
+-- 2. Afficher le code des fournisseurs pour lesquels des commandes ont été passées.
+
+SELECT DISTINCT numfou FROM entcom
+
+-- 3. Afficher le nombre de commandes fournisseurs passées, et le nombre de fournisseur concernés.
+
+SELECT COUNT(*) AS "Commande passées", COUNT(DISTINCT numfou) AS "Nombre de fournisseur" FROM entcom
+
+-- 4. Editer les produits ayant un stock inférieur ou égal au stock d'alerte et dont la quantité annuelle est inférieur est inférieure à 1000 (informations à fournir : n° produit, libellé produit, stock, stock actuel d'alerte, quantité annuelle)
+
+SELECT codart, libart, stkphy , stkale , qteann FROM produit WHERE stkphy <= stkale AND qteann < 1000
+
+-- 5. Quels sont les fournisseurs situés dans les départements 75 78 92 77 ?L’affichage (département, nom fournisseur) sera effectué par département décroissant, puis par ordre alphabétique
+
+SELECT posfou , nomfou FROM fournis WHERE postfou = (LEFT(postfou,2) = ) 
+
+-- 6. Quelles sont les commandes passées au mois de mars et avril ?
+
+-- 7. Quelles sont les commandes du jour qui ont des observations particulières ?(Affichage numéro de commande, date de commande)
+
+-- 8. Lister le total de chaque commande par total décroissant (Affichage numéro de commande et total)
+
+-- 9. Lister les commandes dont le total est supérieur à 10 000€ ; on exclura dans le calcul du total les articles commandés en quantité supérieure ou égale à 1000.(Affichage numéro de commande et total)
+
+-- 10.Lister les commandes par nom fournisseur (Afficher le nom du fournisseur, le numéro de commande et la date)
+
+-- 11.Sortir les produits des commandes ayant le mot "urgent' en observation?(Afficher le numéro de commande, le nom du fournisseur, le libellé du produit et le sous total = quantité commandée * Prix unitaire)
+
+-- 12.Coder de 2 manières différentes la requête suivante : Lister le nom des fournisseurs susceptibles de livrer au moins un article
+
+-- 13.Coder de 2 manières différentes la requête suivante Lister les commandes (Numéro et date) dont le fournisseur est celui de la commande 70210 :
+
+-- 14.Dans les articles susceptibles d’être vendus, lister les articles moins chers (basés sur Prix1) que le moins cher des rubans (article dont le premier caractère commence par R). On affichera le libellé de l’article et prix1
+
+-- 15.Editer la liste des fournisseurs susceptibles de livrer les produits dont le stock est inférieur ou égal à 150 % du stock d'alerte. La liste est triée par produit puis fournisseur
+
+-- 16.Éditer la liste des fournisseurs susceptibles de livrer les produit dont le stock est inférieur ou égal à 150 % du stock d'alerte et un délai de livraison d'au plus 30 jours. La liste est triée par fournisseur puis produit
+
+-- 17.Avec le même type de sélection que ci-dessus, sortir un total des stocks par fournisseur trié par total décroissant
+
+-- 18.En fin d'année, sortir la liste des produits dont la quantité réellement commandée dépasse 90% de la quantité annuelle prévue.
+
+-- 19.Calculer le chiffre d'affaire par fournisseur pour l'année 93 sachant que les prix indiqués sont hors taxes et que le taux de TVA est 20%.
