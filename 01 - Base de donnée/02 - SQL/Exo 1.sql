@@ -161,11 +161,11 @@ SELECT nom, titre, salaire FROM employe WHERE titre = fairent.titre AND salaire 
 
 -- Rechercher le numéro de département, le nom du département, le nom des employés, en affichant aussi les départements dans lesquels il n y a personne, classés par numéro de département.
 
-SELECT nodep , dept.nom , employe.nom 
+SELECT e.nodep, d.nom AS 'nom departement', e.nom AS 'nom employe' FROM employe AS e RIGHT JOIN dept AS d ON e.nodep = d.nodept ORDER BY e.nodep
 
 -- 1. Calculer le nombre d'employés de chaque titre.
 
-SELECT titre, COUNT(titre) AS NbEmploye FROM employe GROUP BY titre
+SELECT titre, COUNT(*) AS NbEmploye FROM employe GROUP BY titre
 
 -- 2. Calculer la moyenne des salaires et leur somme, par région.
 
@@ -175,7 +175,10 @@ SELECT AVG(salaire) AS "Moyenne des salaire" , SUM(salaire) AS "Somme des salair
 
 SELECT nodep FROM `employe` GROUP BY nodep HAVING count(nodep) > 2
 
--- 4. Afficher les lettres qui sont l'initiale d'au moins trois employés. 
+-- 4. Afficher les lettres qui sont l'initiale d'au moins trois employés.
+
+Select substring(nom,1,1) as 'initial'from employe group by initial having count(initial) > 2
+
 -- 5. Rechercher le salaire maximum et le salaire minimum parmi tous les salariés et l'écart entre les deux. 
 
 SELECT MIN(salaire) AS "SalaireMin" , MAX(salaire) AS "SalaireMax" , (MAX(salaire) - MIN(salaire)) AS "Ecart" FROM employe
@@ -193,6 +196,8 @@ SELECT titre, DISTINCT COUNT(titre) FROM employe
 SELECT COUNT(DISTINCT titre) as "Nombre de titres" FROM employe
 
 -- 9. Pour chaque nom de département, afficher le nom du département et le nombre d'employés.
+
+SELECT titre, ROUND(AVG(salaire)) as "MoySalaire" FROM employe GROUP BY titre HAVING MoySalaire > (SELECT AVG(salaire) FROM employe WHERE titre="représentant")
 
 -- 10.Rechercher le nombre de salaires renseignés et le nombre de taux de commission renseignés. 
 
@@ -221,17 +226,25 @@ SELECT codart, libart, stkphy , stkale , qteann FROM produit WHERE stkphy <= stk
 
 -- 5. Quels sont les fournisseurs situés dans les départements 75 78 92 77 ?L’affichage (département, nom fournisseur) sera effectué par département décroissant, puis par ordre alphabétique
 
-SELECT posfou , nomfou FROM fournis WHERE postfou = (LEFT(postfou,2) = ) 
+SELECT posfou , nomfou FROM fournis WHERE (LEFT(posfou,2) = 75 OR 78 OR 92 OR 77) 
 
 -- 6. Quelles sont les commandes passées au mois de mars et avril ?
 
+SELECT * FROM entcom WHERE MONTH(datcom) IN (3,4)
+
 -- 7. Quelles sont les commandes du jour qui ont des observations particulières ?(Affichage numéro de commande, date de commande)
 
+SELECT numcom, datcom FROM entcom WHERE obscom != ""
+
 -- 8. Lister le total de chaque commande par total décroissant (Affichage numéro de commande et total)
+
+SELECT numcom, 
 
 -- 9. Lister les commandes dont le total est supérieur à 10 000€ ; on exclura dans le calcul du total les articles commandés en quantité supérieure ou égale à 1000.(Affichage numéro de commande et total)
 
 -- 10.Lister les commandes par nom fournisseur (Afficher le nom du fournisseur, le numéro de commande et la date)
+
+SELECT * FROM entcom GROUP BY numfou ORDER BY datcom
 
 -- 11.Sortir les produits des commandes ayant le mot "urgent' en observation?(Afficher le numéro de commande, le nom du fournisseur, le libellé du produit et le sous total = quantité commandée * Prix unitaire)
 
