@@ -263,3 +263,56 @@ SELECT * FROM entcom GROUP BY numfou ORDER BY datcom
 -- 18.En fin d'année, sortir la liste des produits dont la quantité réellement commandée dépasse 90% de la quantité annuelle prévue.
 
 -- 19.Calculer le chiffre d'affaire par fournisseur pour l'année 93 sachant que les prix indiqués sont hors taxes et que le taux de TVA est 20%.
+
+CREATE VIEW CommandeLIgne AS
+SELECT 
+c.numcom, 
+c.obscom, 
+c.datcom, 
+c.numfou, 
+l.numlig, 
+l.codart, 
+l.qtecde, 
+l.priuni, 
+l.qteliv, 
+l.derliv
+FROM entcom AS c
+RIGHT JOIN ligcom as l
+ON c.numcom = l.numcom
+
+CREATE VIEW  stagiaireFormation as
+SELECT
+    f.`idFormation`,
+    f.`libelleFormation`,
+    s.`idSessionFormation`,
+    s.`numOffreFormation`,
+    s.`dateDebut`,
+    s.`dateFin`,
+    p.`idPeriode`,
+    p.`dateDebutPAE`,
+    p.`dateFinPAE`,
+    p.`dateRapportSuivi`,
+    p.`objectifPAE`,
+    pa.`idParticipation`,
+    st.`idStagiaire`,
+    st.`genreStagiaire`,
+    st.`nomStagiaire`,
+    st.`prenomStagiaire`,
+    st.`numSecuStagiaire`,
+    st.`numBenefStagiaire`,
+    st.`dateNaissanceStagiaire`,
+    st.`emailStagiaire`
+FROM
+    `formations` AS f
+INNER JOIN sessionsformations AS s
+ON
+    f.idFormation = s.idFormation
+INNER JOIN periodesstages AS p
+ON
+    s.idsessionFormation = p.idSessionFormation
+INNER JOIN participations AS pa
+ON
+    pa.idsessionFormation = s.idsessionFormation
+INNER JOIN stagiaires AS st
+ON
+    st.idStagiaire = pa.idStagiaire

@@ -24,6 +24,27 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/ `papyrus` /*!40100 DEFAULT CHARACTER SE
 USE `papyrus`;
 
 --
+-- Temporary table structure for view `commandeligne`
+--
+
+DROP TABLE IF EXISTS `commandeligne`;
+/*!50001 DROP VIEW IF EXISTS `commandeligne`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE VIEW `commandeligne` AS SELECT 
+ 1 AS `numcom`,
+ 1 AS `obscom`,
+ 1 AS `datcom`,
+ 1 AS `numfou`,
+ 1 AS `numlig`,
+ 1 AS `codart`,
+ 1 AS `qtecde`,
+ 1 AS `priuni`,
+ 1 AS `qteliv`,
+ 1 AS `derliv`*/;
+SET character_set_client = @saved_cs_client;
+
+--
 -- Table structure for table `entcom`
 --
 
@@ -173,6 +194,30 @@ LOCK TABLES `vente` WRITE;
 INSERT INTO `vente` VALUES ('B001',8700,15,0,150,50,145,100,140),('B002',8700,15,0,210,50,200,100,185),('D035',120,0,0,40,0,0,0,0),('D035',9120,5,0,40,100,30,0,0),('I100',120,90,0,700,50,600,120,500),('I100',540,70,0,710,60,630,100,600),('I100',9120,60,0,800,70,600,90,500),('I100',9150,90,0,650,90,600,200,590),('I100',9180,30,0,720,50,670,100,490),('I105',120,90,10,705,50,630,120,500),('I105',540,70,0,810,60,645,100,600),('I105',8700,30,0,720,50,670,100,510),('I105',9120,60,0,920,70,800,90,700),('I105',9150,90,0,685,90,600,200,590),('I108',120,90,5,795,30,720,100,680),('I108',9120,60,0,920,70,820,100,780),('I110',9120,60,0,950,70,850,90,790),('I110',9180,90,0,900,70,870,90,835),('P220',120,15,0,3700,100,3500,0,0),('P220',8700,20,50,3500,100,3350,0,0),('P230',120,30,0,5200,100,5000,0,0),('P230',8700,60,0,5000,50,4900,0,0),('P240',120,15,0,2200,100,2000,0,0),('P250',120,30,0,1500,100,1400,500,1200),('P250',9120,30,0,1500,100,1400,500,1200),('R080',9120,10,0,120,100,100,0,0),('R132',9120,5,0,275,0,0,0,0);
 /*!40000 ALTER TABLE `vente` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Current Database: `papyrus`
+--
+
+USE `papyrus`;
+
+--
+-- Final view structure for view `commandeligne`
+--
+
+/*!50001 DROP VIEW IF EXISTS `commandeligne`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_unicode_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `commandeligne` AS select `c`.`numcom` AS `numcom`,`c`.`obscom` AS `obscom`,`c`.`datcom` AS `datcom`,`c`.`numfou` AS `numfou`,`l`.`numlig` AS `numlig`,`l`.`codart` AS `codart`,`l`.`qtecde` AS `qtecde`,`l`.`priuni` AS `priuni`,`l`.`qteliv` AS `qteliv`,`l`.`derliv` AS `derliv` from (`ligcom` `l` left join `entcom` `c` on((`c`.`numcom` = `l`.`numcom`))) */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -183,4 +228,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-19 12:25:02
+-- Dump completed on 2021-10-19 17:23:10

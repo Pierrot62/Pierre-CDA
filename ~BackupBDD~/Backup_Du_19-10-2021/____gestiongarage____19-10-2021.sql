@@ -180,7 +180,7 @@ CREATE TABLE `vehicules` (
   PRIMARY KEY (`idVehicule`),
   KEY `vehicules_clients_FK` (`idClient`),
   CONSTRAINT `vehicules_clients_FK` FOREIGN KEY (`idClient`) REFERENCES `clients` (`idClient`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -189,7 +189,7 @@ CREATE TABLE `vehicules` (
 
 LOCK TABLES `vehicules` WRITE;
 /*!40000 ALTER TABLE `vehicules` DISABLE KEYS */;
-INSERT INTO `vehicules` VALUES (1,'Dacia','Sandero','AA-229-AA',15000,1),(2,'Citroen','C4','AB-289-BB',12000,2),(3,'Chevrolet','Corvette','FF-222-FF',20000,3),(4,'Ford','Fiesta','AE-155-BA',11000,4),(5,'Bentley','Continental','IM-735-LA',25000,5);
+INSERT INTO `vehicules` VALUES (1,'Dacia','Sandero','AA-229-AA',15000,1),(2,'Citroen','C4','AB-289-BB',12000,2),(3,'Chevrolet','Corvette','FF-222-FF',20000,3),(4,'Ford','Fiesta','AE-155-BA',11000,4),(5,'Bentley','Continental','IM-735-LA',25000,5),(6,'opel','corsa','at-178-cp',100000,1);
 /*!40000 ALTER TABLE `vehicules` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -202,4 +202,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-19 12:25:02
+-- Dump completed on 2021-10-19 17:23:09
