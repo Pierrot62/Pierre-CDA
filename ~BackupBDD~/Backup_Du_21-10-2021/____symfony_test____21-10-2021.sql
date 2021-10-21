@@ -19,7 +19,7 @@
 -- Current Database: `symfony_test`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `symfony_test` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `symfony_test` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
 USE `symfony_test`;
 
@@ -32,12 +32,12 @@ DROP TABLE IF EXISTS `categories`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `categorie_id` int(11) DEFAULT NULL,
   `libelle_categorie` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `categorie_mere_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `IDX_3AF34668665D6AAC` (`categorie_mere_id`),
-  CONSTRAINT `FK_3AF34668665D6AAC` FOREIGN KEY (`categorie_mere_id`) REFERENCES `categories` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  KEY `IDX_3AF34668BCF5E72D` (`categorie_id`),
+  CONSTRAINT `FK_3AF34668BCF5E72D` FOREIGN KEY (`categorie_id`) REFERENCES `categories` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -46,7 +46,7 @@ CREATE TABLE `categories` (
 
 LOCK TABLES `categories` WRITE;
 /*!40000 ALTER TABLE `categories` DISABLE KEYS */;
-INSERT INTO `categories` VALUES (1,'Informatique',NULL),(2,'Alimentaire',NULL),(3,'Vetement',NULL),(4,'Ordinateur',1);
+INSERT INTO `categories` VALUES (1,NULL,'');
 /*!40000 ALTER TABLE `categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -71,7 +71,7 @@ CREATE TABLE `doctrine_migration_versions` (
 
 LOCK TABLES `doctrine_migration_versions` WRITE;
 /*!40000 ALTER TABLE `doctrine_migration_versions` DISABLE KEYS */;
-INSERT INTO `doctrine_migration_versions` VALUES ('DoctrineMigrations\\Version20211019165753','2021-10-19 17:54:45',96),('DoctrineMigrations\\Version20211019165800','2021-10-19 16:58:57',95),('DoctrineMigrations\\Version20211019175401','2021-10-19 17:54:45',4),('DoctrineMigrations\\Version20211019175942','2021-10-19 17:59:54',152);
+INSERT INTO `doctrine_migration_versions` VALUES ('DoctrineMigrations\\Version20211019165753','2021-10-19 16:58:58',95),('DoctrineMigrations\\Version20211019175250','2021-10-19 17:55:06',45),('DoctrineMigrations\\Version20211019175934','2021-10-19 17:59:58',154),('DoctrineMigrations\\Version20211020163858','2021-10-20 16:39:11',199),('DoctrineMigrations\\Version20211020173141','2021-10-20 17:31:50',100);
 /*!40000 ALTER TABLE `doctrine_migration_versions` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -84,4 +84,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-20 17:27:01
+-- Dump completed on 2021-10-21 12:25:02

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Database>
+   <Name>Sans titre</Name>
+   <Table>
+      <Name>departement</Name>
+      <Column>
+         <Name>nodep</Name>
+         <Type>INT</Type>
+      </Column>
+      <Column>
+         <Name>nomdep</Name>
+         <Type>VARCHAR(50) </Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>ville</Name>
+         <Type>VARCHAR(50) </Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <PK>
+         <Key>nodep</Key>
+      </PK>
+   </Table>
+   <Table>
+      <Name>employe</Name>
+      <Column>
+         <Name>noemp</Name>
+         <Type>INT</Type>
+      </Column>
+      <Column>
+         <Name>nomemp</Name>
+         <Type>VARCHAR(50) </Type>
+      </Column>
+      <Column>
+         <Name>fonction</Name>
+         <Type>VARCHAR(50) </Type>
+      </Column>
+      <Column>
+         <Name>noresp</Name>
+         <Type>INT</Type>
+      </Column>
+      <Column>
+         <Name>datemb</Name>
+         <Type>DATE</Type>
+      </Column>
+      <Column>
+         <Name>sala</Name>
+         <Type>DECIMAL(15,2)  </Type>
+      </Column>
+      <Column>
+         <Name>comm</Name>
+         <Type>DECIMAL(15,2)  </Type>
+      </Column>
+      <Column>
+         <Name>noemp_1</Name>
+         <Type>INT</Type>
+      </Column>
+      <Column>
+         <Name>nodep</Name>
+         <Type>INT</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <PK>
+         <Key>noemp</Key>
+      </PK>
+      <FK>
+         <Key>noemp_1</Key>
+         <Reference>employe(noemp)</Reference>
+      </FK>
+      <FK>
+         <Key>nodep</Key>
+         <Reference>departement(nodep)</Reference>
+      </FK>
+   </Table>
+   <Table>
+      <Name>grade</Name>
+      <Column>
+         <Name>nograde</Name>
+         <Type>VARCHAR(50) </Type>
+      </Column>
+      <Column>
+         <Name>salmin</Name>
+         <Type>DECIMAL(15,2)  </Type>
+      </Column>
+      <Column>
+         <Name>salmax</Name>
+         <Type>DECIMAL(15,2)  </Type>
+      </Column>
+      <PK>
+         <Key>nograde</Key>
+      </PK>
+   </Table>
+   <Table>
+      <Name>histofonction</Name>
+      <Column>
+         <Name>noemp</Name>
+         <Type>INT AUTO_INCREMENT</Type>
+      </Column>
+      <Column>
+         <Name>fonction</Name>
+         <Type>VARCHAR(50) </Type>
+      </Column>
+      <PK>
+         <Key>noemp</Key>
+      </PK>
+   </Table>
+</Database>

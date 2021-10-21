@@ -194,7 +194,7 @@ SELECT titre, DISTINCT COUNT(titre) FROM employe
 
 -- 8. Pour chaque nom de département, afficher le nom du département et le nombre d'employés.
 
-SELECT COUNT(DISTINCT titre) as "Nombre de titres" FROM employe
+SELECT d.nom, count(e.noemp) AS "Nb employes" FROM employe AS e INNER JOIN dept AS d ON d.nodept=e.nodep GROUP BY d.nom;
 
 -- 9. Pour chaque nom de département, afficher le nom du département et le nombre d'employés.
 
@@ -248,11 +248,14 @@ SELECT numcom, (priuni * qteliv) FROM commandeLigne WHERE priuni * qteliv > 1000
 -- 10.Lister les commandes par nom fournisseur (Afficher le nom du fournisseur, le numéro de commande et la date)
 
 SELECT fournis.nomfou, entcom.numcom, entcom.datcom FROM entcom INNER JOIN fournis ON entcom.numfou = fournis.numfou GROUP BY entcom.numfou ORDER BY entcom.datcom
+
 -- 11.Sortir les produits des commandes ayant le mot "urgent' en observation?(Afficher le numéro de commande, le nom du fournisseur, le libellé du produit et le sous total = quantité commandée * Prix unitaire)
 
-SELECT entcom.numfou, fournis.nomfou, produit.libart, entcom.obscom FROM entcom INNER JOIN ligcom ON entcom.numcom = ligcom.numcom INNER JOIN fournis ON entcom.numfou = fournis.numfou INNER JOIN produit ON ligcom.codart = produit.codart WHERE entcom.obscom LIKE "%urgent%"
+SELECT entcom.numfou, fournis.nomfou, produit.libart, entcom.obscom, (qtecde * priuni) FROM entcom INNER JOIN ligcom ON entcom.numcom = ligcom.numcom INNER JOIN fournis ON entcom.numfou = fournis.numfou INNER JOIN produit ON ligcom.codart = produit.codart WHERE entcom.obscom LIKE "%urgent%"
 
 -- 12.Coder de 2 manières différentes la requête suivante : Lister le nom des fournisseurs susceptibles de livrer au moins un article
+
+SELECT fournis.nomfou, SUM(qte1+qte2+qte3) AS 'total' FROM vente INNER JOIN fournis ON vente.numfou = fournis.numfou GROUP BY nomfou HAVING total > 0
 
 -- 13.Coder de 2 manières différentes la requête suivante Lister les commandes (Numéro et date) dont le fournisseur est celui de la commande 70210 :
 
@@ -260,11 +263,9 @@ SELECT numcom, datcom FROM entcom WHERE numfou = (SELECT numfou FROM entcom WHER
 
 -- 14.Dans les articles susceptibles d’être vendus, lister les articles moins chers (basés sur Prix1) que le moins cher des rubans (article dont le premier caractère commence par R). On affichera le libellé de l’article et prix1
 
-SELECT produit.libart, vente.prix1 FROM vente INNER JOIN produit ON vente.codart = produit.codart WHERE prix1 = (SELECT prix1 FROM vente INNER JOIN produit ON vente. WHERE produit.libart LIKE "r%")
+SELECT produit.libart, vente.prix1 FROM vente INNER JOIN produit ON vente.codart = produit.codart WHERE prix1 < (SELECT prix1 FROM vente INNER JOIN produit ON vente.libart WHERE produit.libart LIKE "r%")
 
 -- 15.Editer la liste des fournisseurs susceptibles de livrer les produits dont le stock est inférieur ou égal à 150 % du stock d'alerte. La liste est triée par produit puis fournisseur
-
-
 
 -- 16.Éditer la liste des fournisseurs susceptibles de livrer les produit dont le stock est inférieur ou égal à 150 % du stock d'alerte et un délai de livraison d'au plus 30 jours. La liste est triée par fournisseur puis produit
 
@@ -326,3 +327,26 @@ ON
 INNER JOIN stagiaires AS st
 ON
     st.idStagiaire = pa.idStagiaire
+
+
+    1. Application dune augmentation de tarif de 4% pour le prix 1, 2% pour le prix2 
+pour le fournisseur 9180
+
+UPDATE `vente` SET prix1 = prix1 + (4/100), prix2 = prix2 + (2/100) WHERE numfou = 9180
+
+2. Dans la table vente, mettre à jour le prix2 des articles dont le prix2 est null, en affectant a valeur de prix.
+
+UPDATE `vente` SET prix2 = prix1 WHERE prix2 = 0
+
+3. Mettre à jour le champ obscom en positionnant '*****' pour toutes les commandes 
+dont le fournisseur a un indice de satisfaction <5
+
+UPDATE entcom INNER JOIN fournis ON entcom.numfou = fournis.numfou SET obscom = CONCAT("*****", obscom) WHERE satisf < 5
+
+4. Suppression du produit I110
+
+DELETE FROM `produit` WHERE `codart` = "I110"
+
+5. Suppression des entête de commande qui n ont aucune ligne
+
+DELETE FROM `entcom` WHERE obscom = " "
