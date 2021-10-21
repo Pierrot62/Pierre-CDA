@@ -22,7 +22,7 @@ SELECT DISTINCT fonction FROM employe
 
 6.	Afficher les noms des employés avec leur date d embauche, ainsi que la date d embauche augmentée d une journée
 
-SELECT nomemp, datemb, datemb + 1 AS "Date d'embauche + 1"
+SELECT nomemp, datemb, DATE_FORMAT(datemb + 1,"%D %b %Y") AS "Date d'embauche + 1" FROM employe
 
 7.	Afficher les noms des employés suivis d un espace, suivi de leur fonction
 
@@ -63,15 +63,15 @@ SELECT nomemp, fonction, sala FROM employe WHERE fonctions = "directeur" OR sala
 
 8.	Donner la liste des noms, numéros de département des directeurs et des ouvriers du département 10
 
-SELECT nomemp, nodept FROM employe WHERE fonction = "directeur" OR "ouvrier" AND nodep = 10
+SELECT nomemp, nodep FROM employe WHERE fonction = "directeur" OR "ouvrier" AND nodep = 10
 
 9.	Donner la liste des noms, fonctions et numéros de département des employés du département 10 qui ne sont ni ouvrier ni directeur
 
-SELECT nomemp, fonction, nodept FROM employe WHERE nodep = 10 AND fonction IS NOT "ouvrier" OR "directeur"
+SELECT nomemp, fonction, nodep FROM employe WHERE nodep = 10 AND fonction != "ouvrier" OR "directeur"
 
 10.	Donner la liste des noms, fonctions et numéros de département des directeurs qui ne sont pas directeur dans le département 30
 
-SELECT nomemp, fonction, nodept FROM employe WHERE fonction = "directeur" AND nodep != 30
+SELECT nomemp, fonction, nodep FROM employe WHERE fonction = "directeur" AND nodep != 30
 
 11.	Donner la liste des noms, fonctions et salaires des employés qui gagnent entre 1200 € et 1300 €
 
@@ -137,7 +137,24 @@ SELECT noemp, fonction, nomdep FROM employe INNER JOIN departement ON employe.no
 SELECT grade , fonction, noemp, sala FROM employe INNER JOIN grade ON employe. WHERE
 
 4.	Donner la liste des noms et salaires des employés qui gagnent plus que leur responsable
+
+SELECT noemp, sala, noresp as resp FROM employe WHERE  (SELECT sala FROM employe WHERE noemp = resp) > sala 
+
 5.	Donner la liste des noms, salaires, fonctions des employés qui gagnent plus que Perou
 
 
+E.	Requêtes avec fonctions et expressions numériques
 
+1.	Donner les noms, salaires, commissions et revenus des 
+
+SELECT noemp, sala, comm, (sala + comm) as revenue FROM employe WHERE fonction = "vendeur"	
+
+2.	Donner les noms, salaires et les commissions des employés dont la commission est supérieure à 25% de leur salaire
+3.	Donner la liste des vendeurs dans l ordre décroissant de leur commission divisée par leur salaire
+4.	Donner le revenu annuel de chaque vendeur
+5.	Donner le salaire quotidien des vendeurs
+6.	Donner la moyenne des salaires des ouvriers
+7.	Donner le total des salaires et des commissions des vendeurs
+8.	Donner le revenu annuel moyen de tous les vendeurs
+9.	Donner le plus haut salaire, le plus bas et l écart entre les deux
+10.	Donner le nombre d employés du département 30

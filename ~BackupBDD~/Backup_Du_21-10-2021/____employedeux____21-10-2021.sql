@@ -78,7 +78,7 @@ CREATE TABLE `employe` (
 
 LOCK TABLES `employe` WRITE;
 /*!40000 ALTER TABLE `employe` DISABLE KEYS */;
-INSERT INTO `employe` VALUES (15,'Bailly','Président',NULL,'1985-01-05',4275.0000,2000.0000,40);
+INSERT INTO `employe` VALUES (1,'Costanza','psychologue',8,'1994-10-19',1715.0000,200.0000,30),(2,'Mioche','Directeur',6,'1990-03-15',2200.0000,1000.0000,20),(3,'Durand','Responsable',2,'1996-04-18',3250.0000,0.0000,10),(4,'Xiong','vendeur',5,'1994-12-15',1150.0000,200.0000,30),(5,'Manoukian','vendeur',11,'1993-08-15',2530.0000,500.0000,30),(6,'Bourdais','directeur',15,'2002-07-12',3550.0000,850.0000,40),(7,'Moreno','ouvrier',3,'1999-05-05',1075.0000,50.0000,10),(8,'Perou','directeur',2,'1995-07-05',2450.0000,800.0000,10),(9,'Bibaut','chef de service',8,'1993-06-07',2200.0000,NULL,20),(10,'Manian','assistant',9,'1996-10-18',1000.0000,250.0000,10),(11,'Colin','analyste',2,'1992-07-05',2702.0000,625.0000,30),(12,'Coulon','ouvrier',8,'2002-09-18',858.0000,125.0000,20),(13,'Roméo','assistant',8,'2001-08-16',1025.0000,1150.0000,10),(14,'Solal','secrétaire',3,'1992-02-15',1225.0000,NULL,20),(15,'Bailly','Président',NULL,'1985-01-05',4275.0000,2000.0000,40);
 /*!40000 ALTER TABLE `employe` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -94,7 +94,7 @@ CREATE TABLE `grade` (
   `salmin` decimal(19,4) DEFAULT NULL,
   `salmax` decimal(19,4) DEFAULT NULL,
   PRIMARY KEY (`nograde`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5001 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -103,7 +103,7 @@ CREATE TABLE `grade` (
 
 LOCK TABLES `grade` WRITE;
 /*!40000 ALTER TABLE `grade` DISABLE KEYS */;
-INSERT INTO `grade` VALUES (1,0.0000,1000.0000);
+INSERT INTO `grade` VALUES (1,0.0000,1000.0000),(1000,1.0000,2000.0000),(2000,1.0000,3000.0000),(3000,1.0000,4000.0000),(4000,1.0000,5000.0000),(5000,1.0000,6000.0000);
 /*!40000 ALTER TABLE `grade` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -141,4 +141,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-21 12:25:01
+-- Dump completed on 2021-10-21 17:20:01
