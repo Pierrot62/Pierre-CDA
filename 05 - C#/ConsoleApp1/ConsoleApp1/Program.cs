@@ -7,35 +7,36 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             // 1
-            /* //1.1
-             Console.WriteLine("Entre ton nom");
-             string nom = Console.ReadLine();
-             Console.WriteLine(nom);
+            //1.1
+            //Console.WriteLine("Entre ton nom");
+            //string nom = Console.ReadLine();
+            //Console.WriteLine(nom);
 
-             //1.2
-             Console.WriteLine("Entre ton age");
-             string age = Console.ReadLine();
-             Console.WriteLine(age);
+            //1.2
+            //int age;
+            //Console.WriteLine("Entrez ton age");
+            //age = int.Parse(Console.ReadLine());
+            //Console.WriteLine(age);
 
-             bool flag1;
-             do
-             {
-                 try
-                 {
-                     Convert.ToInt32(age);
-                     Console.WriteLine("OK");
-                     flag1 = true;
-                 }
-                 catch
-                 {
-                     Console.WriteLine("Valeur incorect");
-                     age = Console.ReadLine();
-                     flag1 = false;
-                 }
-             } while (!flag1);*/
+            //bool flag1;
+            //do
+            //{
+            //    try
+            //    {
+            //        Convert.ToInt32(age);
+            //        Console.WriteLine("OK");
+            //        flag1 = true;
+            //    }
+            //    catch
+            //    {
+            //        Console.WriteLine("Valeur incorect");
+            //        age = Console.ReadLine();
+            //        flag1 = false;
+            //    }
+            //} while (!flag1);
 
             //1.3
-            /*     string error = "/!\\ Valeur incorrecte /!\\";
+            /*   string error = "/!\\ Valeur incorrecte /!\\";
                  Console.WriteLine("Valeur 1 :");
                  string val1 = Console.ReadLine();
                  int nb = 0;
@@ -117,7 +118,7 @@ namespace ConsoleApp1
 
             //Console.WriteLine("lettre en minuscule : ");
             //string mot = Console.ReadLine();
-            //Console.WriteLine("Lettre en majuscule : " + mot);
+            //Console.WriteLine("Lettre en majuscule : " + mot.ToUpper());
 
             //2
             //2.1
@@ -134,10 +135,28 @@ namespace ConsoleApp1
             //Console.WriteLine("Il est possible de mettre " + Math.Round(M / k) + " carton(s) dans le camion !");
 
             //2.4
-            float somme;
-            Console.WriteLine("Entrer une somme ( 0 - 0,99 ) : ");
-            somme = float.Parse(Console.ReadLine());
-            Console.WriteLine(somme);
+            //float somme;
+            //Console.WriteLine("Entrer une somme ( 0 - 0,99 ) : ");
+            //somme = float.Parse(Console.ReadLine());
+            //Console.WriteLine(somme);
+
+
+
+
+            //3
+            //3.1
+            int age = 0;
+            Console.WriteLine("Votre age : ");
+            age = int.Parse(Console.ReadLine());
+            if (age >= 18)
+            {
+                Console.WriteLine("Tu es majeur !");
+                Console.Read();
+            }else
+            {
+                Console.WriteLine("Tu es mineur !");
+                Console.Read();
+            }
 
         }
     }
