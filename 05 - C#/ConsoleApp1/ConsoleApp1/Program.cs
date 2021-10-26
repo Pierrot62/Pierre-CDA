@@ -126,6 +126,29 @@ namespace ConsoleApp1
             //string mot = Console.ReadLine();
             //Console.WriteLine(int.Parse(mot)+1);
 
+            // 2.2
+            //char val1 = '0';
+            //char val2 = '1';
+            //char val3 = '2';
+            //char val4 = '3';
+            //char val5 = '4';
+            //char val6 = '5';
+            //char val7 = '6';
+            //char val8 = '7';
+            //char val9 = '8';
+            //char val10 = '9';
+
+            //Console.WriteLine((int)val1);
+            //Console.WriteLine((int)val2);
+            //Console.WriteLine((int)val3);
+            //Console.WriteLine((int)val4);
+            //Console.WriteLine((int)val5);
+            //Console.WriteLine((int)val6);
+            //Console.WriteLine((int)val7);
+            //Console.WriteLine((int)val8);
+            //Console.WriteLine((int)val9);
+            //Console.WriteLine((int)val10);
+
             //2.3
             //float k, M;
             //Console.WriteLine("Poid d'un colis : ");
@@ -145,18 +168,122 @@ namespace ConsoleApp1
 
             //3
             //3.1
-            int age = 0;
-            Console.WriteLine("Votre age : ");
-            age = int.Parse(Console.ReadLine());
-            if (age >= 18)
-            {
-                Console.WriteLine("Tu es majeur !");
-                Console.Read();
-            }else
-            {
-                Console.WriteLine("Tu es mineur !");
-                Console.Read();
-            }
+            //int age = 0;
+            //Console.WriteLine("Votre age : ");
+            //age = int.Parse(Console.ReadLine());
+            //if (age >= 18)
+            //{
+            //    Console.WriteLine("Tu es majeur !");
+            //    Console.Read();
+            //}else
+            //{
+            //    Console.WriteLine("Tu es mineur !");
+            //    Console.Read();
+            //}
+
+            //3.2
+
+            //3.3
+
+            //double note = 0;
+            //Console.WriteLine("Entrez votre note : ");
+            //note = double.Parse(Console.ReadLine());
+            //if(note < 8)
+            //{
+            //    Console.WriteLine("ajourné");
+            //}else if(note >= 8 && note <= 10)
+            //{
+            //    Console.WriteLine("Rattrapage");
+            //}else if(note > 10){
+            //    Console.WriteLine("Admis");
+            //}
+
+            //3.4
+            //double franchise = 0;
+            //Console.WriteLine("Montant des dommages : ");
+            //franchise = (10 * double.Parse(Console.ReadLine()) / 100);
+            //if (franchise > 4000)
+            //{
+            //    Console.WriteLine("Votre franchise est de 4000Euros");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Votre franchise est de " + franchise + "Euro(s)");
+            //}
+
+            //3.5
+            //int val1, val2, i;
+            //Console.WriteLine("Valeur 1 : ");
+            //val1 = int.Parse(Console.ReadLine());       
+            //Console.WriteLine("Valeur 2 : ");
+            //val2 = int.Parse(Console.ReadLine());
+
+            //do
+            //{
+            //    Console.WriteLine(val1++);
+            //} while (val1 != val2);  
+
+            //3.7
+            //int a, b;
+            //char op;
+            //Console.WriteLine("Saisisez la valeur a : ");
+            //a = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Saisisez la valeur b : ");
+            //b = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Saisisez l'opérateur de calcul");
+            //op = char.Parse(Console.ReadLine());
+            //switch (op)
+            //{
+            //    case '-':
+            //        Console.WriteLine(a - b);
+            //        break;
+            //    case '+':
+            //        Console.WriteLine(a + b);
+            //        break;
+            //    case '*':
+            //        Console.WriteLine(a * b);
+            //        break;
+            //    case '/':
+            //        Console.WriteLine(a / b);
+            //        break;
+            //}
+
+            //3.8
+            //int i, j;
+            //string color;
+            //Console.WriteLine("Entrez la position i : ");
+            //i = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Entrez la position j : ");
+            //j = int.Parse(Console.ReadLine());
+            //if (i > 8 && j > 8 && i < 0 && j < 8)
+            //{
+            //    Console.WriteLine("Valeur incorrecte");
+            //}
+
+            //if ((i + j) % 2 == 0)
+            //{
+            //    color = "NOIR";
+            //}
+            //else
+            //{
+            //    color = "BLANCHE";
+            //}
+
+            //Console.WriteLine("La couleur de la case est : " + color);
+
+            //3.9
+            int i, j, k, l;
+            Console.WriteLine("Entrez la position i : ");
+            i = int.Parse(Console.ReadLine());
+            Console.WriteLine("Entrez la position j : ");
+            j = int.Parse(Console.ReadLine());
+            Console.WriteLine("Entrez la position k : ");
+            k = int.Parse(Console.ReadLine());
+            Console.WriteLine("Entrez la position l : ");
+            l = int.Parse(Console.ReadLine());
+
+
+
 
         }
     }
