@@ -314,49 +314,49 @@ namespace ConsoleApp1
             //}
 
 
-            int piece, i1, i2, j1, j2;
-            bool etat = false;
-            string[] nomPiece = new string[5] { "du Cavalier", "de la Tour", "du Fou", "de la Dame", "du Roi" };
-            Console.WriteLine("Quelle piece souhaitez-vous deplacer ? :" +  // Présentation by Pierrot |/!\| Utilisation INTERDITE |/!\|
-                              "\n**************************************" +
-                              "\n0 = Cavalier " +
-                              "\n1 = Tour" +
-                              "\n2 = Fou" +
-                              "\n3 = Dame" +
-                              "\n4 = Roi" +
-                              "\n**************************************");
-            piece = int.Parse(Console.ReadLine());
-            Console.WriteLine("Coordonnées (i,j) de la position de départ :");
-            Console.Write("i = ");
-            i1 = int.Parse(Console.ReadLine());
-            Console.Write("j = ");
-            j1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Coordonnées (i',j') de la position d'arrivée :");
-            Console.Write("i' = ");
-            i2 = int.Parse(Console.ReadLine());
-            Console.Write("j' = ");
-            j2 = int.Parse(Console.ReadLine());
-            switch (piece)
-            {
-                case 0: // Cavalier
-                    etat = Math.Abs(i1 - i2) == 2 && Math.Abs(j1 - j2) == 1 || Math.Abs(i1 - i2) == 1 && Math.Abs(j1 - j2) == 2 ? true : false;
-                    break;
-                case 1: // Tour
-                    etat = i1 == i2 || j1 == j2 ? true : false;
-                    break;
-                case 2: // Fou
-                    etat = Math.Abs(i1 - i2) == Math.Abs(j1 - j2) ? true : false;
-                    break;
-                case 3: // Dame
-                    etat = i1 == i2 || j1 == j2 || Math.Abs(i1 - i2) == Math.Abs(j1 - j2) ? true : false;
-                    break;
-                case 4: // Roi
-                    etat = Math.Abs(i1 - i2) < 2 && Math.Abs(j1 - j2) < 2 ? true : false;
-                    break;
-                default:
-                    break;
-            }
-            Console.WriteLine("Le deplacement " + nomPiece[piece] + " est " + (etat != true ? "impossible" : "possible"));
+            //int piece, i1, i2, j1, j2;
+            //bool etat = false;
+            //string[] nomPiece = new string[5] { "du Cavalier", "de la Tour", "du Fou", "de la Dame", "du Roi" };
+            //Console.WriteLine("Quelle piece souhaitez-vous deplacer ? :" +  // Présentation by Pierrot |/!\| Utilisation INTERDITE |/!\|
+            //                  "\n**************************************" +
+            //                  "\n0 = Cavalier " +
+            //                  "\n1 = Tour" +
+            //                  "\n2 = Fou" +
+            //                  "\n3 = Dame" +
+            //                  "\n4 = Roi" +
+            //                  "\n**************************************");
+            //piece = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Coordonnées (i,j) de la position de départ :");
+            //Console.Write("i = ");
+            //i1 = int.Parse(Console.ReadLine());
+            //Console.Write("j = ");
+            //j1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Coordonnées (i',j') de la position d'arrivée :");
+            //Console.Write("i' = ");
+            //i2 = int.Parse(Console.ReadLine());
+            //Console.Write("j' = ");
+            //j2 = int.Parse(Console.ReadLine());
+            //switch (piece)
+            //{
+            //    case 0: // Cavalier
+            //        etat = Math.Abs(i1 - i2) == 2 && Math.Abs(j1 - j2) == 1 || Math.Abs(i1 - i2) == 1 && Math.Abs(j1 - j2) == 2 ? true : false;
+            //        break;
+            //    case 1: // Tour
+            //        etat = i1 == i2 || j1 == j2 ? true : false;
+            //        break;
+            //    case 2: // Fou
+            //        etat = Math.Abs(i1 - i2) == Math.Abs(j1 - j2) ? true : false;
+            //        break;
+            //    case 3: // Dame
+            //        etat = i1 == i2 || j1 == j2 || Math.Abs(i1 - i2) == Math.Abs(j1 - j2) ? true : false;
+            //        break;
+            //    case 4: // Roi
+            //        etat = Math.Abs(i1 - i2) < 2 && Math.Abs(j1 - j2) < 2 ? true : false;
+            //        break;
+            //    default:
+            //        break;
+            //}
+            //Console.WriteLine("Le deplacement " + nomPiece[piece] + " est " + (etat != true ? "impossible" : "possible"));
 
             //int a = 1, b = 0, n = 5;
             //while (a <= n)
@@ -402,7 +402,49 @@ namespace ConsoleApp1
 
             //} while (i == 0);
 
+            //int h1, m1, h2, m2;
+            //string temp;
+            //Console.WriteLine("heure de debut : hh-mm");
 
+            //temp = Console.ReadLine();
+            //h1 = int.Parse(temp.Substring(0, 2));
+            //m1 = int.Parse(temp.Substring(3, 4));
+
+            //Console.WriteLine(h1 + m1);
+            //Console.WriteLine("heure de fin : hh-mm");
+
+
+            //Table de multiplication
+            //int nb;
+            //int i = 0;
+            //Console.WriteLine("Nombre :");
+            //nb = int.Parse(Console.ReadLine());
+            //Console.WriteLine("********Table de " + nb + "********");
+            //do
+            //{
+            //    i++;
+            //    Console.WriteLine(nb + " x " + i + " = " + (nb * i));
+            //} while (i< 10);
+
+            //Joli carré
+            //int nb;
+            //int i = 0;
+            //int j = 0;
+            //string a = "";
+            //string val;
+            //Console.WriteLine("Nombre :");
+            //val = Console.ReadLine();
+            //nb = int.Parse(val);
+            //do
+            //{
+            //    j++;
+            //    a += " " + val;
+            //} while (j < nb);
+            //do
+            //{
+            //    i++;
+            //    Console.WriteLine(a);
+            //} while (i < nb);
 
         }
     }
