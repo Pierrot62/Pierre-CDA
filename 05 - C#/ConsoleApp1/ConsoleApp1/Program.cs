@@ -155,7 +155,7 @@ namespace ConsoleApp1
             //k = float.Parse(Console.ReadLine());
             //Console.WriteLine("Capacité du camion : ");
             //M = float.Parse(Console.ReadLine());
-            //Console.WriteLine("Il est possible de mettre " + Math.Round(M / k) + " carton(s) dans le camion !");
+            //Console.WriteLine("Il est possible de mettre " + Math.Floor(M / k) + " carton(s) dans le camion !");
 
             //2.4
             //float somme;
@@ -199,17 +199,17 @@ namespace ConsoleApp1
             //}
 
             //3.4
-            //double franchise = 0;
-            //Console.WriteLine("Montant des dommages : ");
-            //franchise = (10 * double.Parse(Console.ReadLine()) / 100);
-            //if (franchise > 4000)
-            //{
-            //    Console.WriteLine("Votre franchise est de 4000Euros");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Votre franchise est de " + franchise + "Euro(s)");
-            //}
+            double franchise = 0;
+            Console.WriteLine("Montant des dommages : ");
+            franchise = (10 * double.Parse(Console.ReadLine()) / 100);
+            if (franchise > 4000)
+            {
+                Console.WriteLine("Votre franchise est de 4000Euros");
+            }
+            else
+            {
+                Console.WriteLine("Votre franchise est de " + franchise + "Euro(s)");
+            }
 
             //3.5
             //int val1, val2, i;
@@ -310,19 +310,19 @@ namespace ConsoleApp1
             //}
             //else
             //{
-            //    Console.WriteLine("Va chier tu sais pas jouer, connard !");
+            //    Console.WriteLine("tu sais pas jouer !");
             //}
 
 
             //int p, i, j, k, l;
-            //Console.WriteLine("Quelle piece souhaitez-vous deplacer ? :" +
-            //                 "\n**************************************" +
-            //                 "\n0 = Cavalier " +
-            //                 "\n1 = Tour" +
-            //                 "\n2 = Fou" +
-            //                 "\n3 = Dame" +
-            //                 "\n4 = Roi" +
-            //                 "\n**************************************");
+            Console.WriteLine("Quelle piece souhaitez-vous deplacer ? :" +
+                             "\n**************************************" +
+                             "\n0 = Cavalier " +
+                             "\n1 = Tour" +
+                             "\n2 = Fou" +
+                             "\n3 = Dame" +
+                             "\n4 = Roi" +
+                             "\n**************************************");
             //p = int.Parse(Console.ReadLine());
             //Console.WriteLine("Entrez la position i : ");
             //i = int.Parse(Console.ReadLine());
@@ -423,18 +423,103 @@ namespace ConsoleApp1
             //Console.WriteLine(a + " , " + b + " , " + c + " , " + d + " . ");
 
 
-            int val, i;
-            Console.WriteLine("Entrez une valeur :");
-            val = int.Parse(Console.ReadLine());
+            //int val, i;
+            //Console.WriteLine("Entrez une valeur :");
+            //val = int.Parse(Console.ReadLine());
 
-            do
+            //do
+            //{
+            //    i = val - 1;
+            //    Console.WriteLine(i);
+
+            //} while (i == 0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            int piece, i1, i2, j1, j2;
+            Console.WriteLine("Quelle piece voulez-vous déplacer ?");
+            Console.WriteLine("0 = Cavalier");
+            Console.WriteLine("1 = Tour");
+            Console.WriteLine("2 = Fou");
+            Console.WriteLine("3 = Dame");
+            Console.Write("4 = Roi ");
+            piece = int.Parse(Console.ReadLine());
+            Console.WriteLine("Coordonnées (i,j) de la position de départ :");
+            Console.Write("i = ");
+            i1 = int.Parse(Console.ReadLine());
+            Console.Write("j = ");
+            j1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Coordonnées (i',j') de la position d'arrivée :");
+            Console.Write("i' = ");
+            i2 = int.Parse(Console.ReadLine());
+            Console.Write("j' = ");
+            j2 = int.Parse(Console.ReadLine());
+            switch (piece)
             {
-                i = val - 1;
-                Console.WriteLine(i);
-               
-            } while (i == 0);
-
-
+                case 0:
+                    if (Math.Abs(i1 - i2) == 2 && Math.Abs(j1 - j2) == 1 || Math.Abs(i1 - i2) == 1 && Math.Abs(j1 - j2) == 2)
+                    {
+                        Console.WriteLine("Déplacement du cavalier de (" + i1 + "," + j1 + ") vers (" + i2 + "," + j2 + ") correct.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Déplacement du cavalier de (" + i1 + "," + j1 + ") vers (" + i2 + "," + j2 + ") incorrect.");
+                    }
+                    break;
+                case 1:
+                    if (i1 == i2 || j1 == j2)
+                    {
+                        Console.WriteLine("Déplacement de la tour de (" + i1 + "," + j1 + ") vers (" + i2 + "," + j2 + ") correct.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Déplacement de la tour de (" + i1 + "," + j1 + ") vers (" + i2 + "," + j2 + ") incorrect.");
+                    }
+                    break;
+                case 2:
+                    if (Math.Abs(i1 - i2) == Math.Abs(j1 - j2))
+                    {
+                        Console.WriteLine("Déplacement du fou de (" + i1 + "," + j1 + ") vers (" + i2 + "," + j2 + ") correct.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Déplacement du fou de (" + i1 + "," + j1 + ") vers (" + i2 + "," + j2 + ") incorrect.");
+                    }
+                    break;
+                case 3:
+                    if (i1 == i2 || j1 == j2 || Math.Abs(i1 - i2) == Math.Abs(j1 - j2))
+                    {
+                        Console.WriteLine("Déplacement de la dame de (" + i1 + "," + j1 + ") vers (" + i2 + "," + j2 + ") correct.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Déplacement de la dame de (" + i1 + "," + j1 + ") vers (" + i2 + "," + j2 + ") incorrect.");
+                    }
+                    break;
+                case 4:
+                    if (Math.Abs(i1 - i2) == 1 || Math.Abs(i1 - i2) == 0 && Math.Abs(j1 - j2) == 1 || Math.Abs(j1 - j2) == 0)
+                    {
+                        Console.WriteLine("Déplacement du roi de (" + i1 + "," + j1 + ") vers (" + i2 + "," + j2 + ") correct.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Déplacement du roi de (" + i1 + "," + j1 + ") vers (" + i2 + "," + j2 + ") incorrect.");
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

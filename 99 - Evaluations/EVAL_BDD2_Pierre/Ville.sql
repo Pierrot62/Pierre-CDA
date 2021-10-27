@@ -77,3 +77,5 @@ SELECT
 
 remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
 remote: Please see https://github.blog/2020-12-15-token-authentication-requireme
+emote: Support for password authentication was removed 
+ssh-keygen -t ed25519 -C "courquin.pierre62@gmail.com"
