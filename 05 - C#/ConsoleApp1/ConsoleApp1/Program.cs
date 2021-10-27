@@ -271,18 +271,168 @@ namespace ConsoleApp1
 
             //Console.WriteLine("La couleur de la case est : " + color);
 
+
             //3.9
-            int i, j, k, l;
-            Console.WriteLine("Entrez la position i : ");
-            i = int.Parse(Console.ReadLine());
-            Console.WriteLine("Entrez la position j : ");
-            j = int.Parse(Console.ReadLine());
-            Console.WriteLine("Entrez la position k : ");
-            k = int.Parse(Console.ReadLine());
-            Console.WriteLine("Entrez la position l : ");
-            l = int.Parse(Console.ReadLine());
+            //int i, j, k, l;
+            //Console.WriteLine("Entrez la position i : ");
+            //i = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Entrez la position j : ");
+            //j = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Entrez la position k : ");
+            //k = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Entrez la position l : ");
+            //l = int.Parse(Console.ReadLine());
+
+            //if ((i + 2 == k && j + 1 == l) || (i - 2 == k && j - 1 == l) || (i + 2 == k && j - 1 == l) || (i - 2 == k && j + 1 == l) || (i + 1 == k && j + 2 == l) || (i - 1 == k && j - 2 == l) || (i + 1 == k && j - 2 == l) || (i - 1 == k && j + 2 == l))
+            //{
+            //    Console.WriteLine("Deplacement possible !");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Va chier tu sais pas jouer, connard !");
+            //}
 
 
+            //3.10
+            //int i, j, k, l;
+            //Console.WriteLine("Entrez la position i : ");
+            //i = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Entrez la position j : ");
+            //j = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Entrez la position k : ");
+            //k = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Entrez la position l : ");
+            //l = int.Parse(Console.ReadLine());
+
+            //if ((i + 2 == k && j + 1 == l) || (i - 2 == k && j - 1 == l) || (i + 2 == k && j - 1 == l) || (i - 2 == k && j + 1 == l) || (i + 1 == k && j + 2 == l) || (i - 1 == k && j - 2 == l) || (i + 1 == k && j - 2 == l) || (i - 1 == k && j + 2 == l))
+            //{
+            //    Console.WriteLine("Deplacement possible !");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Va chier tu sais pas jouer, connard !");
+            //}
+
+
+            //int p, i, j, k, l;
+            //Console.WriteLine("Quelle piece souhaitez-vous deplacer ? :" +
+            //                 "\n**************************************" +
+            //                 "\n0 = Cavalier " +
+            //                 "\n1 = Tour" +
+            //                 "\n2 = Fou" +
+            //                 "\n3 = Dame" +
+            //                 "\n4 = Roi" +
+            //                 "\n**************************************");
+            //p = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Entrez la position i : ");
+            //i = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Entrez la position j : ");
+            //j = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Entrez la position k : ");
+            //k = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Entrez la position l : ");
+            //l = int.Parse(Console.ReadLine());
+
+            //switch (p)
+            //{
+            //    case 0:
+            //        if ((i + 2 == k && j + 1 == l) || (i - 2 == k && j - 1 == l) || (i + 2 == k && j - 1 == l) || (i - 2 == k && j + 1 == l) || (i + 1 == k && j + 2 == l) || (i - 1 == k && j - 2 == l) || (i + 1 == k && j - 2 == l) || (i - 1 == k && j + 2 == l))
+            //        {
+            //            Console.WriteLine("Deplacement du Cavalier possible !");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Deplacement du Cavalier impossible");
+            //        }
+            //        break;
+
+            //    case 1:
+            //        if ((i == k) || (j == l))
+            //        {
+            //            Console.WriteLine("Deplacement de la tour possible !");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Deplacement de la tour impossible");
+            //        }
+            //        break;
+            //    case 2:
+            //        if ()
+            //        {
+            //            Console.WriteLine("Deplacement du fou possible !");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Deplacement du fou impossible");
+            //        }
+            //        break;
+            //    case 3:
+            //        if ((i == k) || (j == l))
+            //        {
+            //            Console.WriteLine("Deplacement possible !");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Deplacement impossible");
+            //        }
+            //        break;
+            //    case 4:
+            //        if ((i + 1 == k && j == l) || (i - 1 == k && j == l) || (j + 1 == k && j == l) || (j - 1 == k && j == l) || (i - 1 == k && j - 1 == l) || (i + 1 == k && j + 1 == l) || (i - 1 == k && j + 1 == l) || (i + 1 == k && j - 1 == l))
+            //        {
+            //            Console.WriteLine("Deplacement du roi possible !");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Deplacement du roi impossible");
+            //        }
+            //        break;
+            //}
+
+
+
+            //int a = 1, b = 0, n = 5;
+            //while (a <= n)
+            //    b += a++;
+            //Console.WriteLine(a + " , " + b);
+
+            //6, 15
+
+            //int a = 0, b = 0, c = 0, d = 3, m = 3, n = 4;
+            //for (a = 0; a < m; a++)
+            //{
+            //    d = 0;
+            //    for (b = 0; b < n; b++)
+            //        d += b;
+            //    c += d;
+            //}
+            //Console.WriteLine(a + " , " + b + " , " + c + " , " + d + " . ");
+
+            //3,4,18,6.
+
+            //int a, b, c, d;
+            //a = 1; b = 2;
+            //c = a / b;
+            //d = (a == b) ? 3 : 4;
+            //Console.WriteLine(c + " , " + d + " . ");
+            //a = ++b;
+            //b %= 3;
+            //Console.WriteLine(a + " , " + b + " . ");
+            //b = 1;
+            //for (a = 0; a <= 10; a++)
+            //    c = ++b;
+            //Console.WriteLine(a + " , " + b + " , " + c + " , " + d + " . ");
+
+
+            int val, i;
+            Console.WriteLine("Entrez une valeur :");
+            val = int.Parse(Console.ReadLine());
+
+            do
+            {
+                i = val - 1;
+                Console.WriteLine(i);
+               
+            } while (i == 0);
 
 
         }
