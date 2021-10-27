@@ -72,3 +72,8 @@ SELECT
     FROM villes_france as v
     INNER JOIN departements as d ON v.ville_departement = d.departement_code 
     INNER JOIN regions as r ON d.departement_regionId = r.region_id 
+
+
+
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requireme
