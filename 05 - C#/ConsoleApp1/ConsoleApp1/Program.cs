@@ -358,13 +358,66 @@ namespace ConsoleApp1
             //}
             //Console.WriteLine("Le deplacement " + nomPiece[piece] + " est " + (etat != true ? "impossible" : "possible"));
 
-            //int a = 1, b = 0, n = 5;
-            //while (a <= n)
+
+            //Rectangle
+            //string xHautGauche, yHautGauche, xBasDroite, yBasDroite;
+            //int xGauche, yHaut, xDroite, yBas;
+
+            //Console.Write("Entrez la valeur de xHautGauche : ");
+            //xHautGauche = Console.ReadLine();
+
+            //Console.Write("Entrez la valeur de yHautGauche : ");
+            //yHautGauche = Console.ReadLine();
+
+            //Console.Write("Entrez la valeur de xBasDroite : ");
+            //xBasDroite = Console.ReadLine();
+
+            //Console.Write("Entrez la valeur de yBasDroite : ");
+            //yBasDroite = Console.ReadLine();
+
+            //Console.Write("Entrez la valeur de yBasDroite : ");
+            //yBasDroite = Console.ReadLine();
+
+            //Console.Write("Entrez la valeur de yBasDroite : ");
+            //yBasDroite = Console.ReadLine();
+
+            //if (int.TryParse(xHautGauche, out xGauche) && int.TryParse(yHautGauche, out yHaut) && int.TryParse(xBasDroite, out xDroite) && int.TryParse(yBasDroite, out yBas))
+            //{
+            //    if (xDroite > xGauche && yHaut > yBas)
+            //    {
+            //        Console.WriteLine(" Le rectangle est correct.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(" Le rectangle est incorrect.");
+            //    }
+            //}
+
+            //LES BOUCLES
+
+
+            //Heures
+            //int h1, m1, h2, m2;
+            //string temp;
+            //Console.WriteLine("heure de debut : hh-mm");
+
+            //temp = Console.ReadLine();
+            //h1 = int.Parse(temp.Substring(0, 2));
+            //m1 = int.Parse(temp.Substring(3, 4));
+
+            //Console.WriteLine(h1 + m1);
+            //Console.WriteLine("heure de fin : hh-mm");
+
+            //4.1
+            // int a = 1, b = 0, n = 5;
+            // while (a <= n)
             //    b += a++;
-            //Console.WriteLine(a + " , " + b);
+            // Console.WriteLine(a + " , " + b);
 
             //6, 15
 
+
+            //4.2
             //int a = 0, b = 0, c = 0, d = 3, m = 3, n = 4;
             //for (a = 0; a < m; a++)
             //{
@@ -377,6 +430,8 @@ namespace ConsoleApp1
 
             //3,4,18,6.
 
+
+            //4.3
             //int a, b, c, d;
             //a = 1; b = 2;
             //c = a / b;
@@ -391,30 +446,23 @@ namespace ConsoleApp1
             //Console.WriteLine(a + " , " + b + " , " + c + " , " + d + " . ");
 
 
-            //int val, i;
-            //Console.WriteLine("Entrez une valeur :");
-            //val = int.Parse(Console.ReadLine());
+            // 4.2.4
+            //compte a rebours
+            int val, i;
+            Console.WriteLine("Entrez une valeur :");
+            val = int.Parse(Console.ReadLine());
+            do
+            {
+                i = val - 1;
+                Console.WriteLine(i);
+                val--;
 
-            //do
-            //{
-            //    i = val - 1;
-            //    Console.WriteLine(i);
-
-            //} while (i == 0);
-
-            //int h1, m1, h2, m2;
-            //string temp;
-            //Console.WriteLine("heure de debut : hh-mm");
-
-            //temp = Console.ReadLine();
-            //h1 = int.Parse(temp.Substring(0, 2));
-            //m1 = int.Parse(temp.Substring(3, 4));
-
-            //Console.WriteLine(h1 + m1);
-            //Console.WriteLine("heure de fin : hh-mm");
+            } while (i > 0);
 
 
-            //Table de multiplication
+
+
+            //4.3.6 Table de multiplication
             //int nb;
             //int i = 0;
             //Console.WriteLine("Nombre :");
@@ -426,25 +474,195 @@ namespace ConsoleApp1
             //    Console.WriteLine(nb + " x " + i + " = " + (nb * i));
             //} while (i< 10);
 
-            //Joli carré
-            //int nb;
-            //int i = 0;
-            //int j = 0;
-            //string a = "";
-            //string val;
-            //Console.WriteLine("Nombre :");
-            //val = Console.ReadLine();
-            //nb = int.Parse(val);
-            //do
+
+
+            ////4.3.7
+            //Console.WriteLine("  ");
+            //for (int i = 1; i <= 10 ; i++)
             //{
+            //    Console.Write("   " + i);
+            //}
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    Console.WriteLine();
+            //    Console.Write(i);
+            //    for (int j = 1; j <= 10; j++)
+            //    {
+            //        Console.Write("  " + i * j);
+            //    }
+            //}
+
+
+            //4.8
+            //Joli carré
+            // int nb;
+            // int i = 0;
+            // int j = 0;
+            // string a = "";
+            // string val;
+            // Console.WriteLine("Nombre :");
+            // val = Console.ReadLine();
+            // nb = int.Parse(val);
+            // do
+            // {
             //    j++;
             //    a += " " + val;
-            //} while (j < nb);
-            //do
-            //{
+            // } while (j < nb);
+            // do
+            // {
             //    i++;
             //    Console.WriteLine(a);
-            //} while (i < nb);
+            // } while (i < nb);
+
+            //4.8 Puissance
+
+            //int n, b;
+            //double p;
+            //Console.WriteLine("Entrez la valeur 1 : ");
+            //b = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Entrez la valeur 2 : ");
+            //n = int.Parse(Console.ReadLine());
+
+            //if (n >= 0 )
+            //{
+            //   p = Math.Pow( b, n);
+            //    Console.WriteLine(p);
+            //}
+
+
+            // Calculette
+
+
+            //double nb, nb2;
+            //int nb3;
+            //bool val;
+            //char op;
+            //double result;
+            //bool flag;
+            //bool flagKey;
+
+            //flag = true;
+            //flagKey = false;
+            //result = 0;
+            //nb = 0;
+            //nb2 = 0;
+            //nb3 = 0;
+            //val = false;
+
+            //do
+            //{
+
+            //    if (flag)
+            //    {
+            //        Console.Write("Entrez une valeur : ");
+            //        val = double.TryParse(Console.ReadLine(), out nb);
+            //        flag = false;
+            //    }
+
+            //    if (val || !flag)
+            //    {
+            //        Console.Write("Entrez un opérateur : ");
+            //        val = char.TryParse(Console.ReadLine(), out op);
+            //        if (val)
+            //        {
+            //            if (op != '!' && op != '?')
+            //            {
+            //                if (op != '$')
+            //                {
+            //                    Console.Write("Entrez une valeur : ");
+            //                    val = double.TryParse(Console.ReadLine(), out nb2);
+            //                }
+            //                else
+            //                {
+            //                    do
+            //                    {
+            //                        Console.Write("Entrez une valeur entière : ");
+            //                        val = int.TryParse(Console.ReadLine(), out nb3);
+            //                    } while (!val);
+
+            //                }
+            //            }
+            //            switch (op)
+            //            {
+            //                case '+':
+            //                    result = nb + nb2;
+            //                    break;
+            //                case '-':
+            //                    result = nb - nb2;
+            //                    break;
+            //                case '/':
+            //                    result = nb / nb2;
+            //                    break;
+            //                case '*':
+            //                    result = nb * nb2;
+            //                    break;
+
+            //                case '$':
+            //                    result = Math.Pow(nb, nb3);
+            //                    break;
+
+            //                case '!':
+            //                    result = Math.Sqrt(nb);
+            //                    break;
+            //                case '?':
+            //                    result = nb;
+            //                    for (int i = 1; i < nb; i++)
+            //                    {
+            //                        result *= i;
+            //                    }
+            //                    break;
+
+            //                default:
+            //                    val = false;
+            //                    break;
+            //            }
+
+            //            if (val)
+            //            {
+            //                Console.WriteLine(" = " + result);
+
+            //                if (!flag)
+            //                {
+            //                    nb = result;
+            //                    val = true;
+            //                }
+            //            }
+            //        }
+            //    }
+
+            //    if (val)
+            //    {
+            //        Console.WriteLine("Arrêter le calcul ? Press Enter");
+            //        if (Console.ReadKey(true).Key == ConsoleKey.Enter)
+            //        {
+            //            flagKey = true;
+            //        }
+            //    }
+
+
+            //} while (!val || !flagKey);
+
+            //Console.Write("Le résultat final est : " + result);
+
+
+
+            //5 Chaînes de caractères
+
+            //5.1
+            //string chaine = "Les framboises sont perchées sur le tabouret de mon grand-père.";
+            //char[] tab = chaine.ToCharArray();
+            //for (int i = 0; i < tab.Length; i++)
+            //{
+            //    Console.WriteLine(tab[i]);
+            //}
+
+
+            //5.2
+            //string t;
+            //int ind1, ind2;
+            //Console.ReadLine();
+            //Console.WriteLine("Indice 1 : ");
+
 
         }
     }

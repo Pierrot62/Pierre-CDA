@@ -12,3 +12,31 @@ U:\59011-07-05\CDA\05 - C#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\Conso
 U:\59011-07-05\CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.dll
 U:\59011-07-05\CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.pdb
 U:\59011-07-05\CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.genruntimeconfig.cache
+C:\Users\Pierre COURQUIN\Desktop\cda\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.exe
+C:\Users\Pierre COURQUIN\Desktop\cda\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.deps.json
+C:\Users\Pierre COURQUIN\Desktop\cda\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.json
+C:\Users\Pierre COURQUIN\Desktop\cda\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.dev.json
+C:\Users\Pierre COURQUIN\Desktop\cda\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.dll
+C:\Users\Pierre COURQUIN\Desktop\cda\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.pdb
+C:\Users\Pierre COURQUIN\Desktop\cda\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\Pierre COURQUIN\Desktop\cda\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pierre COURQUIN\Desktop\cda\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\Pierre COURQUIN\Desktop\cda\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfo.cs
+C:\Users\Pierre COURQUIN\Desktop\cda\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\Pierre COURQUIN\Desktop\cda\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.dll
+C:\Users\Pierre COURQUIN\Desktop\cda\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.pdb
+C:\Users\Pierre COURQUIN\Desktop\cda\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.genruntimeconfig.cache
+D:\AFPA\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.AssemblyReference.cache
+D:\AFPA\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\AFPA\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfoInputs.cache
+D:\AFPA\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfo.cs
+D:\AFPA\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\AFPA\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.dll
+D:\AFPA\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.pdb
+D:\AFPA\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.exe
+D:\AFPA\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.deps.json
+D:\AFPA\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.json
+D:\AFPA\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.dev.json
+D:\AFPA\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.dll
+D:\AFPA\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.pdb
+D:\AFPA\Pierre-CDA\05 - C#\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.genruntimeconfig.cache

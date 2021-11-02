@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\AFPA\\Pierre-CDA\\05 - C#\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-      "projectName": "ConsoleApp1",
-      "projectPath": "D:\\AFPA\\Pierre-CDA\\05 - C#\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "D:\\AFPA\\Pierre-CDA\\Corrections\\Corrections\\Corrections\\Corrections.csproj",
+      "projectName": "Corrections",
+      "projectPath": "D:\\AFPA\\Pierre-CDA\\Corrections\\Corrections\\Corrections\\Corrections.csproj",
       "packagesPath": "C:\\Users\\Pierre COURQUIN\\.nuget\\packages\\",
-      "outputPath": "D:\\AFPA\\Pierre-CDA\\05 - C#\\ConsoleApp1\\ConsoleApp1\\obj\\",
+      "outputPath": "D:\\AFPA\\Pierre-CDA\\Corrections\\Corrections\\Corrections\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
