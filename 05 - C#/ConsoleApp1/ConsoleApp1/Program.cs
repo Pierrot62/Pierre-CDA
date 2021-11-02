@@ -448,16 +448,16 @@ namespace ConsoleApp1
 
             // 4.2.4
             //compte a rebours
-            int val, i;
-            Console.WriteLine("Entrez une valeur :");
-            val = int.Parse(Console.ReadLine());
-            do
-            {
-                i = val - 1;
-                Console.WriteLine(i);
-                val--;
+            //int val, i;
+            //Console.WriteLine("Entrez une valeur :");
+            //val = int.Parse(Console.ReadLine());
+            //do
+            //{
+            //    i = val - 1;
+            //    Console.WriteLine(i);
+            //    val--;
 
-            } while (i > 0);
+            //} while (i > 0);
 
 
 
@@ -663,6 +663,107 @@ namespace ConsoleApp1
             //Console.ReadLine();
             //Console.WriteLine("Indice 1 : ");
 
+
+            static int demanderEntierPositif()
+            {
+                int nb;
+                bool ok;
+                do
+                {
+                    Console.Write("Entrez un entier positif : ");
+                    ok = int.TryParse(Console.ReadLine(), out nb);
+                } while (nb <= 0 || !ok);
+                 return nb;
+            }
+
+            static double demanderDouble()
+            {
+                double nb;
+                bool ok;
+                do
+                {
+                    Console.Write("Entrez une valeur : ");
+                    ok = double.TryParse(Console.ReadLine(), out nb);
+                } while (!ok);
+                return nb;
+            }
+
+            static double demanderDoubleNonNull()
+            {
+                double nb;
+                bool ok;
+                do
+                {
+                    Console.Write("Entrez un double : ");
+                    ok = double.TryParse(Console.ReadLine(), out nb);
+                } while (nb <= 0 || !ok);
+                return nb;
+            }
+            
+            static char demanderOperateur()
+            {
+                char op;
+                do
+                {
+                    Console.WriteLine("Entrez un operateur : ");
+                    char.TryParse(Console.ReadLine(), out op);
+                } while (op != '+' && op != '-' && op != '*' && op != '/' && op != '$' && op != '!' && op != 'V');
+                return op;
+            }
+
+            static double calculSimple(double valeur1, char operateur, double valeur2)
+            {
+                double resultat;
+                switch (operateur)
+                {
+                    case '+':
+                        resultat = valeur1 + valeur2;
+                        break;
+                    case '-':
+                        resultat = valeur1 - valeur2;
+                        break;
+                    case '*':
+                        resultat = valeur1 * valeur2;
+                        break;
+                    case '/':
+                        if (valeur2 != 0)
+                        { 
+                            resultat = valeur1 / valeur2;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Calcul impossible");
+                        }
+                        break;
+                    case '$':
+                        resultat = Math.Round(valeur1);
+                        resultat = Math.Pow(valeur1, valeur2);
+                        break;
+                    default:
+                        break;
+                }
+                return resultat;
+            }
+            //static double calcul(double valeur, char operateur)
+            //{
+            //    double resultat;
+            //    switch (operateur)
+            //    {
+            //        case '!':
+            //            resultat = Math.Sqrt(valeur)
+            //            break;
+            //        case 'V':
+            //            resultat = valeur1 - valeur2;
+            //            break
+            //        default:
+            //            break;
+            //    }
+            //}
+
+
+            char test;
+            test = demanderOperateur();
+            Console.WriteLine(test);
 
         }
     }
