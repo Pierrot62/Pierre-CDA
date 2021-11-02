@@ -182,6 +182,10 @@ namespace ConsoleApp1
             //}
 
             //3.2
+            //int val;
+            //Console.WriteLine("Saisir une valeur");
+            //val = int.Parse(Console.ReadLine());
+            //Console.WriteLine(Math.Abs(val));
 
             //3.3
 
@@ -217,11 +221,13 @@ namespace ConsoleApp1
             //val1 = int.Parse(Console.ReadLine());       
             //Console.WriteLine("Valeur 2 : ");
             //val2 = int.Parse(Console.ReadLine());
-
             //do
             //{
             //    Console.WriteLine(val1++);
             //} while (val1 != val2);  
+
+            //3.6
+
 
             //3.7
             //int a, b;
@@ -358,6 +364,71 @@ namespace ConsoleApp1
             //}
             //Console.WriteLine("Le deplacement " + nomPiece[piece] + " est " + (etat != true ? "impossible" : "possible"));
 
+            //3.11
+            //int h1, m1, h2, m2;
+            //string temp;
+            //Console.WriteLine("heure de debut : hh-mm");
+
+            //temp = Console.ReadLine();
+
+            //h1 = int.Parse(temp.Substring(0, 2));
+            //m1 = int.Parse(temp.Substring(3, 2));
+            //Console.WriteLine(h1 + "h" + m1);
+
+            //Console.WriteLine("heure de fin : hh-mm");
+            //temp = Console.ReadLine();
+
+            //h2 = int.Parse(temp.Substring(0, 2));
+            //m2 = int.Parse(temp.Substring(3, 2));
+            //Console.WriteLine(h2 + "h" + m2);
+
+            //if ((h1 > 23) || (h2 > 23) || (m1 > 59) || (h2 > 59) || (h1 > h2))
+            //{
+            //    Console.WriteLine("calcul impossible");
+            //}
+
+            //3.12
+            int j, m, a;
+            bool bissextile = true;
+            Console.WriteLine("Jour");
+            j = int.Parse(Console.ReadLine());
+            Console.WriteLine("Mois");
+            m = int.Parse(Console.ReadLine());
+            Console.WriteLine("Année");
+            a = int.Parse(Console.ReadLine());
+
+            if (a % 4 == 0)
+            {
+                if (a % 100 != 0)
+                {
+                    bissextile = true;
+                }
+                else
+                {
+                    if (a % 400 == 0)
+                    {
+                        bissextile = true;
+                    }
+                    else
+                    {
+                        bissextile = false;
+                    }
+                }
+            }
+            else
+            {
+                bissextile = false;
+            }
+
+            Console.WriteLine(bissextile);
+
+
+
+
+
+
+
+
             //int a = 1, b = 0, n = 5;
             //while (a <= n)
             //    b += a++;
@@ -401,17 +472,6 @@ namespace ConsoleApp1
             //    Console.WriteLine(i);
 
             //} while (i == 0);
-
-            //int h1, m1, h2, m2;
-            //string temp;
-            //Console.WriteLine("heure de debut : hh-mm");
-
-            //temp = Console.ReadLine();
-            //h1 = int.Parse(temp.Substring(0, 2));
-            //m1 = int.Parse(temp.Substring(3, 4));
-
-            //Console.WriteLine(h1 + m1);
-            //Console.WriteLine("heure de fin : hh-mm");
 
 
             //Table de multiplication
