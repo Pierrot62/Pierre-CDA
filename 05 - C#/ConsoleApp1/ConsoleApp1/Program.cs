@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 
 namespace ConsoleApp1
 {
@@ -818,9 +817,8 @@ namespace ConsoleApp1
             //    Console.WriteLine(chaine[i]);
             //}
 
-
             //5.2
-            //string t, t2 ;
+            //string t, t2;
             //t2 = "";
             //int ind1, ind2;
             //Console.WriteLine("Entrez une chaine de caractere : ");
@@ -835,7 +833,6 @@ namespace ConsoleApp1
             //}
             //Console.WriteLine(t);
             //Console.WriteLine(t2);
-
 
             //5.3
             //string t, t2;
@@ -867,7 +864,6 @@ namespace ConsoleApp1
             //5.5
             //string chaine;
             //char a, b;
-
             //Console.Write("Entrez une chaine de caractere : ");
             //chaine = Console.ReadLine();
             //StringBuilder sb = new StringBuilder(chaine);
@@ -888,11 +884,105 @@ namespace ConsoleApp1
             //string nomFichier;
             //Console.Write("Entrez le nom du fichier : ");
             //nomFichier = Console.ReadLine();
-            //Console.WriteLine("Le nom du fichier est : '" + nomFichier.Substring(0, nomFichier.IndexOf(".")) + "' et son extention est : '" + nomFichier.Substring(nomFichier.LastIndexOf("."))+"'");
+            //Console.WriteLine("Le nom du fichier est : '" + nomFichier.Substring(0, nomFichier.IndexOf(".")) + "' et son extention est : '" + nomFichier.Substring(nomFichier.LastIndexOf(".")) + "'");
 
             //5.7
+            string chaine = "3 + 4, ((3 − 2) + (7/3)))";
+            int cpt = 0;
+            for (int i = 0; i < chaine.Length; i++)
+            {
+                if (chaine[i] == '(')
+                {
+                    cpt++;
+                }
+                else if (chaine[i] == ')')
+                {
+                    cpt--;
+                }
+            }
+            if (cpt == 0)
+            {
+                Console.WriteLine("La chaine est correct");
+            }
+            else
+            {
+                Console.WriteLine("La chaine n'est pas correct");
+            }
 
 
+            //6 LES TABLEAUX
+
+            //6.2.4
+            //int[] tab = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //for (int i = 0; i < tab.Length; i++)
+            //{
+            //    Console.WriteLine(tab[i]);
+            //}
+
+            //6.2.5
+            //int[] tab = new int[11];
+            //for (int i = 1; i < tab.Length; i++)
+            //{
+            //    tab[i] = i;
+            //    Console.WriteLine("valeur : " + tab[i]);
+            //}
+
+            //6.2.6
+            //int somme = 0;
+            //int[] tab = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //for (int i = 0; i < tab.Length; i++)
+            //{
+            //    somme += tab[i];
+            //}
+            //Console.WriteLine("la somme du tableau et des : " + somme);
+
+            //6.2.7
+            //int indice;
+            //bool inTab = false;
+            //int[] tab = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //Console.WriteLine("Entrez un chiffre afin de savoir si il est dans le tableau");
+            //indice = int.Parse(Console.ReadLine());
+            //for (int i = 0; i < tab.Length; i++)
+            //{
+            //    if (tab[i] == indice)
+            //    {
+            //        inTab = true;
+            //    }
+            //}
+            //if (inTab == true)
+            //{
+            //    Console.WriteLine("C'EST UN OUI !");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("C'EST UN NON !");
+            //}
+
+            //6.2.9
+            //int temp;
+            //int[] tab = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //temp = tab[0];
+            //for (int i = 0; i < tab.Length; i++)
+            //{
+            //    if (true)
+            //    {
+
+            //    }
+            //}
+
+            //6.2.9
+            int temp;
+            int[] tab = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] tab2 = new int[10];
+            for (int i = 0; i < tab.Length; i++)
+            {
+                if (tab[])
+                {
+
+                }
+            }
+
+            
         }
     }
 }
