@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace ConsoleApp1
 {
@@ -644,126 +645,253 @@ namespace ConsoleApp1
 
             //Console.Write("Le résultat final est : " + result);
 
+            //static int demanderEntierPositif()
+            //{
+            //    int nb;
+            //    bool ok;
+            //    do
+            //    {
+            //        Console.Write("Entrez un entier positif : ");
+            //        ok = int.TryParse(Console.ReadLine(), out nb);
+            //    } while (nb <= 0 || !ok);
+            //     return nb;
+            //}
+
+            //static double demanderDouble()
+            //{
+            //    double nb;
+            //    bool ok;
+            //    do
+            //    {
+            //        Console.Write("Entrez une valeur : ");
+            //        ok = double.TryParse(Console.ReadLine(), out nb);
+            //    } while (!ok);
+            //    return nb;
+            //}
+
+            //static double demanderDoubleNonNull()
+            //{
+            //    double nb;
+            //    bool ok;
+            //    do
+            //    {
+            //        Console.Write("Entrez un double : ");
+            //        ok = double.TryParse(Console.ReadLine(), out nb);
+            //    } while (nb <= 0 || !ok);
+            //    return nb;
+            //}
+
+            //static char demanderOperateur()
+            //{
+            //    char op;
+            //    do
+            //    {
+            //        Console.WriteLine("Entrez un operateur : ");
+            //        char.TryParse(Console.ReadLine(), out op);
+            //    } while (op != '+' && op != '-' && op != '*' && op != '/' && op != '$' && op != '!' && op != 'V');
+            //    return op;
+            //}
+
+            //static double calculSimple(double valeur1, char operateur, double valeur2)
+            //{
+            //    double resultat = 0;
+            //    switch (operateur)
+            //    {
+            //        case '+':
+            //            resultat = valeur1 + valeur2;
+            //            break;
+            //        case '-':
+            //            resultat = valeur1 - valeur2;
+            //            break;
+            //        case '*':
+            //            resultat = valeur1 * valeur2;
+            //            break;
+            //        case '/':
+            //            if (valeur2 != 0)
+            //            { 
+            //                resultat = valeur1 / valeur2;
+            //            }
+            //            else
+            //            {
+            //                Console.WriteLine("Calcul impossible");
+            //            }
+            //            break;
+            //        case '$':
+            //            resultat = Math.Round(valeur1);
+            //            resultat = Math.Pow(valeur1, valeur2);
+            //            break;
+            //        default:
+            //            break;
+            //    }
+            //    return resultat;
+            //}
+
+
+            //static double Calcul(double valeur, char operateur)
+            //{
+            //    double result = 1;
+
+            //    switch (operateur)
+            //    {
+            //        case 'V':
+            //            result = Math.Sqrt(valeur);
+            //            break;
+
+            //        case '!':
+            //            for (int i = 1; i < valeur; i++)
+            //            {
+            //                result *= i;
+            //            }
+            //            break;
+            //    }
+            //    return result;
+            //}
+
+            //double value1, value2;
+            //char operateur;
+
+            //value1 = demanderDouble();
+            //do
+            //{
+            //    operateur = demanderOperateur();
+            //    switch (operateur)
+            //    {
+            //        case '-':
+            //        case '+':
+            //        case '*':
+            //            value2 = demanderDouble();
+            //            value1 = calculSimple(value1, value2, operateur);
+            //            break;
+            //        case '/':
+            //            value2 = demanderDoubleNonNull();
+            //            value1 = calculSimple(value1, value2, operateur);
+            //            break;
+            //        case '$':
+            //            value2 = demanderEntierPositif();
+            //            value1 = calculSimple(value1, value2, operateur);
+            //            break;
+            //        case '!':
+            //            if (value1 % 1 == 0 && value1 > 0) // On vérifie que value1 est un Entier et qu'il est positif.
+            //            {
+            //                value1 = calcul(value1, operateur);
+            //            }
+            //            else
+            //            {
+            //                Console.WriteLine("Calcul impossible !");
+            //            }
+            //            break;
+            //        case 'V':
+            //            if (value1 > 0) // On vérifie que value1 est positif.
+            //            {
+            //                value1 = calcul(value1, operateur);
+            //            }
+            //            else
+            //            {
+            //                Console.WriteLine("Calcul impossible !");
+            //            }
+            //            break;
+            //        case '=':
+            //            break;
+            //        default:
+            //            Console.WriteLine("Opérateur incorrect.");
+            //            break;
+            //    }
+
+            //    Console.WriteLine("Résultat = " + value1);
+            //    if (operateur == '=')
+            //    {
+            //        Console.WriteLine("Merci d'avoir utiliser cette calculatrice made in AFPA.");
+            //    }
+            //} while (operateur != '=');
+
+
+
+
 
 
             //5 Chaînes de caractères
 
             //5.1
             //string chaine = "Les framboises sont perchées sur le tabouret de mon grand-père.";
-            //char[] tab = chaine.ToCharArray();
-            //for (int i = 0; i < tab.Length; i++)
+            //for (int i = 0; i < chaine.Length; i++)
             //{
-            //    Console.WriteLine(tab[i]);
+            //    Console.WriteLine(chaine[i]);
             //}
 
 
             //5.2
-            //string t;
+            //string t, t2 ;
+            //t2 = "";
             //int ind1, ind2;
-            //Console.ReadLine();
-            //Console.WriteLine("Indice 1 : ");
-
-
-            static int demanderEntierPositif()
-            {
-                int nb;
-                bool ok;
-                do
-                {
-                    Console.Write("Entrez un entier positif : ");
-                    ok = int.TryParse(Console.ReadLine(), out nb);
-                } while (nb <= 0 || !ok);
-                 return nb;
-            }
-
-            static double demanderDouble()
-            {
-                double nb;
-                bool ok;
-                do
-                {
-                    Console.Write("Entrez une valeur : ");
-                    ok = double.TryParse(Console.ReadLine(), out nb);
-                } while (!ok);
-                return nb;
-            }
-
-            static double demanderDoubleNonNull()
-            {
-                double nb;
-                bool ok;
-                do
-                {
-                    Console.Write("Entrez un double : ");
-                    ok = double.TryParse(Console.ReadLine(), out nb);
-                } while (nb <= 0 || !ok);
-                return nb;
-            }
-            
-            static char demanderOperateur()
-            {
-                char op;
-                do
-                {
-                    Console.WriteLine("Entrez un operateur : ");
-                    char.TryParse(Console.ReadLine(), out op);
-                } while (op != '+' && op != '-' && op != '*' && op != '/' && op != '$' && op != '!' && op != 'V');
-                return op;
-            }
-
-            static double calculSimple(double valeur1, char operateur, double valeur2)
-            {
-                double resultat;
-                switch (operateur)
-                {
-                    case '+':
-                        resultat = valeur1 + valeur2;
-                        break;
-                    case '-':
-                        resultat = valeur1 - valeur2;
-                        break;
-                    case '*':
-                        resultat = valeur1 * valeur2;
-                        break;
-                    case '/':
-                        if (valeur2 != 0)
-                        { 
-                            resultat = valeur1 / valeur2;
-                        }
-                        else
-                        {
-                            Console.WriteLine("Calcul impossible");
-                        }
-                        break;
-                    case '$':
-                        resultat = Math.Round(valeur1);
-                        resultat = Math.Pow(valeur1, valeur2);
-                        break;
-                    default:
-                        break;
-                }
-                return resultat;
-            }
-            //static double calcul(double valeur, char operateur)
+            //Console.WriteLine("Entrez une chaine de caractere : ");
+            //t = Console.ReadLine();
+            //Console.WriteLine("Entrez le premier indice : ");
+            //ind1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Entrez le second indice : ");
+            //ind2 = int.Parse(Console.ReadLine());
+            //for (int i = ind1; i < ind2; i++)
             //{
-            //    double resultat;
-            //    switch (operateur)
+            //    t2 = t2 + t[i];
+            //}
+            //Console.WriteLine(t);
+            //Console.WriteLine(t2);
+
+
+            //5.3
+            //string t, t2;
+            //t2 = "";
+            //int ind1, ind2;
+            //Console.WriteLine("Entrez une chaine de caractere : ");
+            //t = Console.ReadLine();
+            //Console.WriteLine("Entrez le premier indice : ");
+            //ind1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Entrez le second indice : ");
+            //ind2 = int.Parse(Console.ReadLine());
+            //for (int i = ind1; i < ind2; i++)
+            //{
+            //    t2 = t2 + t[i];
+            //}
+            //Console.WriteLine(t);
+            //Console.WriteLine(t.Insert(t.Length," " + t2));
+
+            //5.4
+            //string chaine, a, b;
+            //Console.Write("Entrez une chaine de caractere : ");
+            //chaine = Console.ReadLine();
+            //Console.Write("Entrez la premiere lettre : ");
+            //a = Console.ReadLine();
+            //Console.Write("Entrez la seconde lettre : ");
+            //b = Console.ReadLine();
+            //Console.WriteLine(chaine.Replace(a, b));
+
+            //5.5
+            //string chaine;
+            //char a, b;
+
+            //Console.Write("Entrez une chaine de caractere : ");
+            //chaine = Console.ReadLine();
+            //StringBuilder sb = new StringBuilder(chaine);
+            //Console.Write("Entrez la premiere lettre : ");
+            //a = char.Parse(Console.ReadLine());
+            //Console.Write("Entrez la seconde lettre : ");
+            //b = char.Parse(Console.ReadLine());
+            //for (int i = 0; i < sb.Length; i++)
+            //{
+            //    if (sb[i] == a)
             //    {
-            //        case '!':
-            //            resultat = Math.Sqrt(valeur)
-            //            break;
-            //        case 'V':
-            //            resultat = valeur1 - valeur2;
-            //            break
-            //        default:
-            //            break;
+            //        sb[i] = b;
             //    }
             //}
+            //Console.WriteLine(sb);
 
+            //5.6
+            //string nomFichier;
+            //Console.Write("Entrez le nom du fichier : ");
+            //nomFichier = Console.ReadLine();
+            //Console.WriteLine("Le nom du fichier est : '" + nomFichier.Substring(0, nomFichier.IndexOf(".")) + "' et son extention est : '" + nomFichier.Substring(nomFichier.LastIndexOf("."))+"'");
 
-            char test;
-            test = demanderOperateur();
-            Console.WriteLine(test);
+            //5.7
+
 
         }
     }
