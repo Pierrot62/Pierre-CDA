@@ -887,27 +887,27 @@ namespace ConsoleApp1
             //Console.WriteLine("Le nom du fichier est : '" + nomFichier.Substring(0, nomFichier.IndexOf(".")) + "' et son extention est : '" + nomFichier.Substring(nomFichier.LastIndexOf(".")) + "'");
 
             //5.7
-            string chaine = "3 + 4, ((3 − 2) + (7/3)))";
-            int cpt = 0;
-            for (int i = 0; i < chaine.Length; i++)
-            {
-                if (chaine[i] == '(')
-                {
-                    cpt++;
-                }
-                else if (chaine[i] == ')')
-                {
-                    cpt--;
-                }
-            }
-            if (cpt == 0)
-            {
-                Console.WriteLine("La chaine est correct");
-            }
-            else
-            {
-                Console.WriteLine("La chaine n'est pas correct");
-            }
+            //string chaine = "3 + 4, ((3 − 2) + (7/3)))";
+            //int cpt = 0;
+            //for (int i = 0; i < chaine.Length; i++)
+            //{
+            //    if (chaine[i] == '(')
+            //    {
+            //        cpt++;
+            //    }
+            //    else if (chaine[i] == ')')
+            //    {
+            //        cpt--;
+            //    }
+            //}
+            //if (cpt == 0)
+            //{
+            //    Console.WriteLine("La chaine est correct");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("La chaine n'est pas correct");
+            //}
 
 
             //6 LES TABLEAUX
@@ -971,7 +971,7 @@ namespace ConsoleApp1
             //}
 
             //6.2.9
-            int temp;
+            //int temp;
             int[] tab = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             int[] tab2 = new int[10];
             for (int i = 0; i < tab.Length; i++)
