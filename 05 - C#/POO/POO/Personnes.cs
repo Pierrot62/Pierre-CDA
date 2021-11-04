@@ -8,10 +8,10 @@ namespace POO
     {
 
         //Attributs
-        string nom;
-        string prenom;
-        int age;
-        string email;
+        public string nom;
+        public string prenom;
+        public int age;
+        public string email;
 
         //Constructeurs
         public Personnes()
@@ -63,7 +63,7 @@ namespace POO
         //ToString
         public override string ToString()
         {
-            return "nom ";
+            return "nom " + this.nom + " prenom " + this.prenom + " age " + this.age + " email " + this.email;
         }
     }
 }

@@ -6,7 +6,9 @@ namespace POO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Personnes p1 = new Personnes("COURQUIN", "Pierre", 21, "courquin.pierre62@gmail.com");
+
+            Console.WriteLine("Le nom de p1 est : " + p1.GetNom());
         }
     }
 }
