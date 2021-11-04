@@ -982,31 +982,38 @@ namespace ConsoleApp1
             //}
 
             //6.2.11
-            //int min = 0, max = 0;
-            //int[] tab = new int[20] { 1, 58, 7, 4, 5, 6, 0, 8, 3, 10 };
+            //int temp;
+            //int[] tab = new int[20] { 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0 };
+            //for (int i = 0; i < tab.Length -1; i++)
+            //{
+
+            //    temp = tab[i + 1] % 17;
+            //    tab[i] = temp;
+            //    Console.WriteLine(tab[i]);
+            //}
 
             //6.2.12
-            int min = 0, max = 0;
-            int[] tab = new int[10] { 1, 58, 7, 4, 5, 6, 0, 8, 3, 10 };
-            min = tab[0];
-            max = tab[0];
-            for (int i = 0; i < tab.Length; i++)
-            {
-                
-                if (tab[i] > max)
-                {
-                    max = tab[i];
-                }
-                else if (tab[i] < min)
-                {
-                    min = tab[i];
-                }
-            }
-            Console.WriteLine("La valeur la plus petite est " + min + " et la plus grande est " + max);
+            //int min = 0, max = 0;
+            //int[] tab = new int[10] { 1, 58, 7, 4, 5, 6, 0, 8, 3, 10 };
+            //min = tab[0];
+            //max = tab[0];
+            //for (int i = 0; i < tab.Length; i++)
+            //{
+
+            //    if (tab[i] > max)
+            //    {
+            //        max = tab[i];
+            //    }
+            //    else if (tab[i] < min)
+            //    {
+            //        min = tab[i];
+            //    }
+            //}
+            //Console.WriteLine("La valeur la plus petite est " + min + " et la plus grande est " + max);
 
 
             //6.2.13
-
+            //int[] tab = new int[10] { 1, 58, 7, 4, 5, 6, 0, 8, 3, 10 };
             //6.2.14
 
 
