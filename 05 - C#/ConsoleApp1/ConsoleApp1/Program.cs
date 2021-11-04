@@ -976,7 +976,7 @@ namespace ConsoleApp1
             int[] tab2 = new int[10];
             for (int i = 0; i < tab.Length; i++)
             {
-                if (tab[])
+                if (tab[i])
                 {
 
                 }
