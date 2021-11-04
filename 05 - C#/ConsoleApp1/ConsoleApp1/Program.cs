@@ -1011,14 +1011,37 @@ namespace ConsoleApp1
             //}
             //Console.WriteLine("La valeur la plus petite est " + min + " et la plus grande est " + max);
 
-
             //6.2.13
             //int[] tab = new int[10] { 1, 58, 7, 4, 5, 6, 0, 8, 3, 10 };
+            //Console.Write("Entrez votre valeur : ");
+            //int valeur = int.Parse(Console.ReadLine());
+            //for (int i = 0; i < tab.Length; i++)
+            //{
+            //    if (tab[i] == valeur)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+
             //6.2.14
-
-
-
-
+            //int[] tab = new int[10] { 1, 58, 58, 4, 5, 6, 0, 8, 3, 58 };
+            //int[] tab2 = new int[0];
+            //int cpt = 0;
+            //Console.Write("Entrez votre valeur : ");
+            //int valeur = int.Parse(Console.ReadLine());
+            //for (int i = 0; i < tab.Length; i++)
+            //{
+            //    if (tab[i] == valeur)
+            //    {
+            //        Array.Resize(ref tab2, tab2.Length + 1);
+            //        tab2[cpt] = i;
+            //        cpt++;
+            //    }
+            //}
+            //    foreach (var item in tab2)
+            //    {
+            //        Console.WriteLine(item);
+            //    }
         }
     }
 }
