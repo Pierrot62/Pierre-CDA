@@ -174,6 +174,205 @@ namespace Corrections
 
             //4.4.12
 
+
+
+
+            //6.1.1 Analyse oral
+            //6.1.2 Analyse oral
+            //6.1.3 Analyse oral
+
+
+            //6.2.4
+            //int[] liste = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //Console.WriteLine("              Un beau tableau  ");
+            //Console.WriteLine("              +-------------+");
+            //for (int i = 0; i < liste.Length; i++)
+            //{
+            //if (liste[i] < 10)
+            //{
+            //  Console.WriteLine("              | Poste {0}: {1}  |", i, liste[i]);
+            //}
+            //  else { Console.WriteLine("              | Poste {0}: {1} |", i, liste[i]); }
+            //}
+            //Console.WriteLine("              +-------------+");
+
+
+            //6.2.5
+            //int[] tab = new int[10];
+            //for (int i = 0; i < tab.Length; i++)
+            //{
+            //    tab[i] = i + 1;
+            //    Console.WriteLine("valeur : " + tab[i]);
+            //}
+
+
+            //6.2.6
+            //int[] t = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //int somme = 0;
+            //for (int i = 0; i < t.Length; i++)
+            //{
+            //    somme = somme + t[i];
+            //}
+            //Console.Write("la somme est de: " + somme);
+
+
+            //6.2.7
+            //int[] t = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //int cpt = 0;
+            //Console.WriteLine("Donner un chiffre :");
+            //int value = int.Parse(Console.ReadLine());
+            //while (cpt < t.Length && t[cpt] != value)
+            //{
+            //    cpt++;
+            //}
+            //if (cpt < t.Length)
+            //{
+            //    Console.WriteLine("Bien joué !");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Le chiffre n'est pas dans le tableau.");
+            //}
+
+            //6.3.8
+            //int[] tableau = new int[10];
+            //int[] tableauCirculezYaRienAVoir = new int[10];
+            //for (int i = 0; i < tableau.Length; i++)
+            //    tableau[i] = i + 1;
+            //for (int i = 0; i < tableau.Length; i++)
+            //    tableauCirculezYaRienAVoir[(i + 1) % tableau.Length] = tableau[i];
+            //foreach (int p in tableauCirculezYaRienAVoir)
+            //    Console.WriteLine(p);
+
+            //6.3.9
+            //int[] k = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //int stock;
+            //stock = k[k.Length - 1];
+            //for (int index = k.Length - 2; index >= 0; index--)
+            //{
+            //    k[index + 1] = k[index];
+            //}
+            //k[0] = stock;
+            //foreach (int p in k)
+            //{
+            //    Console.WriteLine(p);
+            //}
+
+            //6.3.10
+            //int[] t = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+            //int temp;
+            //for (int i = 0; i < (t.Length / 2); i++)
+            //{
+            //    temp = t[i];
+            //    t[i] = t[t.Length - 1 - i];
+            //    t[t.Length - 1 - i] = temp;
+            //}
+            //foreach (int val in t)
+            //{
+            //    Console.Write(val + " ");
+            //}
+
+            //6.4.11
+            //int[] t = new int[10];
+            //int i2;
+            //Array.Resize(ref t, t.Length + 10);
+            //for (int i = 0; i < t.Length; i++)
+            //{
+            //    i2 = i;
+            //    for (int j = 1; j < i; j++)
+            //    {
+            //        i2 *= i;
+            //    }
+            //    t[i] = i2 % 17;
+            //    Console.WriteLine(i2 % 17);
+            //}
+
+
+            //6.4.12
+            //int[] t = new int[20] { 1, 2, -3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 30, 35, 40, 45, 50, 55, 0, 65 };
+            //int min, max;
+            //min = t[0];
+            //max = t[0];
+            //for (int i = 0; i < t.Length; i++)
+            //{
+            //    if (t[i] < min)
+            //    {
+            //        min = t[i];
+
+            //    }
+
+            //    else if (t[i] > max)
+            //    {
+            //        max = t[i];
+            //    }
+            //}
+            //Console.Write("la valeur minimale est de " + min + " et la valeur maximale est de " + max);
+
+            //6.4.13
+            //int[] t = new int[10] { 42, 59, 75, 62, 14, 1, 32, 5, 689, 32 };
+            //int value;
+            //bool apparition = false;
+
+            //Console.Write("Saisissez une valeur numérique : ");
+            //while (!int.TryParse(Console.ReadLine(), out value)) ;
+
+            //for (int i = 0; i < t.Length; i++)
+            //{
+            //    if (t[i] == value)
+            //    {
+            //        Console.WriteLine("La valeur apparait a l'indice " + i + " du tableau.");
+            //        apparition = true;
+            //    }
+            //}
+
+            //if (!apparition)
+            //{
+            //    Console.WriteLine("La valeur n'apparait pas dans le tableau.");
+            //}
+
+            //6.4.14
+            //int[] tab = new int[10] { 1, 58, 58, 4, 5, 6, 0, 8, 3, 58 };
+            //int[] tab2 = new int[0];
+            //int cpt = 0;
+            //Console.Write("Entrez votre valeur : ");
+            //int valeur = int.Parse(Console.ReadLine());
+            //for (int i = 0; i < tab.Length; i++)
+            //{
+            //    if (tab[i] == valeur)
+            //    {
+            //        Array.Resize(ref tab2, tab2.Length + 1);
+            //        tab2[cpt] = i;
+            //        cpt++;
+            //    }
+            //}
+            //foreach (var item in tab2)
+            //{
+            //    Console.Write(item + " ");
+            //}
+
+            //******
+
+            //int valeur;
+            //int[] k = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //int[] q = new int[10];
+            //List<int> liste = new List<int>();
+            //Console.Write("Saisissez une valeur : ");
+            //valeur = int.Parse(Console.ReadLine());
+            //for (int i = 0; i < k.Length; i++)
+            //{
+            //    if (k[i] == valeur)
+            //    {
+            //        liste.Add(i);
+            //        q = liste.ToArray();
+
+            //    }
+            //}
+            //foreach (int p in q)
+            //{
+            //    Console.WriteLine(p);
+
+            //}
+            
         }
     }
 }
