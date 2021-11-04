@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace ConsoleApp1
 {
@@ -920,10 +921,10 @@ namespace ConsoleApp1
             //}
 
             //6.2.5
-            //int[] tab = new int[11];
-            //for (int i = 1; i < tab.Length; i++)
+            //int[] tab = new int[10];
+            //for (int i = 0; i < tab.Length; i++)
             //{
-            //    tab[i] = i;
+            //    tab[i] = i + 1;
             //    Console.WriteLine("valeur : " + tab[i]);
             //}
 
@@ -958,31 +959,59 @@ namespace ConsoleApp1
             //    Console.WriteLine("C'EST UN NON !");
             //}
 
+            //6.2.8
+            //int[] tableau = new int[10];
+            //int[] tableauCirculezYaRienAVoir = new int[10];
+            //for (int i = 0; i < tableau.Length; i++)
+            //    tableau[i] = i + 1;
+            //for (int i = 0; i < tableau.Length; i++)
+            //    tableauCirculezYaRienAVoir[(i + 1) % tableau.Length] = tableau[i];
+            //foreach (int p in tableauCirculezYaRienAVoir)
+            //    Console.WriteLine(p);
+
+
             //6.2.9
+
+            //6.2.10
             //int temp;
             //int[] tab = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            //temp = tab[0];
             //for (int i = 0; i < tab.Length; i++)
             //{
-            //    if (true)
-            //    {
+            //    temp = tab[i];
 
-            //    }
             //}
 
-            //6.2.9
-            //int temp;
-            int[] tab = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            int[] tab2 = new int[10];
+            //6.2.11
+            //int min = 0, max = 0;
+            //int[] tab = new int[20] { 1, 58, 7, 4, 5, 6, 0, 8, 3, 10 };
+
+            //6.2.12
+            int min = 0, max = 0;
+            int[] tab = new int[10] { 1, 58, 7, 4, 5, 6, 0, 8, 3, 10 };
+            min = tab[0];
+            max = tab[0];
             for (int i = 0; i < tab.Length; i++)
             {
-                if (tab[i])
+                
+                if (tab[i] > max)
                 {
-
+                    max = tab[i];
+                }
+                else if (tab[i] < min)
+                {
+                    min = tab[i];
                 }
             }
+            Console.WriteLine("La valeur la plus petite est " + min + " et la plus grande est " + max);
 
-            
+
+            //6.2.13
+
+            //6.2.14
+
+
+
+
         }
     }
 }
