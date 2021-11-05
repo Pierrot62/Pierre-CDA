@@ -1,0 +1,14 @@
+U:\59011-07-05\CDA\05 - C#\ExoPoo\ExoPoo\bin\Debug\netcoreapp3.1\ExoPoo.exe
+U:\59011-07-05\CDA\05 - C#\ExoPoo\ExoPoo\bin\Debug\netcoreapp3.1\ExoPoo.deps.json
+U:\59011-07-05\CDA\05 - C#\ExoPoo\ExoPoo\bin\Debug\netcoreapp3.1\ExoPoo.runtimeconfig.json
+U:\59011-07-05\CDA\05 - C#\ExoPoo\ExoPoo\bin\Debug\netcoreapp3.1\ExoPoo.runtimeconfig.dev.json
+U:\59011-07-05\CDA\05 - C#\ExoPoo\ExoPoo\bin\Debug\netcoreapp3.1\ExoPoo.dll
+U:\59011-07-05\CDA\05 - C#\ExoPoo\ExoPoo\bin\Debug\netcoreapp3.1\ExoPoo.pdb
+U:\59011-07-05\CDA\05 - C#\ExoPoo\ExoPoo\obj\Debug\netcoreapp3.1\ExoPoo.csproj.AssemblyReference.cache
+U:\59011-07-05\CDA\05 - C#\ExoPoo\ExoPoo\obj\Debug\netcoreapp3.1\ExoPoo.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-05\CDA\05 - C#\ExoPoo\ExoPoo\obj\Debug\netcoreapp3.1\ExoPoo.AssemblyInfoInputs.cache
+U:\59011-07-05\CDA\05 - C#\ExoPoo\ExoPoo\obj\Debug\netcoreapp3.1\ExoPoo.AssemblyInfo.cs
+U:\59011-07-05\CDA\05 - C#\ExoPoo\ExoPoo\obj\Debug\netcoreapp3.1\ExoPoo.csproj.CoreCompileInputs.cache
+U:\59011-07-05\CDA\05 - C#\ExoPoo\ExoPoo\obj\Debug\netcoreapp3.1\ExoPoo.dll
+U:\59011-07-05\CDA\05 - C#\ExoPoo\ExoPoo\obj\Debug\netcoreapp3.1\ExoPoo.pdb
+U:\59011-07-05\CDA\05 - C#\ExoPoo\ExoPoo\obj\Debug\netcoreapp3.1\ExoPoo.genruntimeconfig.cache
