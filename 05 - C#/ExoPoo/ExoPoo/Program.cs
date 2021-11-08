@@ -24,8 +24,11 @@ namespace ExoPoo
 
             //Console.WriteLine("Information pour le compte numero : " + compte3.Numero + "\nSolde du compte : " + compte3.Solde + " Euros\nCode du compte : " + compte3.Code + "\nTitulaire du compte : \nNom : " + compte3.Titulaire.Nom + "\nPrenom : " + compte3.Titulaire.Prenom + "\nCIN : " + compte3.Titulaire.Cin);
 
-            compte3.Crediter(50);
-            Console.WriteLine(compte3);
+            //compte3.Crediter(50);
+            //Console.WriteLine(compte3);
+            Console.WriteLine(DateTime.Today);
+            //    Employes Paul = new Employes("Paul", "Henry", new DateTime(2000,10,15), "Chef de projet", 45500, "Developpement");
+            //    Console.WriteLine(Paul.nbAnnees());
         }
     }
 }
