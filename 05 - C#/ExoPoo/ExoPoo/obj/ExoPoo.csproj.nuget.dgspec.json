@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "U:\\59011-07-05\\CDA\\05 - C#\\ExoPoo\\ExoPoo\\ExoPoo.csproj": {}
+    "U:\\GRP-07\\59011-07-05\\CDA\\05 - C#\\ExoPoo\\ExoPoo\\ExoPoo.csproj": {}
   },
   "projects": {
-    "U:\\59011-07-05\\CDA\\05 - C#\\ExoPoo\\ExoPoo\\ExoPoo.csproj": {
+    "U:\\GRP-07\\59011-07-05\\CDA\\05 - C#\\ExoPoo\\ExoPoo\\ExoPoo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "U:\\59011-07-05\\CDA\\05 - C#\\ExoPoo\\ExoPoo\\ExoPoo.csproj",
+        "projectUniqueName": "U:\\GRP-07\\59011-07-05\\CDA\\05 - C#\\ExoPoo\\ExoPoo\\ExoPoo.csproj",
         "projectName": "ExoPoo",
-        "projectPath": "U:\\59011-07-05\\CDA\\05 - C#\\ExoPoo\\ExoPoo\\ExoPoo.csproj",
-        "packagesPath": "C:\\Users\\59011-07-05\\.nuget\\packages\\",
-        "outputPath": "U:\\59011-07-05\\CDA\\05 - C#\\ExoPoo\\ExoPoo\\obj\\",
+        "projectPath": "U:\\GRP-07\\59011-07-05\\CDA\\05 - C#\\ExoPoo\\ExoPoo\\ExoPoo.csproj",
+        "packagesPath": "C:\\Users\\1701871\\.nuget\\packages\\",
+        "outputPath": "U:\\GRP-07\\59011-07-05\\CDA\\05 - C#\\ExoPoo\\ExoPoo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\59011-07-05\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\1701871\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

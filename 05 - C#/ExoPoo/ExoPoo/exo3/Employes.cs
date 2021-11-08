@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ExoPoo
+namespace ExoPoo.Exo3
 {
     class Employes
     {
@@ -24,11 +24,20 @@ namespace ExoPoo
             Service = service;
         }
 
-        public DateTime nbAnnees()
+        public double NbAnnees()
         {
-
-            DateTime compare = DateTime.Today - new(DateEmbauche);
+            //Nombre d'années dans l'entreprise
+            return (int)(DateTime.Today.Subtract(DateEmbauche).TotalDays / 365);
         }
+
+        public void Augmentation()
+        {
+            //Augmentation de 5% chaque années
+            this.Salaire += (0.05 * this.Salaire) / 100;
+            //Augmentation de 2% pour chaque années dans la societe
+            this.Salaire += ((NbAnnees() * 0.02) * this.Salaire) / 100;
+        }
+
     }
 }
 

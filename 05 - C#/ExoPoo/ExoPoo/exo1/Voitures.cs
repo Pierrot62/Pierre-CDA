@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ExoPoo
+namespace ExoPoo.Exo1
 {
     class Voitures
     {
@@ -18,8 +18,8 @@ namespace ExoPoo
         public Voitures(string couleur, string marque, string modele, int nbKilometres, string motorisation)
         {
             Couleur = couleur;
-            Marque = marque ?? throw new ArgumentNullException(nameof(marque));
-            Modele = modele ?? throw new ArgumentNullException(nameof(modele));
+            Marque = marque;
+            Modele = modele;
             NbKilometres = nbKilometres;
             Motorisation = motorisation;
         }

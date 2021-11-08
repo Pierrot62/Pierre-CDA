@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ExoPoo
+namespace ExoPoo.Exo2
 {
     class Comptes
     {
