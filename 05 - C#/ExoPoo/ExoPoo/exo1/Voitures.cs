@@ -43,8 +43,5 @@ namespace ExoPoo
             this.NbKilometres += nbKlm;
             return NbKilometres;
         }
-
-
-
     }
 }
