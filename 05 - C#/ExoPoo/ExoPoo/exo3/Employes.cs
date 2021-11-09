@@ -102,7 +102,7 @@ namespace ExoPoo.Exo3
 
             string reponse =
             "****_INFORMATION_SUR_L'EMPLOYES_****" +
-            "\n|Nom                : " + this.Nom +
+            "\n|Nom              : " + this.Nom +
             "\n|Prenom           : " + this.Prenom +
             "\n|Date Embauche    : " + this.DateEmbauche.ToString("dd/MM/yyyy") +
             "\n|Fonction         : " + this.Fonction +

@@ -53,7 +53,7 @@ namespace ExoPoo
             //    Maxence.Augmentation();
             //}
 
-            List<Employes> listeEmployes = new List<Employes>()
+            List<Employes> ListeEmployes = new List<Employes>()
             {
             bruno,
             pierre,
@@ -64,20 +64,21 @@ namespace ExoPoo
 
             //Console.WriteLine(ListeEmployes);
 
-            listeEmployes.Sort(Employes.Classement);
-            Console.WriteLine("Nombre d'employer dans la societe : " + listeEmployes.Count);
-            foreach (var employe in listeEmployes)
+            ListeEmployes.Sort(Employes.Classement);
+            Console.WriteLine("Nombre d'employer dans la societe : " + ListeEmployes.Count);
+            foreach (var employe in ListeEmployes)
             {
                 Console.WriteLine("\n"+employe);
             }
             double masse = 0;
 
-            for (int i = 0; i < listeEmployes.Count; i++)
+            for (int i = 0; i < ListeEmployes.Count; i++)
             {
-                masse += listeEmployes[i].Salaire; 
+                masse += ListeEmployes[i].Salaire; 
             }
             Console.WriteLine("\n\nLa masse salarial est de : " + masse);
         }
+
         public enum RestaurationEnum
         {
             RestaurantEntreprise,
