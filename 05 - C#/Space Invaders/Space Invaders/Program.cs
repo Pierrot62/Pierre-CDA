@@ -9,7 +9,7 @@ namespace Space_Invaders
         {   
             Invader invader = new Invader('#');
             Space grille = new Space(2, 10);
-            Space.AjouterInvader(invader.Caractere);
+            Space.AjouterInvader();
             //grille.AfficheGrille();
         }
     }
