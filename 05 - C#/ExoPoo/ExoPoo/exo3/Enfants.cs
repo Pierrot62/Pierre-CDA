@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ExoPoo.Exo3
+namespace Employe
 {
     class Enfants
     {
@@ -10,11 +10,11 @@ namespace ExoPoo.Exo3
         public string Prenom { get; set; }
         public DateTime Ddn { get; set; }
 
-        public Enfants(string nom, string prenom, DateTime age)
+        public Enfants(string nom, string prenom, DateTime ddn)
         {
             Nom = nom;
             Prenom = prenom;
-            Ddn = age;
+            Ddn = ddn;
         }
 
         public override string ToString()
