@@ -27,7 +27,13 @@ namespace WpfTest
 
         private void BtnNumerique_Click(object sender, RoutedEventArgs e)
         {
-            Tbx_affichage.Text = ((Button)sender).Content;
+            Tbx_affichage.Text += ((Button)sender).Content;
+        }
+
+        //Remise a 0 de l'affichage
+        private void BtnReset_Click(object sender, RoutedEventArgs e)
+        {
+            Tbx_affichage.Text = "";
         }
     }
 }
