@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfTest
+namespace DateDeNaissance
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
@@ -30,7 +30,7 @@ namespace WpfTest
 
         }
 
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
