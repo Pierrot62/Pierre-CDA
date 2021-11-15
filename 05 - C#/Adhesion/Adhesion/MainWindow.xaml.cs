@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfTest
+namespace Adhesion
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
@@ -23,11 +23,6 @@ namespace WpfTest
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void BtnNumerique_Click(object sender, RoutedEventArgs e)
-        {
-            Tbx_affichage.Text = ((Button)sender).Content;
         }
     }
 }
