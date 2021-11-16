@@ -133,25 +133,19 @@
                                 <TextBlock Text="Latitude : " Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="{DynamicResource TxtRouge}"/>
                                 <TextBlock Text="Longitude : " Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="{DynamicResource TxtRouge}"/>
                                 <Grid Grid.Row="1" Grid.Column="1">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="1*"/>
-                                        <RowDefinition Height="1*"/>
-                                        <RowDefinition Height="1*"/>
-                                        <RowDefinition Height="1*"/>
-                                    </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="2*"/>
-                                        <ColumnDefinition Width="4*"/>
-                                        <ColumnDefinition Width="0.5*"/>
-                                        <ColumnDefinition Width="0.5*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1*"/>
                                     </Grid.ColumnDefinitions>
-                                    <ComboBox Grid.Row="1" Grid.Column="1" BorderBrush="White" SelectionChanged="ComboBox_SelectionChanged" IsEditable="True">
+                                    <ComboBox  BorderBrush="White" SelectionChanged="ComboBox_SelectionChanged" IsEditable="True">
                                         <ComboBoxItem Content="22/01/2013" IsSelected="True"/>
                                     </ComboBox>
                                     <ComboBox Grid.Row="1" Grid.Column="1" BorderBrush="White" SelectionChanged="ComboBox_SelectionChanged" IsEditable="True">
-                                        <ComboBoxItem Content="22/01/2013" IsSelected="True"/>
+                                        <ComboBoxItem Content="18:30" IsSelected="True"/>
                                     </ComboBox>
                                 </Grid>
+                                <TextBox Text="+49 14.100" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center"/>
+                                <TextBox Text="-1 48.320" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"/>
                             </Grid>
                         </GroupBox>
                     </Grid>
