@@ -6,13 +6,16 @@
         xmlns:local="clr-namespace:WpfTest"
         mc:Ignorable="d"
         Title="CALCULATRICE" Height="450" Width="800"
-        Background="Black">
+        Background="Black"
+        Icon="Capture.PNG"
+        >
+      
     <Window.Resources>
         <SolidColorBrush x:Key="couleurBouttonOpe" Color="Black"/>
         <SolidColorBrush x:Key="backgroundBouttonOpe" Color="#FFDC2C2C"/>
         <SolidColorBrush x:Key="backgroundBouttonVert" Color="#FF2CF335"/>
     </Window.Resources>
-    <Grid VerticalAlignment="Bottom" HorizontalAlignment="Right"  ScrollViewer.HorizontalScrollBarVisibility="Visible" Margin="0,0,2,0" Height="409" Width="780">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="13*"/>
             <RowDefinition Height="68*"/>
@@ -40,34 +43,33 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBox x:Name="Tbx_affichage" TextWrapping="Wrap" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="7" HorizontalContentAlignment="Right" VerticalContentAlignment="Stretch" FontSize="48" FontWeight="Bold" Foreground="DarkBlue" IsEnabled="False" TextChanged="Tbx_affichage_TextChanged"/>
+        <TextBox x:Name="Tbx_affichage" TextWrapping="Wrap" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="7" HorizontalContentAlignment="Right" VerticalContentAlignment="Stretch" FontSize="48" FontWeight="Bold" Foreground="DarkBlue" IsEnabled="False"/>
 
-        <Button x:Name="Btn_reset" Content="CE" Grid.Column="1" Grid.Row="3" Foreground="{DynamicResource couleurTextBoutton}" FontSize="36" FontWeight="ExtraBold" Grid.RowSpan="2" Background="{DynamicResource backgroundBouttonVert}" Grid.ColumnSpan="3" Margin="0,0,0,10" Click="Btn_reset_Click">
+        <Button x:Name="Btn_reset" Content="CE" Grid.Column="1" Grid.Row="3" Foreground="{DynamicResource couleurTextBoutton}" FontSize="36" FontWeight="ExtraBold"  Background="{DynamicResource backgroundBouttonVert}" Grid.ColumnSpan="3" Click="BtnReset_Click">
             <Button.ContextMenu>
                 <ContextMenu/>
             </Button.ContextMenu>
         </Button>
-        <Button x:Name="Btn_supp" Content="←" Grid.Column="5" Grid.Row="3" Background="{DynamicResource backgroundBouttonOpe}" Foreground="{DynamicResource couleurTextBoutton}" FontSize="36" FontWeight="ExtraBold" Grid.ColumnSpan="3" ClickMode="Hover"/>
-
+        <Button x:Name="Btn_supp" Content="←" Grid.Column="5" Grid.Row="3" Background="{DynamicResource backgroundBouttonOpe}" Foreground="{DynamicResource couleurTextBoutton}" FontSize="36" FontWeight="ExtraBold" Grid.ColumnSpan="3" Click="BtnSupp_Click"/>
         <Button x:Name="Btn_7" Content="7" Grid.Column="1" Grid.Row="5" Foreground="{DynamicResource couleurTextBoutton}" FontSize="36" FontWeight="ExtraBold" Background="{DynamicResource BackgroundBoutton}" Click="BtnNumerique_Click"/>
         <Button x:Name="Btn_8" Content="8" Grid.Column="3" Grid.Row="5" Background="{DynamicResource BackgroundBoutton}" Foreground="{DynamicResource couleurTextBoutton}" FontSize="36" FontWeight="ExtraBold" Click="BtnNumerique_Click"/>
         <Button x:Name="Btn_9" Content="9" Grid.Column="5" Grid.Row="5" Background="{DynamicResource BackgroundBoutton}" Foreground="{DynamicResource couleurTextBoutton}" FontSize="36" FontWeight="ExtraBold" Click="BtnNumerique_Click"/>
-        <Button x:Name="Btn_foix" Content="X" Grid.Column="7" Grid.Row="5" Background="{DynamicResource backgroundBouttonOpe}" Foreground="{DynamicResource couleurBouttonOpe}" FontSize="36" FontWeight="ExtraBold"/>
+        <Button x:Name="Btn_foix" Content="x" Grid.Column="7" Grid.Row="5" Background="{DynamicResource backgroundBouttonOpe}" Foreground="{DynamicResource couleurBouttonOpe}" FontSize="36" FontWeight="ExtraBold" Click="BtnOperateur_Click"/>
 
         <Button x:Name="Btn_4" Content="4" Grid.Column="1" Grid.Row="7" Background="{DynamicResource BackgroundBoutton}" Foreground="{DynamicResource couleurTextBoutton}" FontSize="36" FontWeight="ExtraBold" Click="BtnNumerique_Click"/>
         <Button x:Name="Btn_5" Content="5" Grid.Column="3" Grid.Row="7" Background="{DynamicResource BackgroundBoutton}" Foreground="{DynamicResource couleurTextBoutton}" FontSize="36" FontWeight="ExtraBold" Click="BtnNumerique_Click"/>
         <Button x:Name="Btn_6" Content="6" Grid.Column="5" Grid.Row="7" Background="{DynamicResource BackgroundBoutton}" Foreground="{DynamicResource couleurTextBoutton}" FontSize="36" FontWeight="ExtraBold" Click="BtnNumerique_Click"/>
-        <Button x:Name="Btn_moins" Content="-" Grid.Column="7" Grid.Row="7" Background="{DynamicResource backgroundBouttonOpe}" Foreground="{DynamicResource couleurBouttonOpe}" FontSize="36" FontWeight="ExtraBold" FontStyle="Italic" VerticalAlignment="Bottom"/>
+        <Button x:Name="Btn_moins" Content="-" Grid.Column="7" Grid.Row="7" Background="{DynamicResource backgroundBouttonOpe}" Foreground="{DynamicResource couleurBouttonOpe}" FontSize="36" FontWeight="ExtraBold" Click="BtnOperateur_Click"/>
 
         <Button x:Name="Btn_1" Content="1" Grid.Column="1" Grid.Row="9" Background="{DynamicResource BackgroundBoutton}" Foreground="{DynamicResource couleurTextBoutton}" FontSize="36" FontWeight="ExtraBold" Click="BtnNumerique_Click"/>
         <Button x:Name="Btn_2" Content="2" Grid.Column="3" Grid.Row="9" Background="{DynamicResource BackgroundBoutton}" Foreground="{DynamicResource couleurTextBoutton}" FontSize="36" FontWeight="ExtraBold" Click="BtnNumerique_Click"/>
         <Button x:Name="Btn_3" Content="3" Grid.Column="5" Grid.Row="9" Background="{DynamicResource BackgroundBoutton}" Foreground="{DynamicResource couleurTextBoutton}" FontSize="36" FontWeight="ExtraBold" Click="BtnNumerique_Click"/>
-        <Button x:Name="Btn_plus" Content="+" Grid.Column="7" Grid.Row="9" Background="{DynamicResource backgroundBouttonOpe}" Foreground="{DynamicResource couleurBouttonOpe}" FontSize="36" FontWeight="ExtraBold"/>
+        <Button x:Name="Btn_plus" Content="+" Grid.Column="7" Grid.Row="9" Background="{DynamicResource backgroundBouttonOpe}" Foreground="{DynamicResource couleurBouttonOpe}" FontSize="36" FontWeight="ExtraBold" Click="BtnOperateur_Click"/>
 
-        <Button x:Name="Btn_poucentage" Content="%" Grid.Column="1" Grid.Row="11" Background="{DynamicResource backgroundBouttonOpe}" Foreground="{DynamicResource couleurBouttonOpe}" FontSize="36" FontWeight="ExtraBold"/>
+        <Button x:Name="Btn_poucentage" Content="/" Grid.Column="1" Grid.Row="11" Background="{DynamicResource backgroundBouttonOpe}" Foreground="{DynamicResource couleurBouttonOpe}" FontSize="36" FontWeight="ExtraBold" Click="BtnOperateur_Click"/>
         <Button x:Name="Btn_0" Content="0" Grid.Column="3" Grid.Row="11" Background="{DynamicResource BackgroundBoutton}" Foreground="{DynamicResource couleurTextBoutton}" FontSize="36" FontWeight="ExtraBold" Click="BtnNumerique_Click"/>
-        <Button x:Name="Btn_virgule" Content="," Grid.Column="5" Grid.Row="11" Background="{DynamicResource backgroundBouttonOpe}" Foreground="{DynamicResource couleurBouttonOpe}" FontSize="36" FontWeight="ExtraBold"/>
-        <Button x:Name="Btn_egale" Content="=" Grid.Column="7" Grid.Row="11" Background="{DynamicResource backgroundBouttonVert}" Foreground="{DynamicResource couleurBouttonOpe}" FontSize="36" FontWeight="ExtraBold"/>
+        <Button x:Name="Btn_virgule" Content="," Grid.Column="5" Grid.Row="11" Background="{DynamicResource backgroundBouttonOpe}" Foreground="{DynamicResource couleurBouttonOpe}" FontSize="36" FontWeight="ExtraBold" Click="BtnVirgule_Click"/>
+        <Button x:Name="Btn_egale" Content="=" Grid.Column="7" Grid.Row="11" Background="{DynamicResource backgroundBouttonVert}" Foreground="{DynamicResource couleurBouttonOpe}" FontSize="36" FontWeight="ExtraBold" Click="BtnResult_Click"/>
 
     </Grid>
 </Window>

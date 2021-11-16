@@ -1,0 +1,12 @@
+﻿<Application x:Class="operation_de_peche.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:operation_de_peche"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <SolidColorBrush x:Key="disabled" Color="#FFF0F0F0"/>
+        <SolidColorBrush x:Key="TxtRouge" Color="Red"/>
+
+    </Application.Resources>
+</Application>

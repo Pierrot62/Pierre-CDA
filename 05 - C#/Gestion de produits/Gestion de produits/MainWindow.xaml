@@ -1,0 +1,56 @@
+﻿<Window x:Class="Gestion_de_produits.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gestion_de_produits"
+        mc:Ignorable="d"
+        Title="COUCOU" Height="450" Width="800">
+    <Grid Background="#FFE5E6CB">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Ajouter" Grid.Column="1" Grid.Row="0" Background="{DynamicResource DegraBtn}" />
+        <Button Content="Modifier" Grid.Column="3" Grid.Row="0" Background="{DynamicResource DegraBtn}" />
+        <Button Content="Supprimer" Grid.Column="5" Grid.ColumnSpan="3" Grid.Row="0" Background="{DynamicResource DegraBtn}" />
+        <Button Content="Dupliquer" Grid.Column="9" Grid.Row="0" Background="{DynamicResource DegraBtn}" />
+        <Button Content="Vider" Grid.Column="11" Grid.Row="0" Background="{DynamicResource DegraBtn}" />
+        <DataGrid Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="11" BorderBrush="Black" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible">
+            <DataGrid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB0B0B0" Offset="0.168"/>
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="Black"/>
+                </LinearGradientBrush>
+            </DataGrid.Background>
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Header="IdProduit" Width="1*"/>
+                <DataGridCheckBoxColumn Header="LibelleProduit" Width="3*"/>
+                <DataGridCheckBoxColumn Header="Catégories" Width="1*"/>
+                <DataGridCheckBoxColumn Header="Rayons" Width="1*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Liste des categories" Grid.Column="1" Grid.ColumnSpan="5" Grid.Row="4" Background="{DynamicResource DegraBtn}"/>
+        <Button Content="Liste des rayons" Grid.Column="7" Grid.ColumnSpan="5" Grid.Row="4" Background="{DynamicResource DegraBtn}"/>
+    </Grid>
+</Window>

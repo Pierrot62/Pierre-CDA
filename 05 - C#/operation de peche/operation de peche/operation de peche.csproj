@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A91C1679-F060-4375-95FC-D3942711DEA0}</ProjectGuid>
+    <ProjectGuid>{7A2A29F9-87FA-4E0F-B787-28B80D3953F3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WpfTest</RootNamespace>
-    <AssemblyName>WpfTest</AssemblyName>
+    <RootNamespace>operation_de_peche</RootNamespace>
+    <AssemblyName>operation de peche</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -93,11 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Capture.PNG" />
-    <Content Include="ico.jpg" />
-    <Resource Include="istockphoto-178462137-1024x1024.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

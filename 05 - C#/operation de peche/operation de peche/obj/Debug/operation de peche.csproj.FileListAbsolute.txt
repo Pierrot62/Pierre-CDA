@@ -1,0 +1,16 @@
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\bin\Debug\operation de peche.exe.config
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\bin\Debug\operation de peche.exe
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\bin\Debug\operation de peche.pdb
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\obj\Debug\MainWindow.g.cs
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\obj\Debug\App.g.cs
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\obj\Debug\operation de peche_MarkupCompile.cache
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\obj\Debug\operation de peche_MarkupCompile.lref
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\obj\Debug\MainWindow.baml
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\obj\Debug\operation de peche.g.resources
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\obj\Debug\operation_de_peche.Properties.Resources.resources
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\obj\Debug\operation de peche.csproj.GenerateResource.cache
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\obj\Debug\operation de peche.csproj.CoreCompileInputs.cache
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\obj\Debug\operation de peche.exe
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\obj\Debug\operation de peche.pdb
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\obj\Debug\operation de peche.csproj.AssemblyReference.cache
+U:\59011-07-05\CDA\05 - C#\operation de peche\operation de peche\obj\Debug\App.baml
