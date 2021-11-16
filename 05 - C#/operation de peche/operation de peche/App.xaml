@@ -7,6 +7,12 @@
 
         <SolidColorBrush x:Key="disabled" Color="#FFF0F0F0"/>
         <SolidColorBrush x:Key="TxtRouge" Color="Red"/>
+        <SolidColorBrush x:Key="BleuSection" Color="#FF2E5C95"/>
+        <LinearGradientBrush x:Key="linearSection" EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="#FF3C6A95" Offset="1"/>
+            <GradientStop Color="White" Offset="0.996"/>
+            <GradientStop Color="#FFBBCBDA"/>
+        </LinearGradientBrush>
 
     </Application.Resources>
 </Application>

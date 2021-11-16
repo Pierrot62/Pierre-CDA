@@ -6,6 +6,8 @@
         xmlns:local="clr-namespace:operation_de_peche"
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="1000">
+
+    <!--Grid globale-->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -17,8 +19,11 @@
             <ColumnDefinition Width="20*"/>
             <ColumnDefinition Width="0.1*"/>
         </Grid.ColumnDefinitions>
+
+        <!--Premiere ligne-->
         <Grid Grid.Column="1">
-            <!--Premiere ligne-->
+
+            <!--Decoupage de la premiere ligne-->
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="4*"/>
@@ -34,7 +39,11 @@
                 <ColumnDefinition Width="1.2*"/>
                 <ColumnDefinition Width="0.05*"/>
             </Grid.ColumnDefinitions>
+
+            <!--Titre de l'application-->
             <TextBlock Grid.Column="1" Grid.Row="0" TextWrapping="Wrap" Text="Opération de pêche" FontWeight="Bold" VerticalAlignment="Center" />
+
+            <!--Section Navire-->
             <GroupBox Grid.Column="1" Grid.Row="1" Header="Navire">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -51,6 +60,8 @@
                     <TextBox Grid.Column="1" Grid.Row="1"  Text="PHILCATHAN" VerticalAlignment="Center" IsEnabled="False" Background="{DynamicResource disabled}"/>
                 </Grid>
             </GroupBox>
+
+            <!--Section Marée-->
             <GroupBox Grid.Column="3" Grid.Row="1" Header="Marée">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -67,6 +78,8 @@
                     <TextBox Grid.Column="1" Grid.Row="1"  Text="23/01/2013 - UCH - Granville" VerticalAlignment="Center" IsEnabled="False" Background="{DynamicResource disabled}"/>
                 </Grid>
             </GroupBox>
+
+            <!--Section Programme d'observation-->
             <GroupBox Grid.Column="5" Grid.Row="1" Header="Programme d'observation">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -83,6 +96,8 @@
                     <TextBox Grid.Column="1" Grid.Row="1"  Text="OBSMER démarrage" VerticalAlignment="Center" IsEnabled="False" Background="{DynamicResource disabled}"/>
                 </Grid>
             </GroupBox>
+
+            <!--Section Saisisseur-->
             <GroupBox Grid.Column="7" Grid.Row="1" Header="Saisisseur">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -99,16 +114,25 @@
                     <TextBox Grid.Column="1" Grid.Row="1"  Text="25/11/2013 10:16:37" VerticalAlignment="Center" IsEnabled="False" Background="{DynamicResource disabled}"/>
                 </Grid>
             </GroupBox>
+
+            <!--Fin de la Grid de la premiere ligne-->
         </Grid>
+
+        <!--Menu a onglets-->
         <TabControl Grid.Row="2" Grid.Column="1" OpacityMask="Black">
+            <!--Section Operation-->
             <TabItem Header="Opération">
                 <Grid Background="White">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="2*"/>
-                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="0.4*"/>
+                        <RowDefinition Height="0.1*"/>
+                        <RowDefinition Height="0.4*"/>
                         <RowDefinition Height="3*"/>
                         <RowDefinition Height="4*"/>
                     </Grid.RowDefinitions>
+
+                    <!--Haut section opération-->
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="3*"/>
@@ -137,39 +161,249 @@
                                         <ColumnDefinition Width="1*"/>
                                         <ColumnDefinition Width="1*"/>
                                     </Grid.ColumnDefinitions>
-                                    <ComboBox  BorderBrush="White" SelectionChanged="ComboBox_SelectionChanged" IsEditable="True">
+                                    <ComboBox  BorderBrush="White" IsEditable="True">
                                         <ComboBoxItem Content="22/01/2013" IsSelected="True"/>
                                     </ComboBox>
-                                    <ComboBox Grid.Row="1" Grid.Column="1" BorderBrush="White" SelectionChanged="ComboBox_SelectionChanged" IsEditable="True">
+                                    <ComboBox Grid.Row="1" Grid.Column="1" BorderBrush="White" IsEditable="True">
                                         <ComboBoxItem Content="18:30" IsSelected="True"/>
                                     </ComboBox>
                                 </Grid>
                                 <TextBox Text="+49 14.100" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center"/>
                                 <TextBox Text="-1 48.320" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"/>
+                                <Grid Grid.Row="2" Grid.Column="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.5*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="0.5*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="0.5*"/>
+                                        <RowDefinition Height="2*"/>
+                                        <RowDefinition Height="0.5*"/>
+                                    </Grid.RowDefinitions>
+                                    <Button Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="questions.png">
+                                            </ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+                                </Grid>
+                                <Grid Grid.Row="2" Grid.Column="3">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.5*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="0.5*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="0.5*"/>
+                                        <RowDefinition Height="2*"/>
+                                        <RowDefinition Height="0.5*"/>
+                                    </Grid.RowDefinitions>
+                                    <Button Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Fleche.png">
+                                            </ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+                                </Grid>
+                                <Grid Grid.Row="3" Grid.Column="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.5*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="0.5*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="0.5*"/>
+                                        <RowDefinition Height="2*"/>
+                                        <RowDefinition Height="0.5*"/>
+                                    </Grid.RowDefinitions>
+                                    <Button Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="questions.png">
+                                            </ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+                                </Grid>
+                                <Grid Grid.Row="3" Grid.Column="3">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.5*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="0.5*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="0.5*"/>
+                                        <RowDefinition Height="2*"/>
+                                        <RowDefinition Height="0.5*"/>
+                                    </Grid.RowDefinitions>
+                                    <Button Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="Fleche.png">
+                                            </ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+                                </Grid>
+
+                            </Grid>
+                        </GroupBox>
+                        <GroupBox Grid.Column="1" Header="Fin de l'opération (Virage)">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="4*"/>
+                                    <ColumnDefinition Width="0.5*"/>
+                                    <ColumnDefinition Width="0.5*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!--Libellés-->
+                                <TextBlock Text="Durée (h) : " Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                <TextBlock Text="Date et heure : " Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="{DynamicResource TxtRouge}"/>
+                                <TextBlock Text="Latitude : " Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="{DynamicResource TxtRouge}"/>
+                                <TextBlock Text="Longitude : " Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="{DynamicResource TxtRouge}"/>
+
+                                <!--Valeurs-->
+                                <TextBox Text="2:00" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" IsEnabled="False" BorderBrush="{DynamicResource disabled}" TextChanged="TextBox_TextChanged"/>
+                                <Grid Grid.Row="1" Grid.Column="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="1*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox  BorderBrush="White" IsEditable="True">
+                                        <ComboBoxItem Content="22/01/2013" IsSelected="True"/>
+                                    </ComboBox>
+                                    <ComboBox Grid.Row="1" Grid.Column="1" BorderBrush="White"  IsEditable="True">
+                                        <ComboBoxItem Content="20:30" IsSelected="True"/>
+                                    </ComboBox>
+                                </Grid>
+                                <TextBox Text="+49 14.200" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center"/>
+                                <TextBox Text="-1 48.390" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center"/>
+
+                                <!--Bouttons-->
+                                <Grid Grid.Row="2" Grid.Column="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.5*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="0.5*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="0.5*"/>
+                                        <RowDefinition Height="2*"/>
+                                        <RowDefinition Height="0.5*"/>
+                                    </Grid.RowDefinitions>
+                                    <Button Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="questions.png">
+                                            </ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+                                </Grid>
+                                <Grid Grid.Row="3" Grid.Column="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.5*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="0.5*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="0.5*"/>
+                                        <RowDefinition Height="2*"/>
+                                        <RowDefinition Height="0.5*"/>
+                                    </Grid.RowDefinitions>
+                                    <Button Grid.Column="1" Grid.Row="1" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="questions.png">
+                                            </ImageBrush>
+                                        </Button.Background>
+                                    </Button>
+                                </Grid>
+
                             </Grid>
                         </GroupBox>
                     </Grid>
-                    <!--<Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                    </Grid.ColumnDefinitions>-->
+
+                    <!--Libellés "Section"-->
+                    <Label Content="Zones d'activité : 27E8" Grid.Row="1" Foreground="{DynamicResource BleuSection}" FontWeight="Bold" Background="{DynamicResource linearSection}" VerticalContentAlignment="Center"/>
+                    <Label Content="Autres caractéritiques de l'opération" Grid.Row="3" Foreground="{DynamicResource BleuSection}" FontWeight="Bold" Background="{DynamicResource linearSection}" VerticalContentAlignment="Center"/>
+
+
+                    <Grid Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="15*"/>
+                            <ColumnDefinition Width="0.1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.5*"/>
+                            <RowDefinition Height="10*"/>
+                            <RowDefinition Height="0.5*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Column="1" Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="6*"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10*"/>
+                                <RowDefinition Height="4*"/>
+                                <!--<RowDefinition Height="4*"/>-->
+                                <RowDefinition Height="10*"/>
+                                <RowDefinition Height="20*"/>
+                            </Grid.RowDefinitions>
+                            <Button Grid.Column="1" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="plus.png">
+                                    </ImageBrush>
+                                </Button.Background>
+                            </Button>
+                            <Button Grid.Column="1" Grid.Row="2"  BorderBrush="{x:Null}" Foreground="{x:Null}">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="plus.png">
+                                    </ImageBrush>
+                                </Button.Background>
+                            </Button>
+                        </Grid>
+                        <DataGrid Grid.Column="2" Grid.Row="1">
+                            <DataGrid.Columns>
+                                <DataGridCheckBoxColumn Width="1*"/>
+                                <DataGridCheckBoxColumn Header="Caractéristique" Width="8*"/>
+                                <DataGridCheckBoxColumn Header="Valeur" Width="6*"/>
+                                <DataGridCheckBoxColumn Header="Unité" Width="4*"/>
+                                <DataGridCheckBoxColumn Header="Support" Width="5*"/>
+                                <DataGridCheckBoxColumn Header="Fraction" Width="5*"/>
+                                <DataGridCheckBoxColumn Header="Méthode" Width="10*"/>
+                                <DataGridCheckBoxColumn Width="4*"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                    <Expander Grid.Column="2" Grid.Row="6"/>
+
+
                 </Grid>
             </TabItem>
+
+
+
+            <!--Section Engin-->
             <TabItem Header="Engin">
                 <Grid Background="White"/>
             </TabItem>
+            <!--Section Position Geographiques-->
             <TabItem Header="Position géographiques">
                 <Grid Background="White">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="31*"/>
-                        <ColumnDefinition Width="956*"/>
-                    </Grid.ColumnDefinitions>
                 </Grid>
             </TabItem>
+            <!--Section commentaire-->
             <TabItem Header="Commentaire">
                 <Grid Background="White"/>
             </TabItem>
+            <!--Fin menu a onglet-->
         </TabControl>
-
+        <!--Fin grid globale-->
     </Grid>
 </Window>
