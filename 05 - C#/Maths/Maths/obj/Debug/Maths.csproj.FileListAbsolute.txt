@@ -1,0 +1,7 @@
+U:\59011-07-05\CDA\05 - C#\Maths\Maths\bin\Debug\Maths.exe.config
+U:\59011-07-05\CDA\05 - C#\Maths\Maths\bin\Debug\Maths.exe
+U:\59011-07-05\CDA\05 - C#\Maths\Maths\bin\Debug\Maths.pdb
+U:\59011-07-05\CDA\05 - C#\Maths\Maths\obj\Debug\Maths.csproj.AssemblyReference.cache
+U:\59011-07-05\CDA\05 - C#\Maths\Maths\obj\Debug\Maths.csproj.CoreCompileInputs.cache
+U:\59011-07-05\CDA\05 - C#\Maths\Maths\obj\Debug\Maths.exe
+U:\59011-07-05\CDA\05 - C#\Maths\Maths\obj\Debug\Maths.pdb
