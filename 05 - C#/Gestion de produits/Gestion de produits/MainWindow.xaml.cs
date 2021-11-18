@@ -17,10 +17,8 @@ namespace Gestion_de_produits
         public MainWindow()
         {
             InitializeComponent();
-            liste = CreerListe();
-            RemplirGrid();
-            //CreerFichier();
             liste = TransformeJson();
+            RemplirGrid();
 
         }
         public void RemplirGrid()
@@ -28,24 +26,10 @@ namespace Gestion_de_produits
             DgProduits.ItemsSource = liste;
         }
 
-        private List<Produits> CreerListe()
+        private void CreerFichier()
         {
-            List<Produits> liste = new List<Produits>();
-
-            for (int i = 1; i < 15; i++)
-            {
-                Produits p = new Produits(1, "Produit" + i, i * 2, Math.Round(i * 45.8, 2), i * 478);
-                liste.Add(p);
-            }
-
-            liste.Dump();
-            return liste;
+            File.WriteAllText(path, JsonConvert.SerializeObject(liste, Formatting.Indented));
         }
-
-        //private void CreerFichier()
-        //{
-        //    File.WriteAllText(path, JsonConvert.SerializeObject(liste, Formatting.Indented));
-        //}
 
         private string LireFichier()
         // Renvoi un tableau de chaine contenant les informations stockées dans le fichier 
@@ -66,29 +50,39 @@ namespace Gestion_de_produits
             return chaine;
         }
 
-        private List<Produits> TransformeJson()
+        public List<Produits> TransformeJson()
         {
             string chaine = LireFichier();
             List<Produits> liste = JsonConvert.DeserializeObject<List<Produits>>(chaine);
             return liste;
         }
 
-        private void BtnAjouter_Click(object sender, RoutedEventArgs e)
+        private void BtnAction_Click(object sender, RoutedEventArgs e)
         {
             this.Opacity = 0.7;
-            FormAdd add = new FormAdd();
+            FormAdd add = new FormAdd(this, ((Button).sender).Content);
             add.ShowDialog();
             this.Opacity = 1;
         }
 
-        public static void AjouterProduits(string LibelleProduit, int Quantite, double Prix, int NbVente)
+        public void AjouterProduits(string LibelleProduit, int Quantite, double Prix, int NbVente)
         {
-            Produits prod = new Produits(1, LibelleProduit, Quantite,Prix, NbVente);
-            Console.WriteLine(prod.LibelleProduit);
-            //return List<Produits>
+            Produits p = new Produits(1, LibelleProduit, Quantite, Prix, NbVente);
+            liste = TransformeJson();
+            liste.Add(p);
+            CreerFichier();
+            RemplirGrid();
         }
 
+        public static List<Produits> ModifierListe(Produits p, List<Produits> liste)
+        {
+            liste.Add(p);
+            return liste;
+        }
 
+        private void BtnAction_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
     }
 }

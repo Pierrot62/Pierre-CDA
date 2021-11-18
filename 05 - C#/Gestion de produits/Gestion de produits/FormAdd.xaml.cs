@@ -19,9 +19,11 @@ namespace Gestion_de_produits
     /// </summary>
     public partial class FormAdd : Window
     {
-        public FormAdd()
+        public MainWindow Accueil { get; set; }
+        public FormAdd(MainWindow fenetre)
         {
             InitializeComponent();
+            this.Accueil = fenetre;
         }
 
         private void BtnExit_Click(object sender, RoutedEventArgs e)
@@ -29,14 +31,10 @@ namespace Gestion_de_produits
             this.Close();
         }
 
-        private void Btnadd_Click(object sender, RoutedEventArgs e)
+        private void BtnCTION_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow.AjouterProduits(LibelleProduit.Text, int.Parse(Quantite.Text), double.Parse(Prix.Text), int.Parse(NbVente.Text));
+            Accueil.AjouterProduits(LibelleProduit.Text, int.Parse(Quantite.Text), double.Parse(Prix.Text), int.Parse(NbVente.Text));
+            this.Close();
         }
-
-        //private void AjouterValeur()
-        //{
-        //    File.WriteAllText(path, JsonConvert.SerializeObject(liste, Formatting.Indented));
-        //}
     }
 }
