@@ -1,24 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Gestion_de_produits
+﻿namespace Gestion_de_produits
 {
-    class Produits
+    public class Produits
     {
-        public int IdProduit { get;  set; }
-        public string Libelle { get; set; }
-        public string Categorie { get; set; }
-        public string Rayon { get; set; }
+        public int IdProduit { get; set; }
+        public string LibelleProduit { get; set; }
+        public int Quantite { get; set; }
+        public double Prix { get; set; }
+        public int NbVente { get; set; }
 
-        public Produits(int idProduit, string libelle, string categorie, string rayon)
+        public Produits(int idProduit, string libelleProduit, int quantite, double prix, int nbVente)
         {
             IdProduit = idProduit;
-            Libelle = libelle;
-            Categorie = categorie;
-            Rayon = rayon;
+            LibelleProduit = libelleProduit;
+            Quantite = quantite;
+            Prix = prix;
+            NbVente = nbVente;
         }
     }
 }

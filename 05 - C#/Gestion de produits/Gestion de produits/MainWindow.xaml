@@ -30,12 +30,12 @@
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Ajouter" Grid.Column="1" Grid.Row="0" Background="{DynamicResource DegraBtn}" />
+        <Button Content="Ajouter" Grid.Column="1" Grid.Row="0" Background="{DynamicResource DegraBtn}" Click="BtnAjouter_Click" />
         <Button Content="Modifier" Grid.Column="3" Grid.Row="0" Background="{DynamicResource DegraBtn}" />
         <Button Content="Supprimer" Grid.Column="5" Grid.ColumnSpan="3" Grid.Row="0" Background="{DynamicResource DegraBtn}" />
         <Button Content="Dupliquer" Grid.Column="9" Grid.Row="0" Background="{DynamicResource DegraBtn}" />
         <Button Content="Vider" Grid.Column="11" Grid.Row="0" Background="{DynamicResource DegraBtn}" />
-        <DataGrid Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="11" BorderBrush="Black" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible">
+        <DataGrid x:Name="DgProduits" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="11" BorderBrush="Black" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Visible" AutoGenerateColumns="False">
             <DataGrid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFB0B0B0" Offset="0.168"/>
@@ -44,10 +44,11 @@
                 </LinearGradientBrush>
             </DataGrid.Background>
             <DataGrid.Columns>
-                <DataGridCheckBoxColumn Header="IdProduit" Width="1*"/>
-                <DataGridCheckBoxColumn Header="LibelleProduit" Width="3*"/>
-                <DataGridCheckBoxColumn Header="Catégories" Width="1*"/>
-                <DataGridCheckBoxColumn Header="Rayons" Width="1*"/>
+                <DataGridCheckBoxColumn Width="1*"/>
+                <DataGridTextColumn Header="LibelleProduit" Width="5*" Binding="{Binding LibelleProduit}"/>
+                <DataGridTextColumn Header="Quantité disponible" Width="2*" Binding="{Binding NbVente}"/>
+                <DataGridTextColumn Header="Prix" Width="2*" Binding="{Binding Prix}"/>
+                <DataGridTextColumn Header="Nombre de vente" Width="2*" Binding="{Binding NbVente}"/>
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Liste des categories" Grid.Column="1" Grid.ColumnSpan="5" Grid.Row="4" Background="{DynamicResource DegraBtn}"/>
