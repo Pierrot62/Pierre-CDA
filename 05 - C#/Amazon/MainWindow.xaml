@@ -177,8 +177,12 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Description">
-                <Grid Background="#FFE5E5E5">
-                    <Label Content="Description du produit :" HorizontalAlignment="Left" Margin="16,3,0,0" VerticalAlignment="Top"/>
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45*"/>
+                        <ColumnDefinition Width="281*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Description du produit :" HorizontalAlignment="Left" Margin="16,3,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
 
                     <Label Content="Mots clés :" HorizontalAlignment="Left" Margin="14,272,0,0" VerticalAlignment="Top"/>
                     <TextBox HorizontalAlignment="Left" Margin="13,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="489" Text="Gamer , 27 , IPS , Trop cool , Pas chere tqt." VerticalScrollBarVisibility="Visible" TextChanged="TextBox_TextChanged_1" Grid.ColumnSpan="2"/>
@@ -189,8 +193,8 @@
                             </Paragraph>
                         </FlowDocument>
                     </RichTextBox>
-                    <Label Content="Couleur :" HorizontalAlignment="Left" Margin="513,272,0,0" VerticalAlignment="Top"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="512,299,0,0" VerticalAlignment="Top" Width="120">
+                    <Label Content="Couleur :" HorizontalAlignment="Left" Margin="423,272,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="422,299,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1">
                         <ComboBoxItem>Bleu</ComboBoxItem>
                         <ComboBoxItem>Rouge</ComboBoxItem>
                         <ComboBoxItem>Vert</ComboBoxItem>
