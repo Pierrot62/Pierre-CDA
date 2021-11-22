@@ -221,6 +221,5 @@
         <Button Content="Sauvegarder" HorizontalAlignment="Left" Margin="502,17,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click" Grid.Column="1" Grid.Row="2"/>
         <Button Content="Annuler" HorizontalAlignment="Left" Margin="588,17,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click" Grid.Column="1" Grid.Row="2"/>
 
-
     </Grid>
 </Window>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+    <Title>Grid Default</Title>
+    <Description>Grid With Default Rows and Columns</Description>
+    <HelpUrl>
+    </HelpUrl>
+    <Shortcut>gr</Shortcut>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal Editable="true">
+        <ID>TagName</ID>
+        <ToolTip>Tag Name</ToolTip>
+        <Default>TextBlock</Default>
+      </Literal>
+    </Declarations>
+
+    <Code Language="xaml">
+      <![CDATA[
+      <Grid>
+          <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto"/>
+          </Grid.ColumnDefinitions>
+
+          <$TagName$ Grid.Row="0" Grid.Column="0" />
+      </Grid>
+      $selected$$end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>
