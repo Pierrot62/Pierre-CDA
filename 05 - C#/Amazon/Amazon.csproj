@@ -100,5 +100,17 @@
   <ItemGroup>
     <Resource Include="images.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="png-clipart-rubbish-bins-waste-paper-baskets-symbol-computer-icons-sign-recycle-bin-miscellaneous-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="poubelle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Mobius_noir-300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="2094970_73d6b6a5b04411571fe5060530d0df95.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
