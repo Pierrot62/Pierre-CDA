@@ -1,0 +1,14 @@
+C:\Users\59011-07-05\source\repos\Essaie\bin\Debug\Essaie.exe.config
+C:\Users\59011-07-05\source\repos\Essaie\bin\Debug\Essaie.exe
+C:\Users\59011-07-05\source\repos\Essaie\bin\Debug\Essaie.pdb
+C:\Users\59011-07-05\source\repos\Essaie\obj\Debug\MainWindow.g.cs
+C:\Users\59011-07-05\source\repos\Essaie\obj\Debug\App.g.cs
+C:\Users\59011-07-05\source\repos\Essaie\obj\Debug\Essaie_MarkupCompile.cache
+C:\Users\59011-07-05\source\repos\Essaie\obj\Debug\Essaie_MarkupCompile.lref
+C:\Users\59011-07-05\source\repos\Essaie\obj\Debug\MainWindow.baml
+C:\Users\59011-07-05\source\repos\Essaie\obj\Debug\Essaie.g.resources
+C:\Users\59011-07-05\source\repos\Essaie\obj\Debug\Essaie.Properties.Resources.resources
+C:\Users\59011-07-05\source\repos\Essaie\obj\Debug\Essaie.csproj.GenerateResource.cache
+C:\Users\59011-07-05\source\repos\Essaie\obj\Debug\Essaie.csproj.CoreCompileInputs.cache
+C:\Users\59011-07-05\source\repos\Essaie\obj\Debug\Essaie.exe
+C:\Users\59011-07-05\source\repos\Essaie\obj\Debug\Essaie.pdb
