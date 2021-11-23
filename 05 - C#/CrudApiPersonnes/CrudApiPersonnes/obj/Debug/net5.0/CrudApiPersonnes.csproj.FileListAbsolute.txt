@@ -46,3 +46,6 @@ U:\59011-07-05\CDA\05 - C#\CrudApiPersonnes\CrudApiPersonnes\obj\Debug\net5.0\Cr
 U:\59011-07-05\CDA\05 - C#\CrudApiPersonnes\CrudApiPersonnes\obj\Debug\net5.0\ref\CrudApiPersonnes.dll
 U:\59011-07-05\CDA\05 - C#\CrudApiPersonnes\CrudApiPersonnes\obj\Debug\net5.0\CrudApiPersonnes.pdb
 U:\59011-07-05\CDA\05 - C#\CrudApiPersonnes\CrudApiPersonnes\obj\Debug\net5.0\CrudApiPersonnes.genruntimeconfig.cache
+U:\59011-07-05\CDA\05 - C#\CrudApiPersonnes\CrudApiPersonnes\bin\Debug\net5.0\AutoMapper.dll
+U:\59011-07-05\CDA\05 - C#\CrudApiPersonnes\CrudApiPersonnes\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+U:\59011-07-05\CDA\05 - C#\CrudApiPersonnes\CrudApiPersonnes\bin\Debug\net5.0\Newtonsoft.Json.dll
