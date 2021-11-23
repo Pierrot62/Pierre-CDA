@@ -10,6 +10,8 @@ namespace APISurPlusieurTables.Data
     public class MyDbContext:DbContext
     {
         public DbSet<Employer> Employer { get; set; }
+        public DbSet<Voiture> Voiture { get;  set; }
+
         public MyDbContext(DbContextOptions<MyDbContext> options) : base(options)
         {
 

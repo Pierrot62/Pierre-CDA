@@ -1,4 +1,5 @@
-﻿using System;
+﻿using APISurPlusieurTables.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,8 +19,10 @@ namespace APISurPlusieurTables.Data.Services
         {
             if (v == null)
             {
-                throw new ArgumentNullException(ne)
+                throw new ArgumentNullException(nameof(v));
             }
+            _context.Voiture.Add(v);
+            _context.SaveChanges();
         }
     }
 }
