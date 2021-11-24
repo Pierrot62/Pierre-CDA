@@ -13,3 +13,18 @@ U:\59011-07-05\CDA\05 - C#\Amazon\obj\Debug\Amazon.csproj.GenerateResource.cache
 U:\59011-07-05\CDA\05 - C#\Amazon\obj\Debug\Amazon.csproj.CoreCompileInputs.cache
 U:\59011-07-05\CDA\05 - C#\Amazon\obj\Debug\Amazon.exe
 U:\59011-07-05\CDA\05 - C#\Amazon\obj\Debug\Amazon.pdb
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\bin\Debug\Amazon.exe.config
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\bin\Debug\Amazon.exe
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\bin\Debug\Amazon.pdb
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\obj\Debug\Amazon.csproj.AssemblyReference.cache
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\obj\Debug\MainWindow.g.cs
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\obj\Debug\App.g.cs
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\obj\Debug\Amazon_MarkupCompile.cache
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\obj\Debug\Amazon_MarkupCompile.lref
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\obj\Debug\MainWindow.baml
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\obj\Debug\Amazon.g.resources
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\obj\Debug\Amazon.Properties.Resources.resources
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\obj\Debug\Amazon.csproj.GenerateResource.cache
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\obj\Debug\Amazon.csproj.CoreCompileInputs.cache
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\obj\Debug\Amazon.exe
+U:\59011-07-05\CDA\05 - C#\02 - WPF\Amazon\obj\Debug\Amazon.pdb
