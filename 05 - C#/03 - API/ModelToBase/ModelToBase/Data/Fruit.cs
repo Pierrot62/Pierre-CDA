@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace ModelToBase.Data
 {
-    public class Fruit
+    public class Fromage
     {
         [Key]
-        public int idFruit { get; set; }
+        public int idFromage { get; set; }
 
-        public string nomFruit { get; set; }
-        public double prixFruit { get; set; }
-        public double paysFruit { get; set; }
+        public string nomFromage { get; set; }
+        public double prixFromage { get; set; }
     }
 }

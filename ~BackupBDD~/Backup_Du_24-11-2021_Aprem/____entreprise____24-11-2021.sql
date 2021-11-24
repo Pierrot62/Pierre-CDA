@@ -35,8 +35,10 @@ CREATE TABLE `employer` (
   `nomEmployer` varchar(255) NOT NULL,
   `prenomEmployer` varchar(255) NOT NULL,
   `ageEmployer` int(11) NOT NULL,
-  PRIMARY KEY (`idEmployer`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+  `idVoiture` int(11) DEFAULT NULL,
+  PRIMARY KEY (`idEmployer`),
+  KEY `FK_Employer_Voiture` (`idVoiture`)
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -45,7 +47,7 @@ CREATE TABLE `employer` (
 
 LOCK TABLES `employer` WRITE;
 /*!40000 ALTER TABLE `employer` DISABLE KEYS */;
-INSERT INTO `employer` VALUES (1,'COURQUIN','Pierre',21),(2,'BALAIR','Quentin',22),(3,'POIX','Martine',49),(4,'MAYEUX','Bruno',47);
+INSERT INTO `employer` VALUES (1,'COURQUIN','Pierre',21,NULL),(2,'BALAIR','Quentin',22,NULL),(3,'POIX','Martine',49,NULL),(4,'MAYEUX','Bruno',47,NULL),(5,'JeSaisPas','Nacer',23,NULL),(7,'JeSaisPas','Nacer',23,NULL),(8,'JeSaisPas','Nacer',23,NULL),(9,'JeSaisPas','Nacer',23,NULL),(10,'JeSaisPas','Nacer',23,NULL),(11,'JeSaisPas','Nacer',23,NULL),(12,'JeSaisPas','Nacer',23,NULL),(13,'JeSaisPas','Nacer',23,NULL),(14,'JeSaisPas','Nacer',23,NULL),(15,'JeSaisPas','Nacer',23,NULL),(16,'JeSaisPas','Nacer',23,NULL),(17,'JeSaisPas','Nacer',23,NULL),(18,'JeSaisPas','Nacer',23,NULL),(19,'JeSaisPas','Nacer',23,NULL),(20,'JeSaisPas','Nacer',23,NULL);
 /*!40000 ALTER TABLE `employer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -84,4 +86,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-24 12:22:45
+-- Dump completed on 2021-11-24 17:22:03

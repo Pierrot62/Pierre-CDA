@@ -32,7 +32,7 @@ namespace APISurPlusieurTables.Data.Services
             {
                 throw new ArgumentNullException(nameof(e));
             }
-            _context.Employer.Add(e);
+            _context.Employer.Remove(e);
             _context.SaveChanges();
         }
 

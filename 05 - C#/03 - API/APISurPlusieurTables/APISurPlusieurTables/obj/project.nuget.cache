@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gOzEG7oGGgXbeY+yxTtm5jtq9fkfvie+pD67HGkDXaIYBa+OGxMIeJz/zgV1fxB6wJVGDTT7/e8n45oioOe/og==",
+  "dgSpecHash": "v/Jn5bROPmwUpXCGLPZbi/cvLfLJGOlrjZHyUKdnrw++bKp45GnujEZzio1ImCnfJRpyhumGvpviAtlFFes4Bg==",
   "success": true,
-  "projectFilePath": "U:\\59011-07-05\\CDA\\05 - C#\\APISurPlusieurTables\\APISurPlusieurTables\\APISurPlusieurTables.csproj",
+  "projectFilePath": "U:\\59011-07-05\\CDA\\05 - C#\\03 - API\\APISurPlusieurTables\\APISurPlusieurTables\\APISurPlusieurTables.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\59011-07-05\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\59011-07-05\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
