@@ -15,11 +15,13 @@ namespace APISurPlusieurTables.Controllers
     public class EmployerController : ControllerBase
     {
         private readonly EmployerServices _service;
+        private readonly VoitureServices _serviceV;
         private readonly IMapper _mapper;
 
-        public EmployerController(EmployerServices service, IMapper mapper)
+        public EmployerController(EmployerServices service, VoitureServices serviceV ,IMapper mapper)
         {
             _service = service;
+            _serviceV = serviceV;
             _mapper = mapper;
         }
 
@@ -70,11 +72,13 @@ namespace APISurPlusieurTables.Controllers
         public ActionResult DeleteEmployer(int id)
         {
             var employerModelFromRepo = _service.GetEmployerById(id);
-            if (employerModelFromRepo == null)
+            var voitureModelFromRepo = _serviceV.GetVoitureById(employerModelFromRepo.IdVoiture);
+
+            if (employerModelFromRepo == null || voitureModelFromRepo == null)
             {
                 return NotFound();
             }
-            _service.DeleteEmployer(employerModelFromRepo);
+            _service.DeleteEmployer(employerModelFromRepo, voitureModelFromRepo);
             return NoContent();
         }
     }

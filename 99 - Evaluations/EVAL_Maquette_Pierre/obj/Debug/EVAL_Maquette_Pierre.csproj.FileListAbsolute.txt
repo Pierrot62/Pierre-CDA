@@ -1,0 +1,15 @@
+U:\59011-07-05\EVAL_Maquette_Pierre\bin\Debug\EVAL_Maquette_Pierre.exe.config
+U:\59011-07-05\EVAL_Maquette_Pierre\bin\Debug\EVAL_Maquette_Pierre.exe
+U:\59011-07-05\EVAL_Maquette_Pierre\bin\Debug\EVAL_Maquette_Pierre.pdb
+U:\59011-07-05\EVAL_Maquette_Pierre\obj\Debug\EVAL_Maquette_Pierre.csproj.AssemblyReference.cache
+U:\59011-07-05\EVAL_Maquette_Pierre\obj\Debug\MainWindow.g.cs
+U:\59011-07-05\EVAL_Maquette_Pierre\obj\Debug\App.g.cs
+U:\59011-07-05\EVAL_Maquette_Pierre\obj\Debug\EVAL_Maquette_Pierre_MarkupCompile.cache
+U:\59011-07-05\EVAL_Maquette_Pierre\obj\Debug\EVAL_Maquette_Pierre_MarkupCompile.lref
+U:\59011-07-05\EVAL_Maquette_Pierre\obj\Debug\MainWindow.baml
+U:\59011-07-05\EVAL_Maquette_Pierre\obj\Debug\EVAL_Maquette_Pierre.g.resources
+U:\59011-07-05\EVAL_Maquette_Pierre\obj\Debug\EVAL_Maquette_Pierre.Properties.Resources.resources
+U:\59011-07-05\EVAL_Maquette_Pierre\obj\Debug\EVAL_Maquette_Pierre.csproj.GenerateResource.cache
+U:\59011-07-05\EVAL_Maquette_Pierre\obj\Debug\EVAL_Maquette_Pierre.csproj.CoreCompileInputs.cache
+U:\59011-07-05\EVAL_Maquette_Pierre\obj\Debug\EVAL_Maquette_Pierre.exe
+U:\59011-07-05\EVAL_Maquette_Pierre\obj\Debug\EVAL_Maquette_Pierre.pdb

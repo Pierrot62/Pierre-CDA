@@ -41,6 +41,17 @@ namespace APISurPlusieurTables.Controllers
             return NotFound();
         }
 
+        //[HttpGet("id", Name = "GetEmployeByIdVoiture")]
+        //public ActionResult<VoitureDTO> GetVoitureById(int id)
+        //{
+        //    var commandItem = _service.GetVoitureById(id);
+        //    if (commandItem != null)
+        //    {
+        //        return Ok(_mapper.Map<VoitureDTO>(commandItem));
+        //    }
+        //    return NotFound();
+        //}
+
         [HttpPost]
         public ActionResult<VoitureDTO> CreateVoiture(Voiture voiture)
         {

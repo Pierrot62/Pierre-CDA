@@ -48,6 +48,11 @@ namespace APISurPlusieurTables.Data.Services
             return _context.Voiture.FirstOrDefault(v => v.IdVoiture == id);
         }
 
+        //public Voiture GetEmployeByVoiture(int id)
+        //{
+        //    return _context.Employer.FirstOrDefault(e => e.IdVoiture == id);
+        //}
+
         //Update
         public void UpdateVoiture(Voiture e)
         {

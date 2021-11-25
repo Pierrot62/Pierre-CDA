@@ -26,26 +26,49 @@ namespace APISurPlusieurTables.Data.Services
         }
 
         //Delete
-        public void DeleteEmployer(Employer e)
+        public void DeleteEmployer(Employer e, Voiture v)
         {
             if (e == null)
             {
                 throw new ArgumentNullException(nameof(e));
             }
             _context.Employer.Remove(e);
+            _context.Voiture.Remove(v);
             _context.SaveChanges();
         }
 
         //FindAll
         public IEnumerable<Employer> GetAllEmployers()
         {
-            return _context.Employer.ToList();
+            var liste = (from e1 in _context.Employer
+                        join e2 in _context.Voiture
+                        on e1.IdVoiture equals e2.IdVoiture
+                        select new Employer
+                        {
+                            IdEmployer = e1.IdEmployer,
+                            NomEmployer = e1.NomEmployer,
+                            PrenomEmployer = e1.PrenomEmployer,
+                            IdVoiture = e2.IdVoiture,
+                            Tuture = e2
+                        }).ToList();
+            return liste;
         }
 
         //FindById
         public Employer GetEmployerById(int id)
         {
-            return _context.Employer.FirstOrDefault(e => e.IdEmployer == id);
+            var liste = (from e1 in _context.Employer
+                         join e2 in _context.Voiture
+                         on e1.IdVoiture equals e2.IdVoiture
+                         select new Employer
+                         {
+                             IdEmployer = e1.IdEmployer,
+                             NomEmployer = e1.NomEmployer,
+                             PrenomEmployer = e1.PrenomEmployer,
+                             IdVoiture = e2.IdVoiture,
+                             Tuture = e2
+                         }).FirstOrDefault(e => e.IdEmployer == id);
+            return liste;
         }
 
         //Update
