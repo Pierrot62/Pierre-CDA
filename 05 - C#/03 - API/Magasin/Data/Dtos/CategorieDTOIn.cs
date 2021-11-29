@@ -7,5 +7,6 @@ namespace Magasin.Data.Dtos
 {
     public class CategorieDTOIn
     {
+        public string LibelleCategorie { get; set; }
     }
 }

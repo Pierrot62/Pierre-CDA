@@ -14,6 +14,8 @@ namespace Magasin.Data.Profiles
         {
             CreateMap<ProduitDTO, Produit>();
             CreateMap<Produit, ProduitDTO>();
+            CreateMap<ProduitDTOIn, Produit>();
+            CreateMap<Produit, ProduitDTOIn>();
         }
     }
 }

@@ -14,12 +14,15 @@ U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\Magasin.runtimeconf
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\Magasin.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\ref\Magasin.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\Magasin.pdb
+U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\AutoMapper.dll
+U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\BouncyCastle.Crypto.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\Google.Protobuf.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\Humanizer.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\K4os.Compression.LZ4.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\K4os.Hash.xxHash.dll
+U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
@@ -47,4 +50,3 @@ U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\obj\Debug\net5.0\Magasin.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\obj\Debug\net5.0\ref\Magasin.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\obj\Debug\net5.0\Magasin.pdb
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\obj\Debug\net5.0\Magasin.genruntimeconfig.cache
-U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\AutoMapper.dll

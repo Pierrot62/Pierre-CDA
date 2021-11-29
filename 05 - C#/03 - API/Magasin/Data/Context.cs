@@ -9,8 +9,8 @@ namespace Magasin.Data
 {
     public class Context:DbContext
     {
-        public DbSet<Produit> Produit { get; set; }
-        public DbSet<Categorie> Categorie { get; set; }
+        public DbSet<Produit> Produits { get; set; }
+        public DbSet<Categorie> Categories { get; set; }
 
         public Context(DbContextOptions<Context> options) : base(options)
         {
@@ -19,17 +19,10 @@ namespace Magasin.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Categorie>(e2 =>
-            {
-                e2.ToTable("categories");
-                e2.Property(e => e.IdCategorie).HasColumnName("idCategorie");
-            });
-            modelBuilder.Entity<Produit>(e1 =>
-            {
-                e1.ToTable("produits");
-                e1.Property(e => e.IdCategorie).HasColumnName("idCategorie");
-                e1.HasOne(e => e.CatProduit).WithOne().HasForeignKey<Categorie>(e => e.IdCategorie);
-            });
+            modelBuilder.Entity<Produit>()
+            .HasOne<Categorie>(p => p.CatProduit)
+            .WithMany(c => c.ListProd)
+            .HasForeignKey(p => p.IdCategorie);
         }
     }
 }

@@ -1,19 +1,15 @@
 using Magasin.Data;
 using Magasin.Data.Models;
+using Magasin.Data.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace Magasin
 {
@@ -31,9 +27,10 @@ namespace Magasin
         {
             services.AddDbContext<Context>(options => options.UseMySQL(Configuration.GetConnectionString("Def")));
             services.AddControllers();
-            services.AddTransient<Produit>();
-            services.AddTransient<Categorie>();
+            services.AddTransient<ProduitServices>();
+            services.AddTransient<CategorieServices>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Magasin", Version = "v1" });

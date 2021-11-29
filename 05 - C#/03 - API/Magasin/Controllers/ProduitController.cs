@@ -53,7 +53,7 @@ namespace Magasin.Controllers
         //prod = Nouvelle valeur a set au produit dont l'Id et passer en parametre
         public ActionResult UpdateProduit(int idProduit, Produit prod)
         {
-            var ProduitAModif = _service.GetProduitById(idProd);
+            var ProduitAModif = _service.GetProduitById(idProduit);
             if (ProduitAModif == null)
             {
                 return NotFound();
