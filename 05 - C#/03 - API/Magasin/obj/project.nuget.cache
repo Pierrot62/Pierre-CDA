@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PIHJiGVC3lDLrJOdvfyVsl+jih7SP7+IRiSBRuzZ2B8VFNdntuqVvBtCNJFMCw2Fpq9ACinkR9ehJLH7rVC7lA==",
+  "dgSpecHash": "YBzEohz55Jw3UszeD6ZrakIS4itaW94ykhfI/OjvoCBrx1Z6zl5TXcciuAxld7aqCrsY5SeucHtHAFOQlGX/lg==",
   "success": true,
   "projectFilePath": "U:\\59011-07-05\\CDA\\05 - C#\\03 - API\\Magasin\\Magasin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\59011-07-05\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\59011-07-05\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\59011-07-05\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\59011-07-05\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
     "C:\\Users\\59011-07-05\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
