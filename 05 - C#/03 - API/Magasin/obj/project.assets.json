@@ -2187,7 +2187,10 @@
     "net5.0": [
       "AutoMapper >= 10.1.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.1",
+<<<<<<< HEAD
       "Microsoft.AspNetCore.JsonPatch >= 6.0.0",
+=======
+>>>>>>> f650741cef75b3a7f2e4e30f943c8d2d8d7f3d02
       "Microsoft.EntityFrameworkCore >= 5.0.12",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.12",
       "Microsoft.Extensions.Configuration.Json >= 5.0.0",
@@ -2248,10 +2251,13 @@
             "target": "Package",
             "version": "[8.1.1, )"
           },
+<<<<<<< HEAD
           "Microsoft.AspNetCore.JsonPatch": {
             "target": "Package",
             "version": "[6.0.0, )"
           },
+=======
+>>>>>>> f650741cef75b3a7f2e4e30f943c8d2d8d7f3d02
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.12, )"

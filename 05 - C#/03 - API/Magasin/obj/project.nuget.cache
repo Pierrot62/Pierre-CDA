@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "qujN5PzL/tXaVMyUyR36c/lLmta3NWN5NqjPVFAdn/dLOdBYxHsqzw30NenOg/jqUmj4szZourC+oZC1kh1dAA==",
+=======
+  "dgSpecHash": "YBzEohz55Jw3UszeD6ZrakIS4itaW94ykhfI/OjvoCBrx1Z6zl5TXcciuAxld7aqCrsY5SeucHtHAFOQlGX/lg==",
+>>>>>>> f650741cef75b3a7f2e4e30f943c8d2d8d7f3d02
   "success": true,
   "projectFilePath": "U:\\59011-07-05\\CDA\\05 - C#\\03 - API\\Magasin\\Magasin.csproj",
   "expectedPackageFiles": [

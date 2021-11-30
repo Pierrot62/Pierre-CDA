@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using AutoMapper;
 using Magasin.Data.Dtos;
 using Magasin.Data.Models;
@@ -112,3 +113,6 @@ namespace Magasin.Controllers
 
     }
 }
+=======
+﻿
+>>>>>>> f650741cef75b3a7f2e4e30f943c8d2d8d7f3d02
