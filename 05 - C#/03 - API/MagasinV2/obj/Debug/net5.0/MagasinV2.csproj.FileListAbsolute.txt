@@ -1,0 +1,7 @@
+U:\59011-07-05\CDA\05 - C#\03 - API\MagasinV2\obj\Debug\net5.0\MagasinV2.csproj.AssemblyReference.cache
+U:\59011-07-05\CDA\05 - C#\03 - API\MagasinV2\obj\Debug\net5.0\MagasinV2.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-05\CDA\05 - C#\03 - API\MagasinV2\obj\Debug\net5.0\MagasinV2.AssemblyInfoInputs.cache
+U:\59011-07-05\CDA\05 - C#\03 - API\MagasinV2\obj\Debug\net5.0\MagasinV2.AssemblyInfo.cs
+U:\59011-07-05\CDA\05 - C#\03 - API\MagasinV2\obj\Debug\net5.0\MagasinV2.csproj.CoreCompileInputs.cache
+U:\59011-07-05\CDA\05 - C#\03 - API\MagasinV2\obj\Debug\net5.0\MagasinV2.MvcApplicationPartsAssemblyInfo.cs
+U:\59011-07-05\CDA\05 - C#\03 - API\MagasinV2\obj\Debug\net5.0\MagasinV2.MvcApplicationPartsAssemblyInfo.cache

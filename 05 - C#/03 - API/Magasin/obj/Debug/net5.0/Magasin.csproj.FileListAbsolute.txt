@@ -5,6 +5,7 @@ U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\obj\Debug\net5.0\Magasin.AssemblyInf
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\obj\Debug\net5.0\Magasin.csproj.CoreCompileInputs.cache
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\obj\Debug\net5.0\Magasin.MvcApplicationPartsAssemblyInfo.cs
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\obj\Debug\net5.0\Magasin.MvcApplicationPartsAssemblyInfo.cache
+<<<<<<< HEAD
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\appsettings.Development.json
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\appsettings.json
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\bin\Debug\net5.0\Magasin.exe
@@ -50,3 +51,5 @@ U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\obj\Debug\net5.0\Magasin.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\obj\Debug\net5.0\ref\Magasin.dll
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\obj\Debug\net5.0\Magasin.pdb
 U:\59011-07-05\CDA\05 - C#\03 - API\Magasin\obj\Debug\net5.0\Magasin.genruntimeconfig.cache
+=======
+>>>>>>> f650741cef75b3a7f2e4e30f943c8d2d8d7f3d02

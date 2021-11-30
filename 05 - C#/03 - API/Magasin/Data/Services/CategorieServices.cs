@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using Magasin.Data.Dtos;
 using Magasin.Data.Models;
+=======
+﻿using Magasin.Data.Models;
+>>>>>>> f650741cef75b3a7f2e4e30f943c8d2d8d7f3d02
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace Magasin.Data.Services
 {
+<<<<<<< HEAD
     public class CategorieServices
     {
 
@@ -57,5 +62,10 @@ namespace Magasin.Data.Services
         }
 
 
+=======
+    public class ProduitServices
+    {
+
+>>>>>>> f650741cef75b3a7f2e4e30f943c8d2d8d7f3d02
     }
 }
