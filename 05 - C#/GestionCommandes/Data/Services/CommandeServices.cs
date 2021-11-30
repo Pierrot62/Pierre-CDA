@@ -1,4 +1,6 @@
-﻿using GestionCommandes.Data.Models;
+﻿using GestionCommande.Data.Models;
+using GestionCommandes.Data.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,7 +40,7 @@ namespace GestionCommandes.Data.Profiles
 
         public IEnumerable<Commande> GetAllCommande()
         {
-            return _context.Commandes.ToList();
+            return _context.Commandes.Include("Preparations.Produit").ToList();
         }
 
         public Commande GetCommandeById(int id)

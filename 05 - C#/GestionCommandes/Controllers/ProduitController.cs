@@ -27,20 +27,20 @@ namespace GestionCommandes.Controllers
 
         //GET api/Produit
         [HttpGet]
-        public ActionResult<IEnumerable<Produit>> GetAllProduit()
+        public ActionResult<IEnumerable<ProduitPreparationDTO>> GetAllProduit()
         {
             IEnumerable<Produit> listeProduit = _service.GetAllProduit();
-            return Ok(_mapper.Map<IEnumerable<Produit>>(listeProduit));
+            return Ok(_mapper.Map<IEnumerable<ProduitPreparationDTO>>(listeProduit));
         }
 
         //GET api/Produit/{i}
         [HttpGet("{id}", Name = "GetProduitById")]
-        public ActionResult<ProduitDTO> GetNomModelById(int id)
+        public ActionResult<ProduitPreparationDTO> GetNomModelById(int id)
         {
             Produit commandItem = _service.GetProduitById(id);
             if (commandItem != null)
             {
-                return Ok(_mapper.Map<ProduitDTO>(commandItem));
+                return Ok(_mapper.Map<ProduitPreparationDTO>(commandItem));
             }
             return NotFound();
         }

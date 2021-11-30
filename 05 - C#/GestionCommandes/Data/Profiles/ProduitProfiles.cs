@@ -16,6 +16,8 @@ namespace GestionCommandes.Data.Profiles
             CreateMap<Produit, ProduitDTO>();
             CreateMap<ProduitDTOIn, Produit>();
             CreateMap<Produit, ProduitDTOIn>();
+            CreateMap<ProduitPreparationDTO, Produit>();
+            CreateMap<Produit, ProduitPreparationDTO>();
         }
     }
 }

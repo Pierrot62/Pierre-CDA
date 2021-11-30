@@ -1,4 +1,5 @@
-﻿using GestionCommandes.Data.Models;
+﻿using GestionCommande.Data.Models;
+using GestionCommandes.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -39,7 +40,7 @@ namespace GestionCommandes.Data.Services
 
         public IEnumerable<Preparation> GetAllPreparation()
         {
-            return _context.Preparations.Include("Produits").ToList();
+            return _context.Preparations.Include("Produit").Include("Commande").ToList();
         }
 
         public Preparation GetPreparationById(int id)

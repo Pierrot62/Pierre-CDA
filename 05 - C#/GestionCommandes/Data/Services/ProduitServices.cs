@@ -1,5 +1,7 @@
-﻿using GestionCommandes.Data.Dtos;
+﻿using GestionCommande.Data.Models;
+using GestionCommandes.Data.Dtos;
 using GestionCommandes.Data.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,12 +40,12 @@ namespace GestionCommandes.Data.Profiles
 
         public IEnumerable<Produit> GetAllProduit()
         {
-            return _context.Produits.ToList();
+            return _context.Produits.Include("Preparations.Commande").ToList();
         }
 
         public Produit GetProduitById(int id)
         {
-            return _context.Produits.FirstOrDefault(obj => obj.IdProduit == id);
+            return _context.Produits.Include("Preparations.Commande").FirstOrDefault(obj => obj.IdProduit == id);
         }
 
         public void UpdateProduit(Produit obj)

@@ -20,4 +20,12 @@ namespace GestionCommandes.Data.Dtos
         public decimal PrixProduit { get; set; }
         public int QuantiteProduit { get; set; }
     }
+
+    public class ProduitPreparationDTO
+    {
+        public string LibelleProduit { get; set; }
+        public decimal PrixProduit { get; set; }
+        public int QuantiteProduit { get; set; }
+        public ICollection<PreparationCommandeDTO> Preparations { get; set; }
+    }
 }

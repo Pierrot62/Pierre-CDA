@@ -16,6 +16,11 @@ namespace GestionCommandes.Data.Profiles
             CreateMap<Preparation, PreparationDTO>();
             CreateMap<PreparationDTOIn, Preparation>();
             CreateMap<Preparation, PreparationDTOIn>();
+            CreateMap<PreparationProduitDTO, Preparation>();
+            CreateMap<Preparation, PreparationProduitDTO>(); 
+            CreateMap<PreparationCommandeDTO, Preparation>();
+            CreateMap<Preparation, PreparationCommandeDTO>();
+
         }
     }
 }

@@ -17,4 +17,11 @@ namespace GestionCommandes.Data.Dtos
         public DateTime DateCommande { get; set; }
         public int NumeroCommande { get; set; }
     }
+    
+    public class CommandeDTOavecProduits
+    {
+        public DateTime DateCommande { get; set; }
+        public int NumeroCommande { get; set; }
+        public ICollection<PreparationProduitDTO> Preparations { get; set; }
+    }
 }

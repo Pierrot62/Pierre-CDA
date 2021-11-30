@@ -13,8 +13,9 @@ namespace GestionCommandes.Data.Dtos
         public DateTime DatePreparation { get; set; }
 
         public CommandeDTOIn Commande { get; set; }
-        public ICollection<ProduitDTOIn> Produit { get; set; }
+        public ProduitDTOIn Produit { get; set; }
     }
+
     public class PreparationDTOIn
     {
         public int IdProduit { get; set; }
@@ -22,4 +23,18 @@ namespace GestionCommandes.Data.Dtos
         public DateTime DatePreparation { get; set; }
 
     }
+
+    public class PreparationProduitDTO
+    {
+        public ProduitDTOIn Produit { get; set; }
+
+    }
+
+    public class PreparationCommandeDTO
+    {
+        public CommandeDTOIn Commande { get; set; }
+
+    }
 }
+
+

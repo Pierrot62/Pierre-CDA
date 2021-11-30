@@ -1,3 +1,4 @@
+using GestionCommande.Data.Models;
 using GestionCommandes.Data;
 using GestionCommandes.Data.Models;
 using GestionCommandes.Data.Profiles;

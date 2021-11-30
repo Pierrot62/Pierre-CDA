@@ -26,10 +26,17 @@ namespace GestionAeroport.Controllers
 
         //GET api/Avion
         [HttpGet]
+<<<<<<< HEAD
         public ActionResult<IEnumerable<AvionDTOOut>> GetAllAvion()
         {
             IEnumerable<Avion> listeAvion = _service.GetAllAvion();
             return Ok(_mapper.Map<IEnumerable<AvionDTOOut>>(listeAvion));
+=======
+        public ActionResult<IEnumerable<AvionDTOIn>> GetAllAvion()
+        {
+            IEnumerable<Avion> listeAvion = _service.GetAllAvion();
+            return Ok(_mapper.Map<IEnumerable<AvionDTOIn>>(listeAvion));
+>>>>>>> bb17a25a531907b5f49e42bdfa7674ab59eec1eb
         }
 
         //GET api/Avion/{i}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "U:\\59011-07-05\\CDA\\05 - C#\\GestionCommandes\\GestionCommandes.csproj": {}
+    "U:\\59011-07-05\\CDA\\Pierre-CDA\\05 - C#\\GestionCommandes\\GestionCommandes.csproj": {}
   },
   "projects": {
-    "U:\\59011-07-05\\CDA\\05 - C#\\GestionCommandes\\GestionCommandes.csproj": {
+    "U:\\59011-07-05\\CDA\\Pierre-CDA\\05 - C#\\GestionCommandes\\GestionCommandes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "U:\\59011-07-05\\CDA\\05 - C#\\GestionCommandes\\GestionCommandes.csproj",
+        "projectUniqueName": "U:\\59011-07-05\\CDA\\Pierre-CDA\\05 - C#\\GestionCommandes\\GestionCommandes.csproj",
         "projectName": "GestionCommandes",
-        "projectPath": "U:\\59011-07-05\\CDA\\05 - C#\\GestionCommandes\\GestionCommandes.csproj",
+        "projectPath": "U:\\59011-07-05\\CDA\\Pierre-CDA\\05 - C#\\GestionCommandes\\GestionCommandes.csproj",
         "packagesPath": "C:\\Users\\59011-07-05\\.nuget\\packages\\",
-        "outputPath": "U:\\59011-07-05\\CDA\\05 - C#\\GestionCommandes\\obj\\",
+        "outputPath": "U:\\59011-07-05\\CDA\\Pierre-CDA\\05 - C#\\GestionCommandes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

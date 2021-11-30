@@ -27,20 +27,20 @@ namespace GestionCommandes.Controllers
 
         //GET api/Commande
         [HttpGet]
-        public ActionResult<IEnumerable<CommandeDTO>> GetAllCommande()
+        public ActionResult<IEnumerable<CommandeDTOavecProduits>> GetAllCommande()
         {
             IEnumerable<Commande> listeCommande = _service.GetAllCommande();
-            return Ok(_mapper.Map<IEnumerable<CommandeDTO>>(listeCommande));
+            return Ok(_mapper.Map<IEnumerable<CommandeDTOavecProduits>>(listeCommande));
         }
 
         //GET api/Commande/{i}
         [HttpGet("{id}", Name = "GetCommandeById")]
-        public ActionResult<CommandeDTO> GetCommandeById(int id)
+        public ActionResult<CommandeDTOavecProduits> GetCommandeById(int id)
         {
             Commande commandItem = _service.GetCommandeById(id);
             if (commandItem != null)
             {
-                return Ok(_mapper.Map<CommandeDTO>(commandItem));
+                return Ok(_mapper.Map<CommandeDTOavecProduits>(commandItem));
             }
             return NotFound();
         }

@@ -1,10 +1,11 @@
 ﻿using System;
+using GestionCommandes.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace GestionCommandes.Data.Models
+namespace GestionCommande.Data.Models
 {
     public partial class GestionCommandeContext : DbContext
     {
@@ -25,7 +26,7 @@ namespace GestionCommandes.Data.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseMySQL("Name=ConnectionDBB");
+                optionsBuilder.UseMySQL("Name=connect");
             }
         }
 
@@ -64,13 +65,13 @@ namespace GestionCommandes.Data.Models
 
                 entity.Property(e => e.IdProduit).HasColumnType("int(11)");
 
-                entity.HasOne(d => d.IdCommandeNavigation)
+                entity.HasOne(d => d.Commande)
                     .WithMany(p => p.Preparations)
                     .HasForeignKey(d => d.IdCommande)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Commandes_Preparatation");
 
-                entity.HasOne(d => d.IdProduitNavigation)
+                entity.HasOne(d => d.Produit)
                     .WithMany(p => p.Preparations)
                     .HasForeignKey(d => d.IdProduit)
                     .OnDelete(DeleteBehavior.ClientSetNull)
