@@ -13,5 +13,6 @@ namespace CrudApiPersonnes.Data.Models
         public MyDbContext(DbContextOptions<MyDbContext> options) : base(options) 
         {
         }
+
     }
 }

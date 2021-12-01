@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A5HESRHWahh5xtHz7CQruFbcTiFtqfgub7DG5GHNDOHwViJ1qovMq5rGfJyfJPJDOOkFdflkhHfg6XiKyRfJxA==",
+  "dgSpecHash": "c0IKFJCC8k3CEPVS5ukgKBt9BhQM5lTd/c2Cjgg+Aj0QJV7j8q0czBMWQTf7kcGYe47sXwL0zGnGIG4CUS5E8Q==",
   "success": true,
-  "projectFilePath": "U:\\59011-07-05\\CDA\\05 - C#\\CrudApiPersonnes\\CrudApiPersonnes\\CrudApiPersonnes.csproj",
+  "projectFilePath": "U:\\59011-07-05\\CDA\\Pierre-CDA\\05 - C#\\03 - API\\CrudApiPersonnes\\CrudApiPersonnes\\CrudApiPersonnes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\59011-07-05\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\59011-07-05\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

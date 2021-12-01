@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = CrudApiPersonnes
-build_property.ProjectDir = U:\59011-07-05\CDA\05 - C#\CrudApiPersonnes\CrudApiPersonnes\
+build_property.ProjectDir = U:\59011-07-05\CDA\Pierre-CDA\05 - C#\03 - API\CrudApiPersonnes\CrudApiPersonnes\

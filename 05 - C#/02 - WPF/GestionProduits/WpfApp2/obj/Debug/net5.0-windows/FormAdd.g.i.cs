@@ -101,7 +101,7 @@ namespace GestionProduits {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GestionProduits;V1.0.0.0;component/formadd.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GestionProduits;component/formadd.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\FormAdd.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

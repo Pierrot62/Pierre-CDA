@@ -15,5 +15,13 @@ namespace CrudApiPersonnes.Models.DbModels
         public string Prenom { get; set; }
         public int Age { get; set; }
 
+        public Personne(int Id, string Prenom, string Nom, int Age)
+        {
+
+        }
+
     }
+
+
+
 }

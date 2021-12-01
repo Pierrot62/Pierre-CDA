@@ -87,3 +87,30 @@ U:\59011-07-05\CDA\05 - C#\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\Gest
 U:\59011-07-05\CDA\05 - C#\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\GestionProduits.dll
 U:\59011-07-05\CDA\05 - C#\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\ref\GestionProduits.dll
 U:\59011-07-05\CDA\05 - C#\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\GestionProduits.pdb
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\bin\Debug\net5.0-windows\GestionProduits.exe
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\bin\Debug\net5.0-windows\GestionProduits.deps.json
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\bin\Debug\net5.0-windows\GestionProduits.runtimeconfig.json
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\bin\Debug\net5.0-windows\GestionProduits.runtimeconfig.dev.json
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\bin\Debug\net5.0-windows\GestionProduits.dll
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\bin\Debug\net5.0-windows\ref\GestionProduits.dll
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\bin\Debug\net5.0-windows\GestionProduits.pdb
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\GestionProduits.csproj.AssemblyReference.cache
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\FormAdd.g.cs
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\MainWindow.g.cs
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\App.g.cs
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\GestionProduits_MarkupCompile.cache
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\GestionProduits_MarkupCompile.lref
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\App.baml
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\FormAdd.baml
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\MainWindow.baml
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\GestionProduits.g.resources
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\GestionProduits.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\GestionProduits.AssemblyInfoInputs.cache
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\GestionProduits.AssemblyInfo.cs
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\GestionProduits.csproj.CoreCompileInputs.cache
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\GestionProduits.csproj.CopyComplete
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\GestionProduits.dll
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\ref\GestionProduits.dll
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\GestionProduits.pdb
+U:\59011-07-05\CDA\Pierre-CDA\05 - C#\02 - WPF\GestionProduits\WpfApp2\obj\Debug\net5.0-windows\GestionProduits.genruntimeconfig.cache
