@@ -1,0 +1,15 @@
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\bin\Debug\Maquette.exe.config
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\bin\Debug\Maquette.exe
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\bin\Debug\Maquette.pdb
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\obj\Debug\Maquette.csproj.AssemblyReference.cache
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\obj\Debug\MainWindow.g.cs
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\obj\Debug\App.g.cs
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\obj\Debug\Maquette_MarkupCompile.cache
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\obj\Debug\Maquette_MarkupCompile.lref
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\obj\Debug\MainWindow.baml
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\obj\Debug\Maquette.g.resources
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\obj\Debug\Maquette.Properties.Resources.resources
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\obj\Debug\Maquette.csproj.GenerateResource.cache
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\obj\Debug\Maquette.csproj.CoreCompileInputs.cache
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\obj\Debug\Maquette.exe
+D:\AFPA\Pierre-CDA\05 - C#\Maquette\obj\Debug\Maquette.pdb

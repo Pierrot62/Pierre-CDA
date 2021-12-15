@@ -1,0 +1,79 @@
+/****  GENERAL ****/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+    overflow-x: hidden;
+}
+
+div, a, header, footer, nav, article, section, ul {
+    display: flex;
+    flex: 1;
+}
+
+.sm{
+    flex: 0.5;
+}
+
+.gr{
+    flex: 1.5;
+}
+
+ul>li{
+    list-style: none;
+    transition: 0.5s;
+    margin: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+    border: red solid 1px;
+}
+
+ul>li:hover{
+    color: rgb(255, 0, 0);
+    border: white solid 1px;
+}
+
+li{
+    padding: 0.5em;
+}
+
+img, video {
+    width: 100%;
+}
+
+.blanc{
+    color: white;
+}
+
+.red{
+    color: red;
+}
+
+.colonne {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav{
+    padding: 0.5em;
+    background-color: rgb(0,0,0,.7);
+    position: absolute;
+    width: 100vw;
+}
+
+#logoNav{
+    height: 5em;
+}
+
+#textBanner{
+    position: absolute;
+    width: 100vw;
+    margin-top: 3em;
+    font-size: 3em;
+}
