@@ -157,6 +157,13 @@ CREATE TABLE Identifications(
 	IdMotCle INT  NOT NULL 
 )ENGINE = InnoDB;
 
+
+CREATE TABLE Employes(
+	idEmploye INT AUTO_INCREMENT PRIMARY KEY ,
+	nomEmploye 
+)
+
+
 ALTER TABLE Livres ADD CONSTRAINT FK_Livres_Editeurs FOREIGN KEY(IdEditeur) REFERENCES Editeurs(IdEditeur);
 ALTER TABLE Livres ADD CONSTRAINT FK_Livres_Themes FOREIGN KEY(IdTheme) REFERENCES Themes(IdTheme);
 ALTER TABLE Exemplaires ADD CONSTRAINT FK_Exemplaires_Usures FOREIGN KEY(IdUsure) REFERENCES Usures(IdUsure);

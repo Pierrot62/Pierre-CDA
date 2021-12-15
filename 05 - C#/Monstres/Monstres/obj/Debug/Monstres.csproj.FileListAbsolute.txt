@@ -1,7 +1,0 @@
-U:\59011-07-05\CDA\05 - C#\Monstres\Monstres\bin\Debug\Monstres.exe.config
-U:\59011-07-05\CDA\05 - C#\Monstres\Monstres\bin\Debug\Monstres.exe
-U:\59011-07-05\CDA\05 - C#\Monstres\Monstres\bin\Debug\Monstres.pdb
-U:\59011-07-05\CDA\05 - C#\Monstres\Monstres\obj\Debug\Monstres.csproj.AssemblyReference.cache
-U:\59011-07-05\CDA\05 - C#\Monstres\Monstres\obj\Debug\Monstres.csproj.CoreCompileInputs.cache
-U:\59011-07-05\CDA\05 - C#\Monstres\Monstres\obj\Debug\Monstres.exe
-U:\59011-07-05\CDA\05 - C#\Monstres\Monstres\obj\Debug\Monstres.pdb

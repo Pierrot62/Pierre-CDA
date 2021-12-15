@@ -1,0 +1,51 @@
+
+#------------------------------------------------------------
+#        Script MySQL.
+#------------------------------------------------------------
+
+CREATE DATABASE GestionStock;
+USE GestionStock;
+
+#------------------------------------------------------------
+# Table: TypesProduits
+#------------------------------------------------------------
+
+DROP TABLE IF EXISTS TypesProduits;
+CREATE TABLE TypesProduits(
+   IdTypesProduits INT AUTO_INCREMENT PRIMARY KEY,
+   LibelleTypesProduit VARCHAR(255) NOT NULL
+);
+
+ALTER TABLE TypesProduits ENGINE = InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Categories
+#------------------------------------------------------------
+
+DROP TABLE IF EXISTS Categories;
+CREATE TABLE Categories(
+   IdCategories INT AUTO_INCREMENT PRIMARY KEY,
+   LibelleCategorie VARCHAR(255) NOT NULL,
+   IdTypesProduits INT NOT NULL
+);
+
+ALTER TABLE Categories ENGINE = InnoDB;
+
+
+#------------------------------------------------------------
+# Table: Articles
+#------------------------------------------------------------
+
+DROP TABLE IF EXISTS Articles;
+CREATE TABLE Articles(
+   IdArticle INT AUTO_INCREMENT PRIMARY KEY,
+   LibelleArticle VARCHAR(50) NOT NULL,
+   QuantiteStockee INT NOT NULL,
+   IdCategories INT NOT NULL
+);
+
+ALTER TABLE Articles ENGINE = InnoDB;
+
+ALTER TABLE Categories ADD CONSTRAINT FK_Categories_TypessProduits FOREIGN KEY(IdTypesProduits) REFERENCES TypesProduits(IdTypesProduits);
+ALTER TABLE Articles ADD CONSTRAINT FK_Articles_Categorie FOREIGN KEY(IdCategories) REFERENCES Categories(IdCategories);
