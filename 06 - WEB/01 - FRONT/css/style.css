@@ -3,77 +3,303 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: pink;
+    background: linear-gradient(72deg, rgba(11,12,14,1) 0%, rgba(65,95,107,1) 50%, rgba(25,97,124,1) 81%, rgba(27,112,144,1) 98%);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 div, a, header, footer, nav, article, section, ul {
     display: flex;
     flex: 1;
-}
-
-.sm{
-    flex: 0.5;
-}
-
-.gr{
-    flex: 1.5;
-}
-
-ul>li{
+    text-decoration: none;
     list-style: none;
-    transition: 0.5s;
-    margin: 0.5em;
-    font-weight: bold;
-    cursor: pointer;
-    border: red solid 1px;
 }
-
-ul>li:hover{
-    color: rgb(255, 0, 0);
-    border: white solid 1px;
-}
-
-li{
-    padding: 0.5em;
-}
-
 img, video {
     width: 100%;
 }
 
-.blanc{
+ul li a{
+    text-decoration: none;
+    list-style: none;
     color: white;
 }
 
-.red{
-    color: red;
+hr{
+    border: 2px solid var(--bleu);
+    width: 80%;
 }
 
-.colonne {
-    flex-direction: column;
-}
+/* 
 
-.center {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+    .web{
+        display: none;
+    }
+    nav{
+        padding: 0.5em;
+        background-color: rgb(0,0,0,.7);
+        position: absolute;
+        width: 100%;
+        position: fixed;
+    }
+    #logoNav{
+        height: 5em;
+    } */
 
-nav{
-    padding: 0.5em;
-    background-color: rgb(0,0,0,.7);
-    position: absolute;
-    width: 100vw;
-}
 
-#logoNav{
-    height: 5em;
-}
 
-#textBanner{
-    position: absolute;
-    width: 100vw;
-    margin-top: 3em;
-    font-size: 3em;
+
+
+    /* .xs{
+        flex: 0;
+        }
+        .sm{
+            flex: 0.2;
+        }
+         .l{
+            flex: 1;
+        }
+        .xl{
+            flex: 1.5;
+        }
+        .xxl{
+            flex: 2;
+        }
+    
+        /* Espace V */
+        /* .hxs{
+            min-height:1vh;
+        }
+        .hsm{
+            min-height: 2vh;
+        }
+        .hl{
+            min-height: 3vh;
+        }
+        .hxl{
+            min-height: 4vh;
+        }
+        .hxxl{
+            min-height: 10vh;
+        } */
+
+
+
+   
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 3000px) { 
+    
+    .xs{
+        flex: 0.2;
+        }
+        .sm{
+            flex: 0.5;
+        }
+        .l{
+            flex: 1.5;
+        }
+        .xl{
+            flex: 2;
+        }
+        .xxl{
+            flex: 2.5;
+        }
+    
+        /* Espace V */
+        .hxs{
+            min-height:1vh;
+        }
+        .hsm{
+            min-height: 2vh;
+        }
+        .hl{
+            min-height: 3vh;
+        }
+        .hxl{
+            min-height: 4vh;
+        }
+        .hxxl{
+            min-height: 10vh;
+        }
+        
+        .colonne {
+            flex-direction: column;
+        }
+        .center {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .justify{
+            text-align: justify;
+        }
+        .blanc{
+            color: var(--blanc);
+        }
+        .rouge{
+            color: var(--rouge);
+        }
+        .vert{
+            color: var(--vert);
+        }
+    
+        /* Nav */
+        .mobile{
+            display: none;
+        }
+        .web{
+            display: flex;
+        }
+        nav{
+            padding: 0.5em;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            width: 100%;
+            position: fixed;
+            z-index: 2;
+        }
+        .txtNav{
+            font-size:2em!important;
+        }
+        .menu>ul>li>a{
+            list-style: none;
+            transition: 0.5s;
+            margin: 0.5em 1em;
+            padding: 0.5em;
+            font-weight: bold;
+            cursor: pointer;
+            color: var(--blanc);
+            border: var(--vert) solid 2px;
+            justify-content: center;
+        }
+        .menu>ul>li>a:hover{
+            color: var(--vert);
+            border: var(--blanc) solid 2px;
+        }
+        .avecEnfants:hover .sousMenu  {
+            color: red;
+            display:block;
+        }
+        .sousMenu{
+            position: absolute;
+            list-style: none;
+            background-color: var(--vert);
+            display:none;
+        }
+        .sousMenu>ul>li>a{
+            padding: 0.5em;
+        }
+        #logoNav{
+            height: 5em;
+        }
+    
+    
+        /* Banner */
+        #textBanner{
+            position: absolute;
+            width: 100vw;
+            margin-top: 5em;
+            font-size: 3em;
+            color: var(--blanc);
+            z-index: 1;
+        }
+        .banner{
+            height: auto;
+            z-index: 1;
+        }
+        .top{
+            transition:1s;
+            color: var(--bleu);
+            position: absolute;
+            bottom:2vh;
+            right: 2vw;
+            position: fixed;
+        }
+        .top:hover{
+            color: var(--vert);
+        }
+    
+        /* Ligne */
+        .ligne{
+            /* margin: 2.5em; */
+            background-image: url('./img/2.png');
+        }
+        .txtDesc>p:last-child{
+            font-size: 1.1em;
+            border: var(--vert) solid 1px;
+            padding:1.5em
+        }
+        .imgPresentation{
+            border: var(--vert) solid 5px;
+            border-radius:5px;
+        }
+ }
+
+ @media (max-width: 1200px) { 
+    .web{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+    .top{
+        display:none;
+    }
+    #logoNav{
+        height:5em;
+    }
+    .burger-ico{
+        color: var(--bleu);
+    }
+    
+    .burger-ico:hover{
+        color: var(--vert);
+    }
+    .elm-burger{
+        top: 8vh;
+        position: absolute;
+        display: none;
+    }
+
+    .burger-ico:hover + .elm-burger{
+        display: flex;
+    }
+    .ligne{
+        flex-direction: column;
+        margin: 1.5em 5em;
+        font-size: 1.5em;
+    }
+    .hxxl{
+        min-height:1em;
+    }
+    .elm-form{
+        
+    }
 }
+ 
+/* // X-Large devices (large desktops, 1200px and up) */
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 1200px) {  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 992px) { 
+    #logoNav{
+        height:2em;
+    }
+    .txtNav{
+        font-size:1em!important;
+    }
+    #textBanner{
+        display:none;
+    }
+    .ligne{
+        margin:0.5em;
+        font-size: 1em;
+    }
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) {  }
+
