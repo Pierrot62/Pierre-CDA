@@ -1,0 +1,65 @@
+/****  GENERAL ****/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+div, a, header, footer, nav, article, section {
+    display: flex;
+    flex: 1;
+}
+ul,li, a {
+    text-decoration: none;
+    list-style: none;
+}
+.l{
+    flex:3;
+    background-color:rgb(219, 219, 219);
+}
+img, video {
+    width: 100%;
+}
+.colonne {
+    flex-direction: column;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    background-color:antiquewhite;
+}
+.categorie{
+    background-color: #8C2F39;
+    font-size: 1.5em;
+    padding: 0.5em;
+    cursor: pointer;
+    color: white;
+}
+.categorie:hover{
+    background-color: #0D1B2A;
+}
+.sousMenu:last-child{
+    border-radius: 50%;
+}
+.elmSousMenu>a{
+    font-size: 1.5em;
+    padding:0.2em;
+    color: #0D1B2A;
+}
+/* .sousMenu{
+} */
+.elmSousMenu:hover{
+    background-color: #0D1B2A;
+    color: #E5D4C0;
+}
+.elmSousMenu>a:hover{
+    background-color: #0D1B2A;
+    color: #E5D4C0;
+}
+.affiche{
+    display: flex;
+}
+.masquer{
+    display:none;
+}
