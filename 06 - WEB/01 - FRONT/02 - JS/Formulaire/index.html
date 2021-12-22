@@ -19,29 +19,51 @@
                 <div class="blockForm">
                     <div class="elmForm colonne">
                         <label for="nom">Nom :</label>
-                        <input type="text" class="text" name="nom" placeholder="Nom">
+                        <input type="text" class="text" name="nom" placeholder="Nom" required>
                     </div>
                     <hr>
                     <div class="elmForm colonne">
                         <label for="nom">Prenom :</label>
-                        <input type="text" class="text" name="prenom" placeholder="Pierre">
+                        <input type="text" class="text" name="prenom" placeholder="Pierre" required>
+                    </div>    
+                </div>
+                <hr>
+                <div class="blockForm">
+                    <div class="elmForm colonne">
+                        <label for="nom">Genre :</label>
+                        <div class="center">
+                            <label for="homme">Homme</label>
+                            <input type="radio" id="homme" name="genre" id="">
+                            <label for="homme">Femme</label>
+                            <input type="radio" id="femme" name="genre" id="">
+                        </div>
+                        <div class="center">
+                            <label for="Table">Table</label>
+                            <input type="radio" id="Table"  name="genre" id=""> 
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <div class="elmForm colonne">
+                        <label for="nom">Prenom :</label>
+                        <input type="text" class="text" name="prenom" placeholder="Pierre" required>
                     </div>    
                 </div>
                 <hr>
                 <div class="blockForm">
                     <div class="elmForm colonne">
                         <label for="tel">Numero de telephone :</label>
-                        <input type="text" class="text" name="tel" placeholder="06.06.49.69.02">
+                        <input type="text" class="text" name="tel" placeholder="06.06.49.69.02" required>
                     </div>
                     <hr>
                     <div class="elmForm colonne">
                         <label for="cp">Code postal :</label>
-                        <input type="text" class="text" name="cp" placeholder="62200">
+                        <input type="text" class="text" name="cp" placeholder="62200" required>
                     </div>
                 </div>
                 <hr>
                 <div class="blockForm center">
-                    <input type="submit">
+                    <input class="btn" type="submit">
                 </div>
                 <!-- <div class="elmForm"></div>
                 <div class="elmForm"></div> -->

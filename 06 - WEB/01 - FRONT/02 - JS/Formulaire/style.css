@@ -1,8 +1,19 @@
 /****  GENERAL ****/
+:root {
+    --bgc1: #1D3557;
+    --bgc2: #5C4D7D;
+    --font: #F1FAEE;
+    --btn: #457B9D;
+    --hr: #E63946;
+}
 
+*{
+    color: var(--font);
+}
 html, body {
     margin: 0;
     padding: 0;
+    
 }
 
 div, a, header, footer, nav, article, section {
@@ -20,7 +31,10 @@ img, video {
 
 form{
     padding:2.5em;
-    background-color:beige
+    background-color:var(--bgc1);
+}
+hr{
+    border: 1px solid var(--hr);
 }
 .center {
     justify-content: center;
@@ -28,4 +42,8 @@ form{
 }
 .elmForm{
     margin:1em;
+}
+.btn{
+    background-color: var(--btn);
+    padding: 0.5em;
 }
