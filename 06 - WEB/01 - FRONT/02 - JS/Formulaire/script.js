@@ -1,17 +1,76 @@
 var inputs = document.querySelectorAll("input");
-var erreur = document.getElementById("erreur");
+var boutonValider = document.querySelector("button[type=submit]");
+var mdp = document.getElementById("mdp");
+var valideForm = {};
+
 inputs.forEach(input => {
     input.addEventListener("input", verifInput);
 });
 
+for (let i = 0; i < inputs.length; i++) {
+    if (inputs[i].required) {
+        valideForm[inputs[i].name] = false;
+    } else {
+        valideForm[inputs[i].name] = true;
+    }
+}
+
 function verifInput(e) {
-    if (e.target.value != "") {
-         if (e.target.checkValidity) {
-        e.target.style.backgroundColor = "green";    
-        }else{
-            e.target.style.backgroundColor = "red";
+    var elm = e.target.nextElementSibling.firstChild.classList;
+    if (e.target.type == "date") {
+        var date = new Date();
+        var userDate = new Date(e.target.value);
+        if (userDate.getTime() > date.getTime()) {
+            elm.add("fa-times-circle");
+            elm.remove("fa-check-circle");
+            e.target.classList.remove("vert");
+            e.target.classList.add("rouge");
+            valideForm[e.target.name] = false;
+        } else {
+            console.log("ok");
+            elm.remove("fa-times-circle");
+            elm.add("fa-check-circle");
+            e.target.classList.remove("rouge");
+            e.target.classList.add("vert");
+            valideForm[e.target.name] = true;
         }
-    }else{
-        e.target.style.backgroundColor = "whrite";
+    } else if (e.target.name == "confirmMdp") {
+        if (e.target.value == mdp.value) {
+            e.target.classList.remove("rouge");
+            e.target.classList.add("vert");
+            elm.remove("fa-times-circle");
+            elm.add("fa-check-circle");
+            valideForm[e.target.name] = true;
+        } else {
+            e.target.classList.remove("vert");
+            e.target.classList.add("rouge");
+            elm.add("fa-times-circle");
+            elm.remove("fa-check-circle");
+            valideForm[e.target.name] = false;
+        }
+    }
+    else {
+        if (e.target.checkValidity()) {
+            e.target.classList.remove("rouge");
+            e.target.classList.add("vert");
+            elm.remove("fa-times-circle");
+            elm.add("fa-check-circle");
+            valideForm[e.target.name] = true;
+        } else {
+            e.target.classList.remove("vert");
+            e.target.classList.add("rouge");
+            elm.add("fa-times-circle");
+            elm.remove("fa-check-circle");
+            valideForm[e.target.name] = false;
+        }
+    }
+    verifForm();
+}
+
+function verifForm() {
+    console.log(valideForm);
+    boutonValider.disabled = false;
+    if (Object.values(valideForm).indexOf(false) != -1) {
+        boutonValider.disabled = true;
     }
 }

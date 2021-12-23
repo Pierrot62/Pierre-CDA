@@ -5,128 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Formulaire</title>
 </head>
-
     <body>
         <section>
             <div></div>
-            <form class="center flex2" action="">
-                <div class="groupeForm">
-                    <div class="elmForm center">
-                        <label for="nom">Nom :</label>
-                        <input type="nom">
-                    </div>
-                    <div class="elmForm center">
-                        <label for="prenom">Prenom :</label>
-                        <input type="prenom">
-                    </div>
+            <form class="" action="">
+
+                <div></div>
+                <div></div>
+                <h1 class="center">~ Creation de compte ~</h1>
+                <div></div>
+                <div></div>
+                <div></div>
+
+                <div></div>
+                <label for="nom">Nom :</label>
+                <input type="text" pattern="[A-Za-z]{2,}" name="nom" required>
+                <div class="center"><i class="fas fa-times-circle"></i></div>                
+                <div class="center"><i class="fas fa-question-circle"></i></div>
+                <div></div>
+
+                <div></div>
+                <label for="prenom">Prenom :</label>
+                <input type="text" pattern="[A-Za-z]{2,}" name="prenom" required>
+                <div class="center"><i class="fas fa-times-circle"></i></div>                
+                <div class="center"><i class="fas fa-question-circle"></i></div>
+                <div></div>
+
+                <div></div>
+                <label for="email">Email :</label>
+                <input type="text" pattern="^[a-zA-Z][a-zA-Z0-9]+([_\.-][a-zA-Z0-9]+)*@([a-zA-Z0-9]+[_\.-])+[a-zA-Z]{2,4}$" name="email" required>
+                <div class="center"><i class="fas fa-times-circle"></i></div> 
+                <div class="center">
+                    <i class="fas fa-question-circle"></i>
+                    <div class="infoBull masquer">Manque @</div>
                 </div>
-                <hr>
-                <div class="groupeForm">
-                    <div class="elmForm center">
-                        <div class="elmForm center">
-                            <label for="age">Age :</label>
-                            <input type="age">
-                        </div>
-                    </div>
-                    <div class="elmForm center">
-                        <label for="ddn">Date de naissance :</label>
-                        <input type="ddn">
-                    </div>
-                </div>
-                <hr>
-                <div class="groupeForm">
-                    <div class="elmForm center">
-                        <label for="mdp">Mots de passe :</label>
-                        <input type="password" name="mdp" id="">
-                    </div>
-                    <div class="elmForm center">
-                        <label for="mdpconfirm">Confirmation :</label>
-                        <input type="password" name="mdpconfirm" id="">
-                    </div>
-                </div>
+                
+                <div></div>
+
+                <div></div>
+                <label for="email">Date de naissance :</label>
+                <input type="date" name="ddn">
+                <div class="center"><i class="fas fa-times-circle"></i></div> 
+                <div class="center"><i class="fas fa-question-circle"></i></div>
+                <div></div>
+
+                <div></div>
+                <label for="mdp">Mot de passe :</label>
+                <input type="password" id="mdp" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).{8,}" name="mdp" required>
+                <div class="center"><i class="fas fa-times-circle"></i></div> 
+                <div class="center"><i class="fas fa-question-circle"></i></div>
+                <div></div>
+
+                <div></div>
+                <label for="confirmMdp">Confirmation :</label>
+                <input type="password" id="confirmMdp" name="confirmMdp" required>
+                <div class="center"><i class="fas fa-times-circle"></i></div> 
+                <div class="center"><i class="fas fa-question-circle"></i></div>
+                <div></div>
+
+                <div></div>    
+                <div></div>
+                <button class="btnForm" type="submit" disabled>Enregister</button>
+                <div></div>
+                <div></div>
             </form>
             <div></div>
         </section>
-        <!-- <section>
-            <div></div>
-            <div>
-                <form class="colonne" action="">
-                    <div class="blockForm center">
-                        <h1>Contact :</h1> 
-                    </div>
-                    <hr>
-                    <div class="blockForm">
-                        <div class="elmForm colonne">
-                            <label for="nom">Nom :</label>
-                            <input type="text" class="text" name="nom" placeholder="Nom" pattern="^[a-zA-Z\-]+$" required>
-                        </div>
-                        <hr>
-                        <div class="elmForm colonne">
-                            <label for="nom">Prenom :</label>
-                            <input type="text" class="text" name="prenom" placeholder="Pierre" pattern="^[a-zA-Z\-]+$" required>
-                        </div>    
-                    </div>
-                    <hr>
-                    <div class="blockForm">
-                        <div class="elmForm colonne">
-                            <label for="nom">Genre :</label>
-                            <div class="center">
-                                <label for="homme">Homme</label>
-                                <input type="radio" id="homme" name="genre" id="">
-                                <label for="homme">Femme</label>
-                                <input type="radio" id="femme" name="genre" id="">
-                            </div>
-                            <div class="center">
-                                <label for="Table">Pizza</label>
-                                <input type="radio" id="Table"  name="genre" id="">
-                                <label for="Table">Chevre</label>
-                                <input type="radio" id="Table"  name="genre" id=""> 
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="elmForm colonne">
-                            <label for="ville">Ville :</label>
-                            <input type="text" class="text" name="ville" placeholder="Lille" pattern="^[a-zA-Z\-]+$" required>
-                        </div>    
-                    </div>
-                    <hr>
-                    <div class="blockForm">
-                        <div class="elmForm colonne">
-                            <label for="tel">Numero de telephone :</label>
-                            <input type="text" class="text" name="tel" placeholder="06.06.49.69.02" pattern="[0-9]{10}" required>
-                        </div>
-                        <hr>
-                        <div class="elmForm colonne">
-                            <label for="cp">Code postal :</label>
-                            <input type="text" class="text" name="cp" placeholder="62200" pattern="[0-9]{4}" required>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="blockForm">
-                        <div class="elmForm colonne mpd">
-                            <label for="tel">Mots de passe :</label>
-                            <input type="password" class="text" name="tel" placeholder="*********" pattern="[0-9]{10}" required>
-                        </div>
-                        <hr>
-                        <div class="elmForm colonne">
-                            <label for="cp">Confirmation :</label>
-                            <input type="password" class="text" name="cp" placeholder="*********" pattern="[0-9]{4}" required>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="center">
-                        <p id="erreur"></p>
-                    </div>
-                    <div class="blockForm center">
-                        <input class="btn" type="submit">
-                    </div>                        
-                
-                </form>
-            </div>
-            <div></div>
-        </section> -->
         <script src="script.js"></script>
     </body>
 

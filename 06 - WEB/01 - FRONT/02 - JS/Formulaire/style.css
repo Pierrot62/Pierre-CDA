@@ -6,60 +6,77 @@
     --btn: #457B9D;
     --hr: #E63946;
 }
-
 html, body {
     margin: 0;
     padding: 0;
-    
 }
-
 div, a, header, footer, nav, article, section {
     display: flex;
     flex: 1;
 }
-
 img, video {
     width: 100%;
 }
-
 .colonne {
     flex-direction: column;
 }
 .center {
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 form{
-    background-color: beige;
+    background-color: var(--bgc1);
+    color: var(--font);
     padding:0.5em;
     border-radius: 5px;
 }
-.flex2{
-    flex: 2;
+form>button{
+    color: var(--font);
+}
+form>h1{
+    color: var(--btn)
+}
+form>label{
+    justify-content: center
 }
 
-/* form{
-    padding:2.5em;
-    background-color:var(--bgc1);
+input{
+    border: 3px solid black;
+    border-radius: 3px
 }
-hr{
-    border: 1px solid var(--hr);
+.rouge{
+    border: 3px solid red;
 }
-
+.vert{
+    border: 3px solid rgb(2, 214, 2);
+}
 .elmForm{
-    margin:1em;
+    padding:0.5em
 }
-.btn{
-    background-color: var(--bgc2);
-    padding: 0.5em;
-    border-radius: 10%;
-    cursor: pointer;
+button{
+    background-color: #2286c0;
+    padding:0.5em;
+    letter-spacing: 0.2em;
+    border-radius: 5px;
+    cursor:pointer;
 }
-.mdp{
-    position: absolute;
+form{
+    display: grid;
+    grid-template-columns: 0.1fr 0.7fr 1fr 0.1fr 0.1fr 0.1fr;
+    grid-gap: 0.5em;
+    grid-auto-rows: minmax(1em, auto);
 }
-.aideMdp{
-    position: absolute;
-    top: 5vh;
-    background-color: var(--bgc1);
+
+.masquer{
+    display: none;
+}
+.visible{
+    display: block;
+}
+/* .infobulle{
+
 } */
+.icoBulle{
+    position: absolute;
+}
