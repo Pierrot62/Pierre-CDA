@@ -7,9 +7,6 @@
     --hr: #E63946;
 }
 
-*{
-    color: var(--font);
-}
 html, body {
     margin: 0;
     padding: 0;
@@ -28,22 +25,41 @@ img, video {
 .colonne {
     flex-direction: column;
 }
-
+.center {
+    justify-content: center;
+    align-items: center;
+}
 form{
+    background-color: beige;
+    padding:0.5em;
+    border-radius: 5px;
+}
+.flex2{
+    flex: 2;
+}
+
+/* form{
     padding:2.5em;
     background-color:var(--bgc1);
 }
 hr{
     border: 1px solid var(--hr);
 }
-.center {
-    justify-content: center;
-    align-items: center;
-}
+
 .elmForm{
     margin:1em;
 }
 .btn{
-    background-color: var(--btn);
+    background-color: var(--bgc2);
     padding: 0.5em;
+    border-radius: 10%;
+    cursor: pointer;
 }
+.mdp{
+    position: absolute;
+}
+.aideMdp{
+    position: absolute;
+    top: 5vh;
+    background-color: var(--bgc1);
+} */
