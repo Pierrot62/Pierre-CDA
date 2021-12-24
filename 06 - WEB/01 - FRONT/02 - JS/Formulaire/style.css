@@ -10,7 +10,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
-div, a, header, footer, nav, article, section {
+div, a, header, footer, nav, article, section, input {
     display: flex;
     flex: 1;
 }
@@ -19,6 +19,9 @@ img, video {
 }
 .colonne {
     flex-direction: column;
+}
+.relative{
+    position: relative;
 }
 .center {
     justify-content: center;
@@ -77,6 +80,25 @@ form{
 /* .infobulle{
 
 } */
-.icoBulle{
+.infoBulle{
     position: absolute;
+    top: 5vh;
+    background-color: #2286c0;
+    padding: 0.5em;
+    border-radius: 5px;
+    z-index: 99;
+}
+
+.contentInfo{
+    position: relative;
+    cursor: pointer;
+}
+.icoInfoBulle{
+    position : absolute;
+}
+.icoMdp{
+    position: absolute;
+    right: 0.5em;
+    bottom:0.2em;
+    color: black;
 }

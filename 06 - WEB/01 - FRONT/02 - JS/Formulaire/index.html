@@ -24,46 +24,69 @@
                 <label for="nom">Nom :</label>
                 <input type="text" pattern="[A-Za-z]{2,}" name="nom" required>
                 <div class="center"><i class="fas fa-times-circle"></i></div>                
-                <div class="center"><i class="fas fa-question-circle"></i></div>
+                <div class="center contentInfo">
+                    <i class="fas fa-question-circle"></i>
+                    <div class="infoBulle masquer">
+                        - Minimun 2 lettre <br>
+                        - Pas de chiffre <br>
+                        - Pas de caractere speciaux</div>
+                </div>
                 <div></div>
 
                 <div></div>
                 <label for="prenom">Prenom :</label>
                 <input type="text" pattern="[A-Za-z]{2,}" name="prenom" required>
-                <div class="center"><i class="fas fa-times-circle"></i></div>                
-                <div class="center"><i class="fas fa-question-circle"></i></div>
-                <div></div>
+                <div class="center"><i class="fas fa-times-circle"></i></div>           
+                <div class="center contentInfo">
+                    <i class="fas fa-question-circle"></i>
+                    <div class="infoBulle masquer">@</div>
+                </div>
+                <div></div>     
+                
 
                 <div></div>
                 <label for="email">Email :</label>
                 <input type="text" pattern="^[a-zA-Z][a-zA-Z0-9]+([_\.-][a-zA-Z0-9]+)*@([a-zA-Z0-9]+[_\.-])+[a-zA-Z]{2,4}$" name="email" required>
                 <div class="center"><i class="fas fa-times-circle"></i></div> 
-                <div class="center">
+                <div class="center contentInfo">
                     <i class="fas fa-question-circle"></i>
-                    <div class="infoBull masquer">Manque @</div>
+                    <div class="infoBulle masquer">@</div>
                 </div>
-                
                 <div></div>
+                
 
                 <div></div>
                 <label for="email">Date de naissance :</label>
                 <input type="date" name="ddn">
                 <div class="center"><i class="fas fa-times-circle"></i></div> 
-                <div class="center"><i class="fas fa-question-circle"></i></div>
+                <div class="center contentInfo">
+                    <i class="fas fa-question-circle"></i>
+                    <div class="infoBulle masquer">@</div>
+                </div>
                 <div></div>
 
                 <div></div>
                 <label for="mdp">Mot de passe :</label>
-                <input type="password" id="mdp" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).{8,}" name="mdp" required>
+                <div class="relative">
+                    <input type="password" id="mdp" class="inputMdp" mode="masquer" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).{8,}" name="mdp" required>
+                    <i class="fas fa-eye icoMdp"></i>
+                </div>
                 <div class="center"><i class="fas fa-times-circle"></i></div> 
-                <div class="center"><i class="fas fa-question-circle"></i></div>
+                <div class="center contentInfo">
+                    <i class="fas fa-question-circle"></i>
+                    <div class="infoBulle masquer">@</div>
+                </div>
                 <div></div>
+                
 
                 <div></div>
                 <label for="confirmMdp">Confirmation :</label>
-                <input type="password" id="confirmMdp" name="confirmMdp" required>
+                <input type="password" id="confirmMdp" name="confirmMdp" mode="masquer" required>
                 <div class="center"><i class="fas fa-times-circle"></i></div> 
-                <div class="center"><i class="fas fa-question-circle"></i></div>
+                <div class="center contentInfo">
+                    <i class="fas fa-question-circle"></i>
+                    <div class="infoBulle masquer">@</div>
+                </div>
                 <div></div>
 
                 <div></div>    

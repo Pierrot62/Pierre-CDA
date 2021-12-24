@@ -2,6 +2,17 @@ var inputs = document.querySelectorAll("input");
 var boutonValider = document.querySelector("button[type=submit]");
 var mdp = document.getElementById("mdp");
 var valideForm = {};
+var icoBulle = document.querySelectorAll(".fa-question-circle");
+var infoBUlle = document.getElementsByClassName("infoBulle");
+var icoMdp = document.getElementsByClassName("icoMdp")[0];
+
+icoMdp.addEventListener("click", afficheMdp);
+
+icoBulle.forEach(ico => {
+    ico.addEventListener("mouseover" , afficheInfoBulle);
+    ico.addEventListener("mouseout" , masquerInfoBulle);
+
+});
 
 inputs.forEach(input => {
     input.addEventListener("input", verifInput);
@@ -16,7 +27,12 @@ for (let i = 0; i < inputs.length; i++) {
 }
 
 function verifInput(e) {
-    var elm = e.target.nextElementSibling.firstChild.classList;
+    if (e.target.classList.contains("inputMdp")) {
+        console.log(e.target.parentNode.nextElementSibling.firstChild.classList);
+        var elm = e.target.parentNode.nextElementSibling.firstChild.classList;
+    }else{
+        var elm = e.target.nextElementSibling.firstChild.classList;
+    }
     if (e.target.type == "date") {
         var date = new Date();
         var userDate = new Date(e.target.value);
@@ -72,5 +88,29 @@ function verifForm() {
     boutonValider.disabled = false;
     if (Object.values(valideForm).indexOf(false) != -1) {
         boutonValider.disabled = true;
+    }
+}
+
+function afficheInfoBulle(e){
+    e.target.nextElementSibling.classList.remove("masquer");
+    e.target.nextElementSibling.classList.add("visible");
+}
+function masquerInfoBulle(e){
+    e.target.nextElementSibling.classList.remove("visible");
+    e.target.nextElementSibling.classList.add("masquer");
+}
+
+function afficheMdp(e){
+    console.log(e.target);
+    if (mdp.getAttribute("mode") == "masquer") {
+        e.target.classList.add("far");
+        e.target.classList.remove("fas");
+        mdp.setAttribute("mode","affiche");
+        mdp.type="text";
+    }else{
+        e.target.classList.add("fas");
+        e.target.classList.remove("far");
+        mdp.setAttribute("mode" ,"masquer");
+        mdp.type="password";
     }
 }
