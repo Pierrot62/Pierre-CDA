@@ -1,0 +1,46 @@
+/****  GENERAL ****/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div, a, header, footer, nav, article, section, main {
+    display: flex;
+    flex: 1;
+}
+
+img, video {
+    width: 100%;
+}
+
+.colonne {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+#grid{
+    display: grid;
+    grid-gap: 0.5em;
+    grid-auto-rows: minmax(3.5em, auto);
+    padding: 0.5em;
+    border: 3px solid black;
+}
+/* Case */
+.case{
+    background-color: rgb(167, 153, 153);
+    padding: 0.5em;
+    font-size: 1.5em;
+}
+
+.caseVide{
+    background-color: rgb(75, 73, 73);
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.5em;
+    color: beige;
+}

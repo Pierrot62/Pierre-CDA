@@ -1,0 +1,55 @@
+/****  GENERAL ****/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div, a, header, footer, nav, article, section, main {
+    display: flex;
+    flex: 1;
+}
+
+img, video {
+    width: 100%;
+}
+
+.colonne {
+    flex-direction: column;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+}
+.sm{
+    flex: 0.5;
+}
+.m{
+    flex: 1.5;
+}
+.l{
+    flex: 2;
+}
+.xs{
+    flex: 0.1;
+}
+.xl{
+    flex: 3;
+}
+.bleu{
+    background-color: blue;
+}
+.rouge{
+    background-color: red;
+    height: 15vh;
+    margin: 0.5em;
+}
+.vert{
+    background-color: green;
+    margin: 0.5em;
+}
+.gris{
+    background-color: grey;
+    height: 20vh;
+    margin: 0.5em;
+}
