@@ -64,4 +64,12 @@ class Services
         $methode = "get".ucfirst($colonnes[0]);
         $q = $db->prepare("DELETE FROM ".$class." WHERE ".$colonnes[0]." = ".$obj->$methode());
 	}
+
+    private static function tableSelect($nomTable){
+        return(" FROM " . $nomTable);
+    }
+
+    private static function limitSelect($limit){
+        return(" LIMIT " . $limit);
+    }
 }

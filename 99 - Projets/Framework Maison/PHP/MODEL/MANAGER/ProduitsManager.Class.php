@@ -16,6 +16,9 @@ class ProduitsManager
         Services::delete($obj);
     }
 
+    // Exemple d'appel a la fonction select 
+    // Services::select(["idProduit", "libelleProduit", "prixProduit"],"produit", 1);
+
     public static function findById($id)
     {
         $db = DbConnect::getDb();
