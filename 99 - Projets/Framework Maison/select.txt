@@ -1,0 +1,7 @@
+Pour le select on besoin de traiter tous les cas possible.
+
+
+SELECT * FROM table;
+SELECT nomdecolonne1, nomdecolonne2 FROM table
+SELECT * FROM table WHERE nomcol = param1 AND nomcol = param2;
+SELECT *  FROM table INNER JOIN table1 ON table1.nomcol = table2.nomcol

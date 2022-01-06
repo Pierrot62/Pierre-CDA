@@ -1,55 +1,40 @@
 <?php
 
-class Texte
+class Categories 
 {
 
 	/*****************Attributs***************** */
 
-	private $_idTexte;
-	private $_codeTexte;
-	private $_FR;
-	private $_EN;
+	private static $_attributes = ["idCategorie","LibelleCategorie"];
+	private $_idCategorie;
+	private $_LibelleCategorie;
 
 	/***************** Accesseurs ***************** */
 
-    public function getEN()
+
+	public function getIdCategorie()
 	{
-		return $this->_EN;
+		return $this->_idCategorie;
 	}
 
-	public function setEN($EN)
+	public function setIdCategorie($idCategorie)
 	{
-		$this->_EN = $EN;
+		$this->_idCategorie=$idCategorie;
 	}
 
-	public function getFR()
+	public function getLibelleCategorie()
 	{
-		return $this->_FR;
+		return $this->_LibelleCategorie;
 	}
 
-	public function setFR($FR)
+	public function setLibelleCategorie($LibelleCategorie)
 	{
-		$this->_FR = $FR;
+		$this->_LibelleCategorie=$LibelleCategorie;
 	}
 
-	public function getCodeTexte()
+	public static function getAttributes()
 	{
-		return $this->_codeTexte;
-	}
-
-	public function setCodeTexte($codeTexte)
-	{
-		$this->_codeTexte = $codeTexte;
-	}
-
-	public function getIdTexte()
-	{
-		return $this->_idTexte;
-	}
-
-	public function setIdTexte($idTexte)
-	{
-		$this->_idTexte = $idTexte;
+		return self::$_attributes;
 	}
 
 	/*****************Constructeur***************** */
@@ -73,4 +58,5 @@ class Texte
 		}
 	}
 
+	/*************** METHODES *****************/
 }

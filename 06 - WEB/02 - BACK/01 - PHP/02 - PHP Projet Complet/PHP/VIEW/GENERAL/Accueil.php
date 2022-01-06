@@ -1,3 +1,3 @@
 <div class="demiPage">
-<h2>Choisissez entre Produits et Catégories</h2>
+<h2><?php echo texte("choix"); ?></php></h2>
 </div>
