@@ -1,0 +1,12 @@
+.center{
+    text-align: center;
+}
+.ligne{
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: rgb(221, 221, 221);
+}
+
+.erreur{
+    border: 2px solid red;
+}
