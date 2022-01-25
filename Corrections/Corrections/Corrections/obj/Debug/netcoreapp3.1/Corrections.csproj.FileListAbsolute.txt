@@ -1,5 +1,0 @@
-U:\59011-07-05\CDA\Corrections\Corrections\Corrections\obj\Debug\netcoreapp3.1\Corrections.csproj.AssemblyReference.cache
-U:\59011-07-05\CDA\Corrections\Corrections\Corrections\obj\Debug\netcoreapp3.1\Corrections.GeneratedMSBuildEditorConfig.editorconfig
-U:\59011-07-05\CDA\Corrections\Corrections\Corrections\obj\Debug\netcoreapp3.1\Corrections.AssemblyInfoInputs.cache
-U:\59011-07-05\CDA\Corrections\Corrections\Corrections\obj\Debug\netcoreapp3.1\Corrections.AssemblyInfo.cs
-U:\59011-07-05\CDA\Corrections\Corrections\Corrections\obj\Debug\netcoreapp3.1\Corrections.csproj.CoreCompileInputs.cache
