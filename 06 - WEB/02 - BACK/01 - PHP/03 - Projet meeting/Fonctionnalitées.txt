@@ -1,0 +1,20 @@
+Planification de réunion
+Editeur d'ordre du jour
+Allocation des taches
+Distribution des taches
+Rappels de taches automatique
+Suivi de l'etat de progression des taches
+Regroupement des taches en projets
+Capture de note instantanée
+Outils d'aide a la decision (sondage)
+Resumés des point abordée
+Compte-rendu
+tableau de bort analystique
+Tableau analystique d'etat des taches
+Rattachement des fichiers et hyperliens
+Distribution et archivage des ordres du jours
+Création de compte-rendu
+Systeme de permissions
+Distribution automatique du compte-rendu
+Archivage automatique du compte-rendu
+Module de recherche
