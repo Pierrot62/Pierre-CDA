@@ -7,6 +7,7 @@ function recupInfo() {
     requ.open('POST', 'index.php?page=ListeProduitAPI');
     requ.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     var args = "id=" + selectCateg.value;
+    console.log(args);
     requ.send(args);
 }
 

@@ -11,8 +11,6 @@ req2.open('GET', 'https://geo.api.gouv.fr/departements');
 req2.send();
 console.log("toto");
 
-
-
 req2.onreadystatechange = function (event) {
     if (this.readyState === XMLHttpRequest.DONE) {
         reponseDep = JSON.parse(this.responseText);
