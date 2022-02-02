@@ -1,0 +1,51 @@
+header,footer {
+    width:100%;
+    background-color:rgb(132, 194, 132);   
+}
+
+body{
+    background-color: rgb(209, 202, 202);
+}
+
+img{
+    width:50%; 
+}
+
+nav div{
+    padding: 10px;
+    border: 1px solid;
+    margin: 0px;
+    box-shadow: 2px 2px 3px black;
+    background-color: rgb(211, 203, 193);
+   
+    
+    }  
+  nav{
+    flex-direction: column;
+    list-style-type: none;
+    position: fixed; /* Make it stick, even on scroll */
+    width: 15%;
+    right: 0;
+    height: 10%; /* Full height */
+    /* overflow: auto; Enable scrolling if the sidenav has too much content */
+    }
+nav div:active{
+        box-shadow: -2px -2px 3px black;
+    }
+    
+footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color:rgb(132, 194, 132);
+}
+.demi{
+ position: center
+} 
+.titre{
+    font-family: cursive;
+   font-size: 30px;
+   position: center;
+   
+}
+

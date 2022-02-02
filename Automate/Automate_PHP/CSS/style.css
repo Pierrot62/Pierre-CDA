@@ -1,0 +1,91 @@
+header,footer {
+    width:100%;
+    background-color:rgb(132, 194, 132);   
+}
+
+body{
+    background-color: rgb(209, 202, 202);
+}
+
+img{
+    width:50%; 
+}
+
+nav div{
+    padding: 15px;
+    border: 1px solid;
+    margin: 0px;
+    box-shadow: 2px 2px 3px black;
+    background-color: rgb(157, 208, 250);
+    font-family: cursive;
+    
+   
+    
+    }  
+  nav{
+    flex-direction: column;
+    list-style-type: none;
+    position: absolute; 
+    width: 15%;
+    right: 0; 
+    height: 20%; /* Full height */
+    margin-top: 15em;
+
+    
+   }
+nav div:active{
+        box-shadow: -2px -2px 3px black;
+    }
+    
+footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color:rgb(132, 194, 132);
+}
+.demi{
+ position: center
+} 
+.titre{
+    font-family: cursive;
+   font-size: 30px;
+   position: center;
+   
+}
+/* Menu burger */
+#menu-burger {position:absolute; top:2.5em; right:3.5em; display:inline-block; cursor:pointer;}
+#menu-burger .bar1,
+#menu-burger .bar2,
+#menu-burger .bar3 {width:50px; height:7px; background-color:#F1F1F1; margin:10px 0; transition:0.4s;}
+#menu-burger:hover {opacity:.75; transition:.5s;}
+/*permet de vriller le menu hamburger : a activer si besoin/*
+/* #menu-burger.clicked .bar1 {-webkit-transform:rotate(-45deg) translate(-9px, 6px); transform:rotate(-45deg) translate(-9px, 6px);}
+#menu-burger.clicked .bar2 {opacity: 0;}
+#menu-burger.clicked .bar3 {-webkit-transform:rotate(45deg) translate(-8px, -8px); transform:rotate(45deg) translate(-8px, -8px);} */
+
+/* Main menu (slide) */
+#menu {position:fixed; z-index:9999; right:0; top:auto; background:rgb(132, 194, 132);   ; padding:4em 2em; width:25%; min-height:100%; box-shadow:1px 0 1px #b5b9ab;}
+#menu ul li {list-style:none;}
+#menu ul li a {display:block; color:rgb(37, 35, 35); text-decoration:none; font-weight:700; background:#bebebe; transition:background .5s; padding:1em; text-align:center; margin-bottom:.5em; box-shadow:1px 1px 0 rgb(185, 181, 181)}
+#menu ul li a:hover {background:rgb(132, 194, 132);   ; transition:background .5s;}
+
+#menu.visible {animation:.5s slideRight ease-in forwards; transition-delay:0;}
+#menu.invisible {animation:1s slideLeft ease-out forwards; transition-delay:0;}
+
+/* Animations pour le menu slide */
+@keyframes slideRight {
+	from {Right:-30%;}
+	to {Right:0%;}
+}
+@-webkit-keyframes slideRight {
+	from {Right:-30%;}
+	to {Right:0%;}
+}
+@keyframes slideRight {
+	from {Right:0%;}
+	to {Right:-30%;}
+}
+@-webkit-keyframes slideRight {
+	from {Right:0%;}
+	to {Right:-30%;}
+}

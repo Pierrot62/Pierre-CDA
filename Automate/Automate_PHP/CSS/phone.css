@@ -1,0 +1,45 @@
+/* Responsive design */
+@media (max-width:1024px) {
+	#menu {left:-50%; width:50%;}
+	#menu-burger.clicked {position:fixed;}
+
+	/* Animations pour le menu slide */
+	@keyframes slideRight {
+		from {left:-50%;}
+		to {left:0%;}
+	}
+	@-webkit-keyframes slideRight {
+		from {left:-50%;}
+		to {left:0%;}
+	}
+	@keyframes slideLeft {
+		from {left:0%;}
+		to {left:-50%;}
+	}
+	@-webkit-keyframes slideLeft {
+		from {left:0%;}
+		to {left:-50%;}
+	}
+}
+@media (max-width:600px) {
+	#menu-burger {top:1em; right:2em; z-index:9999;}
+	#menu {left:-100%; width:100%;}
+
+	/* Animations pour le menu slide */
+	@keyframes slideRight {
+		from {left:-100%;}
+		to {left:0%;}
+	}
+	@-webkit-keyframes slideRight {
+		from {left:-100%;}
+		to {left:0%;}
+	}
+	@keyframes slideLeft {
+		from {left:0%;}
+		to {left:-100%;}
+	}
+	@-webkit-keyframes slideLeft {
+		from {left:0%;}
+		to {left:-100%;}
+	}
+}
