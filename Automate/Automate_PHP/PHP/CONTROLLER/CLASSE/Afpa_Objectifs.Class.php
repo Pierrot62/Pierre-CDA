@@ -20,7 +20,7 @@ class Afpa_Objectifs
 		return $this->_IdObjectif;
 	}
 
-	public function setIdObjectif(int $IdObjectif)
+	public function setIdObjectif(?int $IdObjectif)
 	{
 		$this->_IdObjectif=$IdObjectif;
 	}
@@ -67,7 +67,7 @@ class Afpa_Objectifs
 
 	public function getDate()
 	{
-		return is_null($this->_Date)?null:$this->_Date->format('Y-n-j H:i:s');
+		return is_null($this->_Date)?null:$this->_Date->format('Y-m-d');
 	}
 
 	public function setDate(?string $Date)

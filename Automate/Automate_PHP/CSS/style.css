@@ -1,10 +1,17 @@
+.graphiqueAnomalie{
+    border: 1px var(--linkColor) solid;
+
+}
+
+
 header,footer {
     width:100%;
-    background-color:rgb(132, 194, 132);   
+
+/* margin-bottom:2em; */
 }
 
 body{
-    background-color: rgb(209, 202, 202);
+    background-color: var(--bgc2);
 }
 
 img{
@@ -12,13 +19,11 @@ img{
 }
 
 nav div{
-    padding: 15px;
+    padding: 10px;
     border: 1px solid;
     margin: 0px;
-    box-shadow: 2px 2px 3px black;
-    background-color: rgb(157, 208, 250);
-    font-family: cursive;
-    
+    box-shadow: 2px 2px 3px var(--linkColor);
+    background-color: rgb(211, 203, 193);
    
     
     }  
@@ -28,28 +33,42 @@ nav div{
     position: absolute; 
     width: 15%;
     right: 0; 
-    height: 20%; /* Full height */
-    margin-top: 15em;
+    height: 20%; 
+   /* Full height */
+     margin-top: 0vh; 
+   
 
     
    }
 nav div:active{
-        box-shadow: -2px -2px 3px black;
+        box-shadow: -2px -2px 3px var(--linkColor);
+        /* display:none; */
     }
     
 footer{
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color:rgb(132, 194, 132);
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:var(--bgc1);
 }
 .demi{
- position: center
+    position: center
 } 
+
+.border{
+    border: 2px solid black;
+    padding: 1em;
+    background-color: whitesmoke;
+    box-shadow: 4px 4px 10px black;
+}
+
 .titre{
-    font-family: cursive;
-   font-size: 30px;
-   position: center;
+   font-family: 'Alfa Slab One', cursive;
+   font-family: 'Staatliches', cursive;
+   font-size: 4em;
+   color: white;
+   justify-content: center;
+   align-items: center;
    
 }
 /* Menu burger */
@@ -58,20 +77,36 @@ footer{
 #menu-burger .bar2,
 #menu-burger .bar3 {width:50px; height:7px; background-color:#F1F1F1; margin:10px 0; transition:0.4s;}
 #menu-burger:hover {opacity:.75; transition:.5s;}
-/*permet de vriller le menu hamburger : a activer si besoin/*
-/* #menu-burger.clicked .bar1 {-webkit-transform:rotate(-45deg) translate(-9px, 6px); transform:rotate(-45deg) translate(-9px, 6px);}
+/*permet de vriller le menu hamburger : a activer si besoin */
+#menu-burger.clicked .bar1 {-webkit-transform:rotate(-45deg) translate(-9px, 6px); transform:rotate(-45deg) translate(-9px, 6px);}
 #menu-burger.clicked .bar2 {opacity: 0;}
-#menu-burger.clicked .bar3 {-webkit-transform:rotate(45deg) translate(-8px, -8px); transform:rotate(45deg) translate(-8px, -8px);} */
+#menu-burger.clicked .bar3 {-webkit-transform:rotate(45deg) translate(-8px, -8px); transform:rotate(45deg) translate(-8px, -8px);}
 
 /* Main menu (slide) */
-#menu {position:fixed; z-index:9999; right:0; top:auto; background:rgb(132, 194, 132);   ; padding:4em 2em; width:25%; min-height:100%; box-shadow:1px 0 1px #b5b9ab;}
+#menu {z-index:9999 ; right:0; top:auto; 
+  
+    padding:4em 2em; width:10%; min-height:100%;
+    box-shadow:1px 0 1px #b5b9ab; 
+    height: 20em;
+}
 #menu ul li {list-style:none;}
-#menu ul li a {display:block; color:rgb(37, 35, 35); text-decoration:none; font-weight:700; background:#bebebe; transition:background .5s; padding:1em; text-align:center; margin-bottom:.5em; box-shadow:1px 1px 0 rgb(185, 181, 181)}
-#menu ul li a:hover {background:rgb(132, 194, 132);   ; transition:background .5s;}
 
-#menu.visible {animation:.5s slideRight ease-in forwards; transition-delay:0;}
-#menu.invisible {animation:1s slideLeft ease-out forwards; transition-delay:0;}
+#menu ul li a {display:block; color:rgb(37, 35, 35);
+     text-decoration:none; font-weight:700;
+      background:#bebebe; 
+      transition:background .9s; 
+      padding:1em; text-align:center;
+       margin-bottom:.5em; 
+       box-shadow:1px 1px 0 rgb(185, 181, 181)}
+#menu ul li a:hover {background:rgb(132, 194, 132);   ; transition:background .9s;}
+#menu.invisible {animation:1s slideRight ease-in forwards; display:none; transition-delay:0;}  
+/* #menu.invisible {animation:1s slideLeft ease-out forwards; transition-delay:0;}  */
 
+
+.menu {
+    height:20em; 
+     
+}
 /* Animations pour le menu slide */
 @keyframes slideRight {
 	from {Right:-30%;}
@@ -89,3 +124,277 @@ footer{
 	from {Right:0%;}
 	to {Right:-30%;}
 }
+
+.border{
+    border: solid var(--linkColor) 1px;
+}
+.borderRadiuce{
+    border-radius: 5vh;
+}
+
+#iconCo{
+    flex: none;
+    border-radius: 100%;
+    position:absolute;
+    top: 0;
+    height: min(20vh,20vw);
+    width: min(20vh,20vw);
+    transform: translateY(-50%);
+    background-color: var(--bgc2);
+    overflow: hidden;
+}
+#teteIconCo{
+    flex: none;
+    border-radius: 100%;
+    position:absolute;
+    top: min(2vh,2vw);
+    height: min(10vh,10vw);
+    width: min(10vh,10vw);
+    background-color: var(--bgc1);
+}
+#corpsIconCo{
+    flex: none;
+    border-radius: 100%;
+    position:absolute;
+    top: min(12vh,12vw);
+    height: min(20vh,20vw);
+    width: min(20vh,20vw);
+    background-color: var(--bgc1);
+}
+
+nav div{
+    padding: 10px;
+    border: 1px solid;
+    margin: 0px;
+    box-shadow: 2px 2px 3px black;
+    background-color: rgb(211, 203, 193);
+   
+    
+    }  
+  nav{
+    flex-direction: column;
+    list-style-type: none;
+     position: fixed;  
+    width: 15%;
+    right: 0;
+     height: 10%; /*Full height */
+     /*overflow: auto; Enable scrolling if the sidenav has too much content */
+    }
+nav div:active{
+        box-shadow: -2px -2px 3px black;
+    }
+    
+footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color:rgb(132, 194, 132);
+}
+.demi{
+ position: center
+} 
+
+
+
+
+/***** Accueil *****/ 
+.AccueilContenu{
+
+    display: flex;
+    
+}
+.marge {
+
+    flex: 1;
+}
+.AccueilCentre{
+flex : 10; 
+    display: flex;
+    flex-direction: column;
+    
+}
+.AccueilPartie1{ 
+flex: 10;
+    display: flex ; 
+    
+    
+
+}
+
+.Objectif {
+    flex: 8;
+    border : 1px solid black; 
+display: flex;
+flex-direction: column;
+padding-bottom:2em;
+background: linear-gradient(rgba(191, 194, 25, 0.637), rgba(238, 228, 228, 0.712) ,rgb(133, 197, 114));
+border-radius: 5%;
+
+}
+.Objectif h3{
+
+    text-align: center;
+}
+
+.EspaceObjectifStatus{
+    flex : 0.5; 
+}
+
+.Status{
+    flex : 2.5; 
+    align-items: center;
+    text-align: center;
+    border : 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(191, 194, 25, 0.637), rgba(238, 228, 228, 0.712) ,rgb(133, 197, 114));
+    border-radius: 5%;
+}
+
+.Status img {
+
+    align-self: center;
+}
+
+.barreBasse {
+    border-top: 1px solid black;
+    width: 100%;
+}
+.Espace05{
+    flex : 0.5; 
+}
+
+.Espace04{
+    flex : 0.43; 
+}
+
+.Espace01{
+    flex : 0.15; 
+}
+
+.contenuObjectif{
+    display : flex; 
+  
+}
+#RendementS{
+     margin-bottom:2em; 
+}
+.caseBlanche{
+    background-color: white; 
+    flex : 1; 
+    border : 1px solid black ;  margin-bottom:2em; 
+   justify-content:center;
+}
+
+.ContenuAccueilG {
+
+    border-top: 1px solid black ; 
+    display : flex ; 
+    flex-direction: column;
+    padding-top: 2em;
+}
+
+fieldset{
+    margin-right: 2em ;
+}
+
+
+.txtNom{
+   font-size:0.8em;   
+   flex: 2;
+   align-items: center;
+   text-align: center;
+}
+
+.AccueilPartie2{
+
+
+        display: flex;
+        flex-wrap: wrap;
+        /* pour prendre la place dont il a besoin */
+        justify-content: space-around;
+      
+    
+      
+}
+.graphique{
+    flex-direction: column;
+	width: calc(20% - 2rem);
+	min-width: 18vw;
+    max-width: 25vw;
+	align-items: center;
+	display: flex;
+	
+	padding: 0.5em;
+    margin: 2em; 
+	box-shadow: 3px 3px rgba(191, 194, 25, 0.637), -1em 0 .4em rgb(133, 197, 114);
+border-radius: 1em;
+}
+
+
+.graphique img{
+    height : 20vh; 
+    width : 20vw; 
+}
+
+#inputR{
+align-self: center;
+    width: 5vw;
+    height: 3vh;
+}
+
+.pourcent {
+   
+        align-self: center;
+}
+
+.graph{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black; 
+   align-items: center; 
+}
+
+.graph img {
+    height: 20vh;
+    width: 20vw;
+    padding:0.5em; 
+    border-radius: 20%;
+}
+/*****La touche alan*****/
+
+
+.Alan {
+    /* animation header*/ 
+    animation: inherit;
+  }
+  .background {
+    color: hsl(324, 70%, 45%);
+    animation: wheelHueColor 10s infinite;
+    background-color: currentColor;
+  }
+  @supports (background-blend-mode: overlay) {
+    .background {
+      background-image: linear-gradient(45deg, white 10%, black 90%);
+      background-blend-mode: overlay;
+    }
+  }
+  @keyframes wheelHueColor {
+    from, to { color: hsl(324, 70%, 45%); }
+    10%      { color: hsl(360, 65%, 45%); }
+    20%      { color: hsl( 36, 80%, 45%); }
+    30%      { color: hsl( 72, 75%, 35%); }
+    40%      { color: hsl(108, 65%, 35%); }
+    50%      { color: hsl(144, 75%, 35%); }
+    60%      { color: hsl(180, 75%, 35%); }
+    70%      { color: hsl(216, 60%, 45%); }
+    80%      { color: hsl(252, 65%, 50%); }
+    90%      { color: hsl(288, 60%, 40%); }
+  }
+  
+.imggraph{
+    
+    background-size: cover;
+}
+
+

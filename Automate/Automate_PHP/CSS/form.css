@@ -33,6 +33,15 @@ fieldset {
     padding: 0.5em;
 }
 
+.fieldsetFormSeuil{
+    margin: 0;
+}
+
+.phoneCol {
+    padding: 1em;
+    margin: 0;
+}
+
 form {
     display: grid;
     grid-template-columns: 1fr 1.5fr;

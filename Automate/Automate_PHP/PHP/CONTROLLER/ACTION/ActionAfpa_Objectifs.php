@@ -1,6 +1,9 @@
 <?php
 $elm = new Afpa_Objectifs($_POST);
-
+var_dump($elm);
+$elm->setRendement($elm->getRendement()*$_POST["multiplicateur"]);
+$elm->setDate($_POST["Date"]." 00:00:00");
+var_dump($elm);
 switch ($_GET['mode']) {
 	case "Ajouter": {
 		$elm = Afpa_ObjectifsManager::add($elm);

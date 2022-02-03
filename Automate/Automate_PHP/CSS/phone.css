@@ -20,6 +20,9 @@
 		from {left:0%;}
 		to {left:-50%;}
 	}
+	.phoneCol{
+		flex-direction: column;
+	}
 }
 @media (max-width:600px) {
 	#menu-burger {top:1em; right:2em; z-index:9999;}

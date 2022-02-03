@@ -20,7 +20,7 @@ class Afpa_Seuils
 		return $this->_IdSeuil;
 	}
 
-	public function setIdSeuil(int $IdSeuil)
+	public function setIdSeuil(?int $IdSeuil)
 	{
 		$this->_IdSeuil=$IdSeuil;
 	}
@@ -47,7 +47,7 @@ class Afpa_Seuils
 
 	public function getDateSeuil()
 	{
-		return is_null($this->_DateSeuil)?null:$this->_DateSeuil->format('d-m-Y');
+		return is_null($this->_DateSeuil)?null:$this->_DateSeuil->format('Y-m-d');
 	}
 
 	public function setDateSeuil(?string $DateSeuil)

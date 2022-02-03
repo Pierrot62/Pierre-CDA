@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer x:Name="ScrollBar" Grid.Row="1" Grid.Column="1" ScrollChanged="ScrollViewer_ScrollChanged">
+            <TextBlock x:Name="Log"  HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" />
+        </ScrollViewer>
     </Grid>
 </Window>

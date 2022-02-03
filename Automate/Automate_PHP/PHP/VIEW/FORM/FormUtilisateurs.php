@@ -10,9 +10,9 @@ switch ($mode) {
 }
 
 if (isset($_GET['id'])) {
-	$elm = UtilisateursManager::findById($_GET['id']);
+	$elm = Afpa_UtilisateursManager::findById($_GET['id']);
 } else {
-	$elm = new Utilisateurs();
+	$elm = new Afpa_Utilisateurs();
 }
 echo '<main class="center">';
 

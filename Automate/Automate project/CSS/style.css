@@ -49,3 +49,125 @@ footer{
    
 }
 
+
+
+/***** Accueil *****/ 
+.AccueilContenu{
+
+    display: flex;
+    
+}
+.marge {
+
+    flex: 1;
+}
+.AccueilCentre{
+flex : 10; 
+    display: flex;
+    flex-direction: column;
+    
+}
+.AccueilPartie1{ 
+flex: 10;
+    display: flex ; 
+    
+    
+
+}
+
+.Objectif {
+    flex: 10;
+    border : 1px solid black; 
+display: flex;
+flex-direction: column;
+padding-bottom:2em;
+background: linear-gradient(#faf7f7, #e96868);
+border-radius: 5%;
+}
+.Objectif h3{
+
+    text-align: center;
+}
+
+.EspaceObjectifStatus{
+    flex : 1 ; 
+}
+
+.Status{
+    flex : 2; 
+    border : 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#faf7f7, #e96868);
+    border-radius: 5%;
+}
+
+.Status img {
+
+    align-self: center;
+}
+.Espace05{
+    flex : 0.5; 
+}
+
+.Espace04{
+    flex : 0.43; 
+}
+
+.Espace01{
+    flex : 0.15; 
+}
+
+.contenuObjectif{
+    display : flex; 
+  
+}
+#RendementS{
+     margin-bottom:2em; 
+}
+.caseBlanche{
+    background-color: white; 
+    flex : 1; 
+    border : 1px solid black ;  margin-bottom:2em; 
+   justify-content:center;
+}
+
+.ContenuAccueilG {
+
+    border-top: 1px solid black ; 
+    display : flex ; 
+    flex-direction: column;
+    padding-top: 2em;
+}
+
+fieldset{
+    margin-right: 2em ;
+}
+
+
+.txtNom{
+   font-size:0.8em;   
+   flex: 2;
+   align-items: center;
+   text-align: center;
+}
+
+
+.graphique{
+
+    display : flex;
+    flex-direction: column;
+    margin: 2em;
+    border: 1px solid black ;
+}
+.graphique img{
+    height : 20vh; 
+    width : 20vw; 
+}
+
+
+
+
+
+
+

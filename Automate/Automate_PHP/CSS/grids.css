@@ -1,28 +1,33 @@
 
 /********** GRIDS **********/
 
-.grid-col-7 {
-	display : grid;
-	grid-template-columns : 2fr 2fr 2fr 2fr 0.5fr 0.5fr 0.5fr;}
-
-.grid-columns-span-7 { 
-	grid-column:1/8;
+.gridListe div,button,a {
+	justify-content: center;
+	align-items: center;
 }
 
-.grid-col-5 {
-	display : grid;
-	grid-template-columns : 2fr 2fr 0.5fr 0.5fr 0.5fr;}
 
-.grid-columns-span-5 { 
-	grid-column:1/6;
+.grid-col-2 {
+	
+	display : grid;
+	grid-template-columns :  1fr 1fr;
+
 }
 
-.grid-col-6 {
-	display : grid;
-	grid-template-columns : 2fr 2fr 2fr 0.5fr 0.5fr 0.5fr;}
+.grid-columns-span-2 { 
+	grid-column: span 2 ;
+}
 
-.grid-columns-span-6 { 
-	grid-column:1/7;
+
+.grid-col-3 {
+
+	display : grid;
+	grid-template-columns :  1fr 1fr 1fr;
+
+}
+
+.grid-columns-span-3 { 
+	grid-column: span 3;
 }
 
 .grid-col-4 {
@@ -30,7 +35,31 @@
 	grid-template-columns : 2fr 0.5fr 0.5fr 0.5fr;}
 
 .grid-columns-span-4 { 
-	grid-column:1/5;
+	grid-column: span 4 ;
+}
+
+.grid-col-5 {
+	display : grid;
+	grid-template-columns : 2fr 2fr 0.5fr 0.5fr 0.5fr;}
+
+.grid-columns-span-5 { 
+	grid-column:span 5;
+}
+
+.grid-col-6 {
+	display : grid;
+	grid-template-columns : 2fr 2fr 2fr 0.5fr 0.5fr 0.5fr;}
+
+.grid-columns-span-6 { 
+	grid-column: span 6;
+}
+
+.grid-col-7 {
+	display : grid;
+	grid-template-columns : 2fr 2fr 2fr 2fr 0.5fr 0.5fr 0.5fr;}
+
+.grid-columns-span-7 { 
+	grid-column:1/8;
 }
 
 .grid-col-8 {
@@ -41,13 +70,21 @@
 	grid-column:1/9;
 }
 
-.gridListe div,button,a {
-	justify-content: center;
-	align-items: center;
+.grid-col-9 {
+	display : grid;
+	grid-template-columns : 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+	grid-gap: 2em;
+	
+	
+}
+
+.grid-columns-span-9 { 
+	grid-column: span 9;
 }
 
 .caseListe {
 	padding : 0.2em;
+	background-color: whitesmoke;
 	border: 1px solid black
 }
 
@@ -56,14 +93,24 @@
 }
 
 .GridForm {
-	 display : grid;
-	grid-template-columns: 2fr 2fr 0.5fr 0.5fr;
-	grid-gap: 0.5em;
+	display : grid;
+   grid-template-columns: 2fr 2fr 0.5fr 0.5fr;
+   grid-gap: 0.5em;
 }
 
-.GridForm div,button,a {
-	justify-content: center;
-	align-items: center;
+.GridForm div,button,a, .GridFormSeuil {
+   justify-content: center;
+   align-items: center;
+}
+
+.GridFormSeuil {
+	display : grid;
+  	grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+   	grid-gap: 0.5em;
+}
+
+.grid-columns-span-7 { 
+	grid-column: span 7;
 }
 
 .flex-0-1 {
@@ -72,4 +119,22 @@
 
 .gridForm-col-span {
 	grid-column: 1/5 ;
+}
+
+.tailleTab{
+	width:10em; 
+	height:10em;
+}
+
+/* .grid-col-6Lumiere{
+
+	
+		display : grid;
+		grid-template-columns : 0.5fr 2fr 2fr 0.5fr 2fr 0.5fr;
+	grid-gap: 2em;
+} */
+.grid-col-9Lumiere{
+	display : grid;
+	grid-template-columns : 1fr 1fr 0.5fr 0.5fr 1fr 0.5fr 0.5fr 1fr 1fr;
+grid-gap: 2em;
 }

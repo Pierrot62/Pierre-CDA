@@ -8,11 +8,11 @@ Use Automate;
 
 CREATE TABLE Afpa_Seuils(
    IdSeuil INT AUTO_INCREMENT PRIMARY KEY,
-   SeuilBas FLOAT,
-   SeuilHaut FLOAT,
-   DateSeuil DATE,
-   Temps INT,
-   Nature INT
+   SeuilBas FLOAT NOT NULL,
+   SeuilHaut FLOAT NOT NULL,
+   DateSeuil DATE NOT NULL,
+   Temps INT NOT NULL,
+   Nature INT NOT NULL
 )ENGINE=InnoDB;
 
 
@@ -23,8 +23,8 @@ CREATE TABLE Afpa_Seuils(
 
 CREATE TABLE Afpa_Temperatures(
    IdTemperature INT AUTO_INCREMENT PRIMARY KEY,
-   ValeurTemperature FLOAT,
-   DateTemperature DATETIME
+   ValeurTemperature FLOAT NOT NULL,
+   DateTemperature DATETIME NOT NULL
 )ENGINE=InnoDB;
 
 
@@ -35,8 +35,8 @@ CREATE TABLE Afpa_Temperatures(
 
 CREATE TABLE Afpa_Sons(
    IdSon INT AUTO_INCREMENT PRIMARY KEY,
-   ValeurSon FLOAT,
-   DateSon DATETIME
+   ValeurSon FLOAT NOT NULL,
+   DateSon DATETIME NOT NULL
 )ENGINE=InnoDB;
 
 
@@ -47,8 +47,8 @@ CREATE TABLE Afpa_Sons(
 
 CREATE TABLE Afpa_Lumieres(
    IdLumiere INT AUTO_INCREMENT PRIMARY KEY,
-   ValeurLumiere FLOAT,
-   DateLumiere DATETIME
+   ValeurLumiere FLOAT NOT NULL,
+   DateLumiere DATETIME NOT NULL
 )ENGINE=InnoDB;
 
 --
@@ -58,9 +58,9 @@ CREATE TABLE Afpa_Lumieres(
 
 CREATE TABLE Afpa_Couleurs(
    IdCouleur INT AUTO_INCREMENT PRIMARY KEY,
-   Red INT,
-   Green INT,
-   Blue INT
+   Red INT NOT NULL,
+   Green INT NOT NULL,
+   Blue INT NOT NULL
 )ENGINE=InnoDB;
 
 
@@ -71,7 +71,7 @@ CREATE TABLE Afpa_Couleurs(
 
 CREATE TABLE Afpa_Erreurs(
    IdErreur INT AUTO_INCREMENT PRIMARY KEY,
-   MessageErreur TEXT
+   MessageErreur TEXT NOT NULL
  
 )ENGINE=InnoDB;
 
@@ -82,11 +82,11 @@ CREATE TABLE Afpa_Erreurs(
 
 CREATE TABLE Afpa_Objectifs(
    IdObjectif INT AUTO_INCREMENT PRIMARY KEY,
-   Rendement INT,
-   MaxNombreArretTemperature INT,
-   MaxNombreArretDecibel INT,
-   MaxPourcentDeclasses INT,
-   Date DATETIME
+   Rendement INT NOT NULL,
+   MaxNombreArretTemperature INT NOT NULL,
+   MaxNombreArretDecibel INT NOT NULL,
+   MaxPourcentDeclasses INT NOT NULL,
+   Date DATETIME NOT NULL
 )ENGINE=InnoDB;
 
 --
@@ -96,8 +96,8 @@ CREATE TABLE Afpa_Objectifs(
 
 CREATE TABLE Afpa_Cadences(
    IdCadence INT AUTO_INCREMENT PRIMARY KEY,
-   NbProduit INT,
-   DateCadence DATETIME
+   NbProduit INT NOT NULL,
+   DateCadence DATETIME NOT NULL
 )ENGINE=InnoDB;
 
 
@@ -108,9 +108,9 @@ CREATE TABLE Afpa_Cadences(
 
 CREATE TABLE Afpa_Anomalies(
    IdAnomalie INT AUTO_INCREMENT PRIMARY KEY,
-   DateAnomalie DATETIME,
-   TypeAnomalie VARCHAR(50),
-   NbDeclasses INT,
+   DateAnomalie DATETIME NOT NULL,
+   TypeAnomalie VARCHAR(50) NOT NULL,
+   NbDeclasses INT NOT NULL,
    IdErreur INT NOT NULL
   
 )ENGINE=InnoDB;
@@ -130,7 +130,7 @@ INSERT INTO `afpa_couleurs` (`IdCouleur`, `Red`, `Green`, `Blue`) VALUES
 INSERT INTO `afpa_erreurs` (`IdErreur`, `MessageErreur`) VALUES
 (1, 'Luminosité trop basse '),
 (2, 'Son trop haut '),
-(3, 'Luminosité trop faible'),
+(3, 'Luminosité trop haute'),
 (4, 'Son trop bas'),
 (5, 'Température trop élevé. '),
 (6, 'Température trop basse. '),
@@ -148,8 +148,8 @@ INSERT INTO `afpa_lumieres` (`IdLumiere`, `ValeurLumiere`, `DateLumiere`) VALUES
 
 INSERT INTO `afpa_seuils` (`IdSeuil`, `SeuilBas`, `SeuilHaut`, `DateSeuil`, `Temps`,`Nature`) VALUES
 (1, 10, 30, '2022-02-01', 1,3),
-(2, 40, 150, '2022-02-02', 2,2),
-(3, 100, 1000, '2022-02-25', 1,1);
+(2, 73, 80, '2022-02-02', 2,2),
+(3, 21, 23, '2022-02-25', 1,1);
 
 INSERT INTO `afpa_sons` (`IdSon`, `ValeurSon`, `DateSon`) VALUES
 (1, 120, '2022-02-01 13:58:44'),
@@ -160,9 +160,9 @@ INSERT INTO `afpa_temperatures` (`IdTemperature`, `ValeurTemperature`, `DateTemp
 (2, '-3.0', '2022-02-01 14:57:57');
 
 
-INSERT INTO `afpa_objectifs` (`IdObjectif`, `Rendement`, `MaxNombreArretTemperature`,`MaxNombreArretDecibel`,`MaxPourcentDeclasses`) VALUES
-(1, 100, 4,5,60 ),
-(2, 200, 5,4,70);
+INSERT INTO `afpa_objectifs` (`IdObjectif`, `Rendement`, `MaxNombreArretTemperature`,`MaxNombreArretDecibel`,`MaxPourcentDeclasses`, `Date`) VALUES
+(1, 100, 4,5,60, '2022-02-15 10:00:00' ),
+(2, 200, 5,4,70, '2022-02-25 10:00:00');
 
 INSERT INTO `afpa_cadences` (`IdCadence`, `NbProduit`, `DateCadence`) VALUES
 (1, 100, '2022-02-01 14:20:30'),

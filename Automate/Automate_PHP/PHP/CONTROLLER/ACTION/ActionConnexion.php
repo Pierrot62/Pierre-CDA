@@ -1,6 +1,6 @@
 <?php
     
-$uti =  UtilisateursManager::getList(null, ['adresseMail' => $_POST['adresseMail']]);
+$uti =  Afpa_UtilisateursManager::getList(null, ['adresseMail' => $_POST['adresseMail']]);
 if ($uti != null) {
     if ($uti[0]->getMotDePasse() == crypte($_POST['motDePasse'])) {       
         echo 'connection reussie';

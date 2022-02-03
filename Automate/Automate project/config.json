@@ -1,6 +1,6 @@
 {
 	"Host":"localhost",
-	"Port":"3306",
+	"Port":"3308",
 	"DbName":"automate",
 	"Login":"root",
 	"Pwd":""

@@ -1,6 +1,8 @@
-
-<footer>
-<div class= "colonne center"> 
+</div>
+<div class ="bigEspace"></div>
+<div class ="bigEspace"></div>
+<footer Class="background ">
+<div class= "colonne center Alan"> 
     <div>AFPA</div>
     <div>Adresse : 407 Av. de la Gironde, 59640 Dunkerque</div>
     <div>Réalisé par la session CDA 2021/2022</div>
