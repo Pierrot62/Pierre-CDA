@@ -1,0 +1,88 @@
+:root {
+    --bgc1: #f5deb3;
+    --bgc2: tan;
+    --font: #074e4e;
+}
+
+/****  GENERAL ****/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div,
+a,
+header,
+footer,
+nav,
+article,
+section {
+    display: flex;
+    flex: 1;
+}
+
+img,
+video {
+    width: 100%;
+}
+
+.colonne {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    flex: 4;
+}
+.menu{
+    
+    height: min-content;
+}
+
+.titreNav,
+.menuItem {
+    font-size: 2em;
+    color: var(--font);
+    background-color: var(--bgc1);
+    padding: .8em;
+}
+
+.titreNav {
+    display: none;
+}
+
+.sousMenu {
+    display: none;
+    background-color: var(--bgc2);
+    transition: 1s;
+    /* pour éviter que le site descend */
+    position: absolute;
+    top:5.5em;
+}
+
+.sousMenuItem {
+    font-size: 1.5em;
+    color: var(--font);
+    padding: .8em;
+    justify-content: center;
+}
+
+.menuItemActive {
+    color: var(--bgc1);
+    background-color: var(--font);
+    transition: background-color 1s ;
+}
+
+.sousMenuItemActive {
+    border: 2px solid var(--font);
+}
+.decalage{
+    flex: 0;
+    background-color: #fff;
+}

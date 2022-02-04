@@ -1,0 +1,123 @@
+/****  GENERAL ****/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+div, a, header, footer, nav, article, section, ul {
+    display: flex;
+    flex: 1;
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    color: white;
+}
+.block{
+    flex-direction: row;
+}
+.sm{
+    flex: 0.5;
+}
+.xs{
+    flex: 0.1;
+}
+.gr{
+    flex: 1.5;
+}
+.xl{
+    flex: 2;
+}
+hr{
+    height: 1px;
+    background-color: #B4BE2B;
+    border-radius: 5px;
+    width: 95%;
+}
+ul>li{
+    list-style: none;
+    transition: 0.5s;
+    margin: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+    border: #B4BE2B solid 1px;
+}
+ul>li>a{
+    transition: 0.5s;
+}
+ul>li>a:hover{
+    color: #B4BE2B;
+}
+ul>li:hover{
+    border: white solid 1px;
+}
+li{
+    padding: 0.5em;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.justify{
+    text-align: justify;
+}
+#logoNav:hover{
+    transition: 2s;
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+img, video {
+    width: 100%;
+}
+.sec{
+    margin: 4em;
+    padding: 1.5em;
+    font-size: 1.3em;
+}
+.blanc{
+    color: white;
+}
+.red{
+    color: red;
+}
+.bleu{
+    color: #0066B1;
+}
+.colonne {
+    flex-direction: column;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+nav{
+    padding: 0.5em;
+    background-color: rgb(0,0,0,.7);
+    position: absolute;
+    width: 100vw;
+}
+#logoNav{
+    height: 5em;
+}
+#textBanner{
+    position: absolute;
+    width: 100vw;
+    margin-top: 3em;
+    font-size: 3em;
+}
+.caracteristique{
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3em;
+}
+.space{
+    word-spacing: 0.2em;
+    letter-spacing: 0.1em;
+}

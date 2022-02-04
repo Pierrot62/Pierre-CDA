@@ -1,0 +1,105 @@
+/****  GENERAL ****/
+:root {
+    --bgc1: #1D3557;
+    --bgc2: #5C4D7D;
+    --font: #F1FAEE;
+    --btn: #457B9D;
+    --hr: #E63946;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+div, a, header, footer, nav, article, section, input {
+    display: flex;
+    flex: 1;
+}
+img, video {
+    width: 100%;
+}
+.colonne {
+    flex-direction: column;
+}
+.relative{
+    position: relative;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+form{
+    background-color: var(--bgc1);
+    color: var(--font);
+    padding:0.5em;
+    border-radius: 5px;
+}
+form>button{
+    color: var(--font);
+}
+form>h1{
+    color: var(--btn)
+}
+form>label{
+    justify-content: center
+}
+
+input{
+    border: 3px solid black;
+    border-radius: 3px
+}
+.rouge{
+    border: 3px solid red;
+}
+.vert{
+    border: 3px solid rgb(2, 214, 2);
+}
+.elmForm{
+    padding:0.5em
+}
+button{
+    background-color: #2286c0;
+    padding:0.5em;
+    letter-spacing: 0.2em;
+    border-radius: 5px;
+    cursor:pointer;
+}
+form{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1.5fr 0.1fr 0.1fr 0.1fr;
+    grid-gap: 0.5em;
+    grid-auto-rows: minmax(1em, auto);
+}
+
+.masquer{
+    display: none;
+}
+.visible{
+    display: block;
+}
+/* .infobulle{
+
+} */
+.infoBulle{
+    position: absolute;
+    top: 5vh;
+    background-color: #2286c0;
+    padding: 0.5em;
+    border-radius: 5px;
+    z-index: 99;
+}
+
+.contentInfo{
+    position: relative;
+    cursor: pointer;
+}
+.icoInfoBulle{
+    position : absolute;
+}
+.icoMdp{
+    position: absolute;
+    right: 0.5em;
+    bottom:0.2em;
+    color: black;
+}

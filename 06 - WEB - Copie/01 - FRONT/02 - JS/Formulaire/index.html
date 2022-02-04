@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Formulaire</title>
+</head>
+    <body>
+        <section>
+            <div></div>
+            <form class="" action="">
+
+                <div></div>
+                <div></div>
+                <h1 class="center">~ Creation de compte ~</h1>
+                <div></div>
+                <div></div>
+                <div></div>
+
+                <div></div>
+                <label for="nom">Nom :</label>
+                <input type="text" pattern="[A-Za-z]{2,}" name="nom" required>
+                <div class="center"><i class="fas fa-times-circle"></i></div>                
+                <div class="center contentInfo">
+                    <i class="fas fa-question-circle"></i>
+                    <div class="infoBulle masquer">
+                        - Minimun 2 lettre <br>
+                        - Pas de chiffre <br>
+                        - Pas de caractere speciaux</div>
+                </div>
+                <div></div>
+
+                <div></div>
+                <label for="prenom">Prenom :</label>
+                <input type="text" pattern="[A-Za-z]{2,}" name="prenom" required>
+                <div class="center"><i class="fas fa-times-circle"></i></div>           
+                <div class="center contentInfo">
+                    <i class="fas fa-question-circle"></i>
+                    <div class="infoBulle masquer">@</div>
+                </div>
+                <div></div>     
+                
+
+                <div></div>
+                <label for="email">Email :</label>
+                <input type="text" pattern="^[a-zA-Z][a-zA-Z0-9]+([_\.-][a-zA-Z0-9]+)*@([a-zA-Z0-9]+[_\.-])+[a-zA-Z]{2,4}$" name="email" required>
+                <div class="center"><i class="fas fa-times-circle"></i></div> 
+                <div class="center contentInfo">
+                    <i class="fas fa-question-circle"></i>
+                    <div class="infoBulle masquer">@</div>
+                </div>
+                <div></div>
+                
+
+                <div></div>
+                <label for="email">Date de naissance :</label>
+                <input type="date" name="ddn">
+                <div class="center"><i class="fas fa-times-circle"></i></div> 
+                <div class="center contentInfo">
+                    <i class="fas fa-question-circle"></i>
+                    <div class="infoBulle masquer">@</div>
+                </div>
+                <div></div>
+
+                <div></div>
+                <label for="mdp">Mot de passe :</label>
+                <div class="relative">
+                    <input type="password" id="mdp" class="inputMdp" mode="masquer" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).{8,}" name="mdp" required>
+                    <i class="fas fa-eye icoMdp"></i>
+                </div>
+                <div class="center"><i class="fas fa-times-circle"></i></div> 
+                <div class="center contentInfo">
+                    <i class="fas fa-question-circle"></i>
+                    <div class="infoBulle masquer">@</div>
+                </div>
+                <div></div>
+                
+
+                <div></div>
+                <label for="confirmMdp">Confirmation :</label>
+                <input type="password" id="confirmMdp" name="confirmMdp" mode="masquer" required>
+                <div class="center"><i class="fas fa-times-circle"></i></div> 
+                <div class="center contentInfo">
+                    <i class="fas fa-question-circle"></i>
+                    <div class="infoBulle masquer">@</div>
+                </div>
+                <div></div>
+
+                <div></div>    
+                <div></div>
+                <button class="btnForm" type="submit" disabled>Enregister</button>
+                <div></div>
+                <div></div>
+            </form>
+            <div></div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+
+</html>
